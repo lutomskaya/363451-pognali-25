@@ -1,7 +1,7 @@
 # Личный проект «Погнали» 
 
 * Студент: [Анна Лютомская](https://up.htmlacademy.ru/adaptive/25/user/363451).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко] (https://htmlacademy.ru/profile/tatien).
 
 ---
 
