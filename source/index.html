@@ -5,8 +5,277 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+    <header class="main-header">
+      <a href="" class="main-header__logo">
+        <img src="./img/logo-mobile.svg" alt="Логотип" width="96" height="15">
+      </a>
+      <button class="button main-header__button">Открыть</button>
+      <nav class="main-header__nav">
+        <ul class="main-header__list">
+          <li class="main-header__item">
+            <a class="main-header__link">О сервисе</a>
+          </li>
+          <li class="main-header__item">
+            <a href="./form.html" class="main-header__link">Направления</a>
+          </li>
+          <li class="main-header__item">
+            <a href="./catalog.html" class="main-header__link">Попутчики</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="main-header__contacts contacts">
+        <li class="contacts__item">
+          <a class="contacts__phone" href="tel:78128121212">8 800 555-86-28</a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__email" href="#">mail@htmlacademy.ru</a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__login" href="#">Авторизация</a>
+        </li>
+      </ul>
+      <ul class="main-header__social-list">
+        <li class="main-header__social-item">
+          <a href="https://www.facebook.com/htmlacademy">
+            <img src="./img/facebook.svg" alt="Фейсбук" width="23" height="23">Фейсбук</a>
+        </li>
+        <li class="main-header__social-item">
+          <a href="https://www.vk.com/htmlacademy">
+            <img src="./img/vkontakte.svg" alt="Вконтакте" width="23" height="23">Вконтакте</a>
+        </li>
+        <li class="main-header__social-item">
+          <a href="https://www.instagram.com/htmlacademy">
+            <img src="./img/instagram.svg" alt="Инстаграм" width="23" height="23">Инстаграм</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="intro">
+        <h2 class="intro__title">В путешествие с крутыми попутчиками!</h2>
+        <blockquote class="intro__text">
+          «Лучшее приложение, что я видел в жизни!»
+        </blockquote>
+        <cite class="intro__author">
+          Мурат Эльтазин главный редактор газеты «гаджетлайф»
+        </cite>
+      </section>
+      <section class="features">
+        <ol class="features__list">
+          <li class="features__item">Выберите направление</li>
+          <li class="features__item">Изучите идеи путешественников</li>
+          <li class="features__item">Находите тех, кто похож на вас</li>
+          <li class="features__item">Путешествуйте вместе!</li>
+        </ol>
+      </section>
+      <section class="service">
+        <h2 class="service__title">О сервисе</h2>
+        <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+        <p>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+      </section>
+      <section class="directions">
+        <h2 class="directions__title">Направления</h2>
+        <p>Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+        <ul class="directions__list">
+          <li class="directions__item">
+            <img src="./img/thailand-mobile.png" alt="Таиланд" width="270" height="110">
+            <h3>Таиланд</h3>
+            <span>18321</span>
+            <p>Джунгли зовут!</p>
+          </li>
+          <li class="directions__item">
+            <img src="./img/france-mobile.png" alt="Франция" width="270" height="110">
+            <h3>Франция</h3>
+            <span>12518</span>
+            <p>Трэ бьен, манифик!</p>
+          </li>
+          <li class="directions__item">
+            <img src="./img/czech-mobile.png" alt="Чехия" width="270" height="110">
+            <h3>Чехия</h3>
+            <span>5326</span>
+            <p>Закоулки старой Европы</p>
+          </li>
+        </ul>
+        <button class="directions__button">Показать все</button>
+      </section>
+      <section class="companions">
+        <h2 class="companions__title">Попутчики</h2>
+        <p>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+        <p>Теперь можно легко найти единомышленников!</p>
+        <ul class="companion">
+          <li class="companion__item">
+            <span class="companion__level">99 level </span>
+            <img src="./img/companions1.png" alt="Таня Фирсова" width="270" height="270">
+            <div class="companion__country">
+              <ul class="companion__list">
+                <li class="companion__flag">
+                  <img src="./img/sri-Lanka.svg" alt="Шри-Ланка" width="35" height="20">
+                </li>
+                <li class="companion__flag">
+                  <img src="./img/thailand.svg" alt="Таиланд" width="35" height="20">
+                </li>
+                <li class="companion__flag">
+                  <img src="./img/seychelles.svg" alt="Сейшелы" width="35" height="20">
+                </li>
+              </ul>
+            </div>
+            <h3 class="companion__title">Таня Фирсова</h3>
+            <p class="companion__hashtags">
+              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+            </p>
+            <ul class="companion__transport transport">
+              <li class="transport__item">
+                <div class="transport__img">
+                  <img src="./img/plane.svg" alt="Авиаперелет" width="14" height="16">
+                </div>
+              </li>
+              <li class="transport__item">
+                <div class="transport__img">
+                  <img src="./img/bus.svg" alt="Автотранспорт" width="13" height="16">
+                </div>
+              </li>
+              <li class="transport__item">
+                <div class="transport__img">
+                  <img src="./img/bicycle.svg" alt="Велосипед" width="19" height="17">
+                </div>
+              </li>
+              <li class="transport__item">
+                <div class="transport__img">
+                  <img src="./img/run.svg" alt="Пешком" width="15" height="17">
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="companions__item">
+            <span class="companion__level">80 level </span>
+            <img src="./img/companions2.png" alt="Петя Демин" width="270" height="270">
+            <div class="companion__country">
+              <ul class="companion__list">
+                <li class="companion__flag">
+                  <img src="./img/belgium.svg" alt="Бельгия" width="35" height="20">
+                </li>
+                <li class="companion__flag">
+                  <img src="./img/czech.svg" alt="Чехия" width="35" height="20">
+                </li>
+              </ul>
+            </div>
+            <h3 class="companion__title">Петя Демин</h3>
+            <p class="companion__hashtags">
+              #бургер #бар #футбол #концерт #крафт
+            </p>
+            <ul class="companion__transport transport">
+              <li class="transport__item">
+                <div class="transport__img">
+                  <img src="./img/plane.svg" alt="Авиаперелет" width="14" height="16">
+                </div>
+              </li>
+              <li class="transport__item">
+                <div class="transport__img">
+                  <img src="./img/bus.svg" alt="Автотранспорт" width="13" height="16">
+                </div>
+              </li>
+              <li class="transport__item">
+                <div class="transport__img">
+                  <img src="./img/bicycle.svg" alt="Велосипед" width="19" height="17">
+                </div>
+              </li>
+              <li class="transport__item">
+                <div class="transport__img">
+                  <img src="./img/run.svg" alt="Пешком" width="15" height="17">
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <a href="#" class="companions__button">Показать всех</a>
+      </section>
+      <section class="rate">
+        <h2 class="rate__title">Добавьте свой профиль</h2>
+        <ol class="rate__list">
+          <li class="rate__item">
+            <p class="rate__name">Базовое размещение</p>
+            <p class="rate__price">Бесплатно</p>
+          </li>
+          <li class="rate__item">
+            <p class="rate__name">Вывод на первых позициях</p>
+            <p class="rate__price">99 руб./мес</p>
+          </li>
+          <li class="rate__item">
+            <p class="rate__name">Кастомный цвет карточки</p>
+            <p class="rate__price">59 руб./мес</p>
+          </li>
+        </ol>
+        <a href="#" class="rate__button">Показать тарифы для бизнеса</a>
+        <div class="modal rate-business">
+          <h2 class="rate-business__title">Бизнес-тарифы</h2>
+          <ul class="rate-business__list">
+            <li class="rate-business__item">
+              <p class="rate__name">Реклама у блоггера</p>
+              <p class="rate__price">300 000 руб./пост</p>
+            </li>
+            <li class="rate-business__item">
+              <p class="rate__name">Накрутка подписчиков</p>
+              <p class="rate__price">от 1 руб./шт.т</p>
+            </li>
+            <li class="rate-business__item">
+              <p class="rate__name">Лайки от ботов</p>
+              <p class="rate__price">от 20 коп./лайк</p>
+            </li>
+            <li class="rate-business__item">
+              <p class="rate__name">Ваш продакт-плейсмент</p>
+              <p class="rate__price">Индивидуально</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="interested">
+        <h2 class="interested__title">Заинтересовались?</h2>
+        <p class="interested__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
+          <a href="#">авторизуйтесь.</a>
+        </p>
+        <form class="interested__form" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="interested__input" type="text" placeholder="E-mail" name="email">
+          <button type="submit" class="interested__button" aria-label="Зарегистрироваться">
+            Регистрация
+          </button>
+        </form>
+        <p class="interested__text">Остались вопросы? Мы с радостью на них ответим!</p>
+        <a class="interested__phone" href="tel:78005558628">8 800 555-86-28</a>
+        <a class="interested__email" href="#">mail@htmlacademy.ru</a>
+      </section>
+      <section class="route">
+        <p class="route__address">ул. Большая Конюшенная, 19/8</p>
+        <a href="#" class="route__button">Проложить маршрут</a>
+      </section>
+      <section class="map">
+        <div>
+          <img src="./img/background-map.png" alt="Карта" width="320" height="352">
+        </div>
+      </section>
+    </main>
+    <section class="footer">
+      <a href="#" class="footer__logo">
+        <img src="./img/logo-mobile.svg" alt="Логотип" width="96" height="15">
+      </a>
+      <ul class="footer__social">
+        <li class="social__item">
+          <a href="https://www.telegram.org/htmlacademy">
+            <img src="./img/telegram.svg" alt="Телеграм" width="23" height="23"> Телеграм</a>
+        </li>
+        <li class="social__item">
+          <a href="https://www.vk.com/htmlacademy">
+            <img src="./img/vkontakte.svg" alt="Вконтакте" width="23" height="23"> Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <img src="./img/youtube.svg" alt="Youtube" width="23" height="23">Youtube</a>
+        </li>
+      </ul>
+      <div class="footer__copyright">
+        <a href="#" class="footer__link">
+          Разработано
+          <img src="./img/logo-html.svg" alt="htmlacademy" width="27" height="33">
+        </a>
+      </div>
+    </section>
   </body>
 </html>
