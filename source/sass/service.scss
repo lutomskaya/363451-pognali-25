@@ -1,0 +1,28 @@
+.service {
+  width: 320px;
+  background-image: url("../img/about-mobile.png");
+  background-repeat: no-repeat;
+  background-color: $color-blue;
+  color: $color-white;
+}
+
+.service__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: $special-orange;
+}
+
+.service__text {
+  margin: 0;
+  font-weight: 300;
+
+  &--bold {
+    margin: 0;
+    font-weight: 700;
+  }
+}

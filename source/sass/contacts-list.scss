@@ -1,0 +1,59 @@
+.contacts-list {
+  @include reset;
+}
+
+.contacts-list__item {
+  position: relative;
+  padding: 10px 0;
+}
+
+.contacts-list__link {
+  padding-left: 40px;
+
+  line-height: 18px;
+  font-weight: 700;
+
+  color: $color-blue;
+}
+
+.contacts-list__link::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: $blue-icon;
+  background-repeat: no-repeat;
+}
+
+.contacts-list__phone::before {
+  background-image: url("../img/icon-telephone.svg");
+  background-position: 8px 8px;
+}
+
+.contacts-list__email::before {
+  background-image: url("../img/icon-mail.svg");
+  background-position: 5px 5px;
+}
+
+.contacts-list__login {
+  padding: 10px 80px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $basic-yellow;
+  color: $basic-blue;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: $link-opacity;
+  }
+}

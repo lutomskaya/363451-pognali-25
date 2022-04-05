@@ -1,0 +1,5 @@
+.country-flag__list {
+  @include reset;
+  display: flex;
+  justify-content: center;
+}

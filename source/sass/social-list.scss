@@ -1,0 +1,24 @@
+.social-list {
+  @include reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.socials__link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  background-color: $color-white;
+
+  &--footer {
+    background-color: $basic-yellow;
+  }
+}
+
+.socials__link img {
+  width: 100%;
+  height: auto;
+}

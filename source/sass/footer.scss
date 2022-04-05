@@ -1,0 +1,27 @@
+.footer {
+  width: 320px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.footer__logo {
+  display: block;
+  text-align: center;
+}
+
+.footer__social {
+  margin-top: 40px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.footer__link {
+  line-height: 16px;
+  text-decoration: none;
+
+  color: $special-grey;
+}

@@ -1,0 +1,95 @@
+.intro {
+  width: 320px;
+  background-image: url("../img/traveller-illustration-mobile.svg"), url("../img/globe-back-mobile\ 1.png");
+  background-repeat: no-repeat;
+  background-position: left 79px top 139px, center 0;
+  background-size: 192px 255px, 320px 569px;
+  background-color: $basic-blue;
+  color: $color-white;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.intro__list {
+  @include reset;
+}
+
+
+.intro__item {
+  position: relative;
+  padding: 20px 0;
+}
+
+.intro__link {
+  padding-left: 40px;
+}
+
+.intro__phone::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: $special-orange;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-call.svg");
+  background-position: 8px 8px;
+}
+
+.intro__phone:hover::before {
+  background-color: $icon-hover;
+}
+
+.intro__email::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: $special-yellow-dark;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-email.svg");
+  background-position: 8px 8px;
+}
+
+.intro__email:hover::before {
+  background-color: $special-orange;
+}
+
+.intro__login {
+  padding: 10px 80px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $basic-yellow;
+  color: $basic-blue;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: $link-opacity;
+  }
+}
+
+.intro__text {
+  font-weight: 300;
+}
+
+.intro__author {
+  font-weight: 700;
+}
