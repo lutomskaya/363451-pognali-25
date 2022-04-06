@@ -1,5 +1,9 @@
 .companions {
+  /*временно*/
   width: 320px;
+  margin: 0 auto;
+
+
   position: relative;
   color: $color-white;
   background-color: $color-blue;
@@ -90,4 +94,8 @@
 
 .companions__button {
   text-decoration: none;
+}
+
+.companions__transport {
+  border: none;
 }

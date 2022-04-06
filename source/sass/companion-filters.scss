@@ -1,0 +1,30 @@
+.companion-filters {
+  /*временно*/
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: $background-directions;
+}
+
+.companion-filters__inner {
+  width: 270px;
+  margin: 0 25px;
+
+  font-size: 15px;
+  line-height: 15px;
+
+  background-color: $background-yellow;
+  color: $special-grey;
+  border-radius: 20px;
+}
+
+.companion-filters__title {
+  margin: 0;
+  padding: 25px 100px 25px 25px;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+
+  color: $basic-blue-light;
+}

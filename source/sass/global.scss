@@ -24,13 +24,26 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
-  padding: 22px;
+  padding: 10px;
   padding-right: 142px;
   display: inline-block;
   line-height: 18px;
   font-weight: 700;
+  text-align: center;
   background-color: $basic-yellow;
   color: $basic-blue-light;
   border: none;
   border-radius: 10px;
+
+  &--grey {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    background-color: $button-phone;
+    color: $basic-blue;
+    border-radius: 20px;
+  }
 }

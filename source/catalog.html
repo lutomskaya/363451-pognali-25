@@ -29,18 +29,18 @@
             <a class="site-list__link" href="./index.html">О сервисе</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="./form.html">Направления</a>
+            <a class="site-list__link">Направления</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">Попутчики</a>
+            <a class="site-list__link" href="./catalog.html">Попутчики</a>
           </li>
         </ul>
         <ul class="main-nav__list contacts-list">
           <li class="contacts-list__item">
-            <a class="contacts-list__phone" href="tel:78128121212">8 800 555-86-28</a>
+            <a class="contacts-list__link contacts-list__phone" href="tel:78128121212">8 800 555-86-28</a>
           </li>
           <li class="contacts-list__item">
-            <a class="contacts-list__email" href="#">mail@htmlacademy.ru</a>
+            <a class="contacts-list__link contacts-list__email" href="#">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts-list__item">
             <a class="contacts-list__login" href="#">Авторизация</a>
@@ -49,15 +49,15 @@
         <ul class="main-nav__list social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.facebook.com/htmlacademy">
-              <img src="./img/facebook.svg" alt="Фейсбук" width="23" height="23">Фейсбук</a>
+              <img src="./img/facebook.svg" alt="Фейсбук" width="23" height="23"></a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.vk.com/htmlacademy">
-              <img src="./img/vkontakte.svg" alt="Вконтакте" width="23" height="23">Вконтакте</a>
+              <img src="./img/vkontakte.svg" alt="Вконтакте" width="23" height="23"></a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.instagram.com/htmlacademy">
-              <img src="./img/instagram.svg" alt="Инстаграм" width="23" height="23">Инстаграм</a>
+              <img src="./img/instagram.svg" alt="Инстаграм" width="23" height="23"></a>
           </li>
         </ul>
       </nav>
@@ -68,16 +68,16 @@
         <h2 class="country-filters__title">Фильтрация по странам:</h2>
         <ul class="country-filters__mainland mainland">
           <li class="mainland__item">
-            <a href="#" class="mainland__link">Европа</a>
+            <a class="mainland__link mainland__link--current" href="#">Европа</a>
           </li>
           <li class="mainland__item">
-            <a href="#" class="mainland__link">Азия</a>
+            <a class="mainland__link" href="#">Азия</a>
           </li>
           <li class="mainland__item">
-            <a href="#" class="mainland__link">Америка</a>
+            <a class="mainland__link" href="#">Америка</a>
           </li>
           <li class="mainland__item">
-            <a href="#" class="mainland__link">Острова</a>
+            <a class="mainland__link" href="#">Острова</a>
           </li>
         </ul>
         <button class="country-filters__toggle country-filters__toggle--show" type="button">
@@ -87,8 +87,8 @@
           <span class="visually-hidden">Свернуть</span>
         </button>
         <ul class="country-filters__letters country-letters">
-          <li class="country-letters__item">А
-            <ul class="country-letters__title">
+          <li class="country-letters__item country-letters__item--current"><a class="country-letters__index country-letters__index--current" href="#">А</a>
+            <ul class="country-letters__title country-letters__title--current">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Австралия</a>
               </li>
@@ -124,7 +124,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Б
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Б</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Багамские Острова</a>
@@ -179,7 +179,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">В
+          <li class="country-letters__item"><a class="country-letters__index" href="#">В</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Вануату</a>
@@ -201,7 +201,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Г
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Г</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Габон</a>
@@ -244,7 +244,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Д
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Д</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Дания</a>
@@ -260,14 +260,14 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Е
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Е</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Египет</a>
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">З
+          <li class="country-letters__item"><a class="country-letters__index" href="#">З</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Замбия</a>
@@ -277,7 +277,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">И
+          <li class="country-letters__item"><a class="country-letters__index" href="#">И</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Израиль</a>
@@ -311,7 +311,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">К
+          <li class="country-letters__item"><a class="country-letters__index" href="#">К</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Кабо-Верде</a>
@@ -351,7 +351,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Л
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Л</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Лаос</a>
@@ -382,7 +382,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">М
+          <li class="country-letters__item"><a class="country-letters__index" href="#">М</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Маврикий</a>
@@ -413,7 +413,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Н
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Н</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Намибия</a>
@@ -444,7 +444,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">О
+          <li class="country-letters__item"><a class="country-letters__index" href="#">О</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">ОАЭ</a>
@@ -454,7 +454,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">П
+          <li class="country-letters__item"><a class="country-letters__index" href="#">П</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Пакистан</a>
@@ -482,7 +482,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Р
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Р</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Руанда</a>
@@ -495,7 +495,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">С
+          <li class="country-letters__item"><a class="country-letters__index" href="#">С</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Сальвадор</a>
@@ -535,7 +535,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Т
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Т</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Таджикистан</a>
@@ -569,7 +569,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">У
+          <li class="country-letters__item"><a class="country-letters__index" href="#">У</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Уганда</a>
@@ -585,7 +585,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Ф
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Ф</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Фиджи</a>
@@ -601,14 +601,14 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Х
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Х</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Хорватия</a>
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Ч
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Ч</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Чад</a>
@@ -624,7 +624,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Ш
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Ш</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Швейцария</a>
@@ -637,7 +637,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Э
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Э</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Эквадор</a>
@@ -656,7 +656,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Ю
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Ю</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">ЮАР</a>
@@ -666,7 +666,7 @@
               </li>
             </ul>
           </li>
-          <li class="country-letters__item">Я
+          <li class="country-letters__item"><a class="country-letters__index" href="#">Я</a>
             <ul class="country-letters__title">
               <li class="country-letters__title-item">
                 <a href="#" class="country-letters__link">Ямайка</a>
@@ -677,147 +677,131 @@
             </ul>
           </li>
         </ul>
-        <a href="#" class="country-filters__button">Свернуть</a>
+        <a href="#" class="country-filters__button button button--grey">Свернуть</a>
       </section>
       <section class="companion-filters">
-        <h2 class="companion-filters__title">Подберите идеального попутчика</h2>
-        <form class="companion-filters__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset">
-            <legend class="form__title">Хобби</legend>
-            <a class="form__button form__button--hide" aria-label="Скрыть"></a>
-            <ul class="form__list">
-              <li class="form__item">
-                <label class="form__label" for="hobby-sport">
-                  <input type="checkbox" class="form__input" name="hobby" id="hobby-sport" value="sport" checked>
-                  Спортзал
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label" for="hobby-smoke">
-                  <input type="checkbox" class="form__input" name="hobby" id="hobby-smoke" value="smoke">
-                  Кальян
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label" for="hobby-sofa">
-                  <input type="checkbox" class="form__input" name="hobby" id="hobby-sofa" value="sofa">
-                  Диван
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__title">Музыка</legend>
-            <a class="form__button form__button--hide" aria-label="Скрыть"></a>
-            <ul class="form__list">
-              <li class="form__item">
-                <label class="form__label" for="music-rok">
-                  <input type="checkbox" class="form__input" name="music" id="music-rok" value="rok" checked>
-                  Тяжелый рок
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label" for="music-rap">
-                  <input type="checkbox" class="form__input" name="music" id="music-rap" value="rap">
-                  Русский рэп
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label" for="music-dance">
-                  <input type="checkbox" class="form__input" name="music" id="music-dance" value="dance">
-                  Евроденс
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__title">Еда</legend>
-            <a class="form__button form__button--hide" aria-label="Скрыть"></a>
-            <ul class="form__list">
-              <li class="form__item">
-                <label class="form__label" for="food-meat">
-                  <input type="checkbox" class="form__input" name="food" id="food-meat" value="meat" checked>
-                  Мясоед
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label" for="food-pp">
-                  <input type="checkbox" class="form__input" name="food" id="food-pp" value="pp">
-                  Сидит на ПП
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label" for="food-vegan">
-                  <input type="checkbox" class="form__input" name="food" id="food-vegan" value="vegan">
-                  Веган-сыроед
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__title">Транспорт</legend>
-            <a class="form__button form__button--hide" aria-label="Скрыть"></a>
-            <ul class="form__list">
-              <li class="form__item">
-                <label class="form__label" for="transport-plane">
-                  <input type="checkbox" class="form__input" name="transport" id="transport-plane" value="plane" checked>
-                  <span>
-                    <img src="./img/plane.svg" alt="Авиаперелет">
-                  </span>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label" for="transport-bus">
-                  <input type="checkbox" class="form__input" name="transport" id="transport-bus" value="bus">
-                  <span>
-                    <img src="./img/bus.svg" alt="Автотранспорт">
-                  </span>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label" for="transport-bike">
-                  <input type="checkbox" class="form__input" name="transport" id="transport-bike" value="bike">
-                  <span>
-                    <img src="./img/bicycle.svg" alt="Велосипед">
-                  </span>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label" for="transport-foot">
-                  <input type="checkbox" class="form__input" name="transport" id="transport-foot" value="foot">
-                  <span>
-                    <img src="./img/run.svg" alt="Пешком">
-                  </span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__title">Левел:</legend>
-            <a class="form__button form__button--hide" aria-label="Скрыть"></a>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar">
-                  <button class="range-toggle toggle-min">
-                    <span class="visually-hidden"></span>
-                  </button>
-                  <button class="range-toggle toggle-max">
-                    <span class="visually-hidden"></span>
-                  </button>
+        <div class="companion-filters__inner">
+          <h2 class="companion-filters__title">Подберите идеального попутчика</h2>
+          <form class="companion-filters__form form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="form__fieldset">
+              <legend class="form__title">Хобби</legend>
+              <a class="form__button--hide" aria-label="Скрыть"></a>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label" for="hobby-sport">Спортзал</label>
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="hobby" id="hobby-sport" value="sport" checked>
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="hobby-smoke">Кальян</label>
+                  <input class="visually-hidden form__input" type="checkbox" name="hobby" id="hobby-smoke" value="smoke">
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="hobby-sofa">Диван</label>
+                  <input class="visually-hidden form__input" type="checkbox" name="hobby" id="hobby-sofa" value="sofa">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__title">Музыка</legend>
+              <a class="form__button--hide" aria-label="Скрыть"></a>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label" for="music-rok">Тяжелый рок</label>
+                  <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="music" id="music-rok" value="rok" checked>
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="music-rap">Русский рэп</label>
+                  <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="music" id="music-rap" value="rap">
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="music-dance">Евроденс</label>
+                  <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="music" id="music-dance" value="dance">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__title">Еда</legend>
+              <a class="form__button--hide" aria-label="Скрыть"></a>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label" for="food-meat">Мясоед</label>
+                  <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="food" id="food-meat" value="meat" checked>
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="food-pp">Сидит на ПП</label>
+                  <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="food" id="food-pp" value="pp">
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="food-vegan">Веган-сыроед</label>
+                  <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="food" id="food-vegan" value="vegan">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__title">Транспорт</legend>
+              <a class="form__button--hide" aria-label="Скрыть"></a>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label" for="transport-plane">
+                    <input type="checkbox" class="form__input" name="transport" id="transport-plane" value="plane" checked>
+                    <span>
+                      <img src="./img/plane.svg" alt="Авиаперелет">
+                    </span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="transport-bus">
+                    <input type="checkbox" class="form__input" name="transport" id="transport-bus" value="bus">
+                    <span>
+                      <img src="./img/bus.svg" alt="Автотранспорт">
+                    </span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="transport-bike">
+                    <input type="checkbox" class="form__input" name="transport" id="transport-bike" value="bike">
+                    <span>
+                      <img src="./img/bicycle.svg" alt="Велосипед">
+                    </span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="transport-foot">
+                    <input type="checkbox" class="form__input" name="transport" id="transport-foot" value="foot">
+                    <span>
+                      <img src="./img/run.svg" alt="Пешком">
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__title">Левел:</legend>
+              <a class="form__button--hide" aria-label="Скрыть"></a>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden"></span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden"></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="price-controls">
+                  <label class="price-controls-label" for="price-controls-min">
+                    <input class="range-input" id="price-controls-min" type="text" value="30">
+                  </label>
+                  <label class="price-controls-label price-controls-label--right" for="price-controls-max">
+                    <input class="range-input" id="price-controls-max" type="text" value="100">
+                  </label>
                 </div>
               </div>
-              <div class="price-controls">
-                <label class="price-controls-label" for="price-controls-min">
-                  <input class="range-input" id="price-controls-min" type="text" value="30">
-                </label>
-                <label class="price-controls-label price-controls-label--right" for="price-controls-max">
-                  <input class="range-input" id="price-controls-max" type="text" value="100">
-                </label>
-              </div>
-            </div>
-          </fieldset>
-          <button type="submit" class="form__button">Показать</button>
-        </form>
+            </fieldset>
+            <button type="submit" class="form__button">Показать</button>
+          </form>
+        </div>
       </section>
       <section class="companion-catalog">
         <h2 class="visually-hidden">Попутчики</h2>
@@ -1125,21 +1109,23 @@
       </a>
       <ul class="footer__social social-list">
         <li class="social-list__item">
-          <a href="https://www.telegram.org/htmlacademy">
-            <img src="./img/telegram.svg" alt="Телеграм" width="23" height="23"> Телеграм</a>
+          <a class="socials__link socials__link--footer" href="https://www.telegram.org/htmlacademy">
+            <img src="./img/telegram.svg" alt="Телеграм" width="23" height="23"></a>
         </li>
         <li class="social-list__item">
-          <a href="https://www.vk.com/htmlacademy">
-            <img src="./img/vkontakte.svg" alt="Вконтакте" width="23" height="23"> Вконтакте</a>
+          <a class="socials__link socials__link--footer" href="https://www.vk.com/htmlacademy">
+            <img src="./img/vkontakte.svg" alt="Вконтакте" width="23" height="23"></a>
         </li>
         <li class="social-list__item">
-          <a href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <img src="./img/youtube.svg" alt="Youtube" width="23" height="23">Youtube</a>
+          <a class="socials__link socials__link--footer" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <img src="./img/youtube.svg" alt="Youtube" width="23" height="23"></a>
         </li>
       </ul>
       <div class="footer__copyright">
-        <a href="#" class="footer__link">
+        <a class="footer__link" href="#">
           Разработано
+        </a>
+        <a class="footer__link" href="#">
           <img src="./img/logo-html.svg" alt="htmlacademy" width="27" height="33">
         </a>
       </div>
