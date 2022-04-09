@@ -1,0 +1,99 @@
+.add-plan {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: $background-plan;
+}
+
+.add-plan__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.add-plan__title {
+  margin: 0;
+  padding: 25px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: $basic-blue-light;
+}
+
+.add-plan__controls {
+  @include reset;
+  display: flex;
+}
+
+.add-plan__list {
+  @include reset;
+  padding: 0 25px;
+}
+
+.add-plan__item {
+  padding: 25px;
+  border-radius: 10px;
+  background-color: $color-white;
+  margin-bottom: 10px;
+}
+
+.add-plan__subtitle {
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+
+  color: $basic-blue-light;
+}
+
+.add-plan__text {
+  color: $special-grey;
+}
+
+.add-plan__calendar {
+  @include reset;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+  border-top: 1px solid $background-directions;
+  border-bottom: 1px solid $background-directions;
+}
+
+.add-plan__calendar-button {
+  width: 18px;
+  height: 18px;
+
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+}
+
+.add-plan__calendar-button--back {
+  background-image: url("../img/arr-left.svg");
+}
+
+.add-plan__calendar-button--next {
+  background-image: url("../img/arr-right.svg");
+}
+
+.add-plan__calendar-name {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+
+  color: $basic-blue-light;
+}
+
+.add-plan__link {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: $basic-blue-light;
+  background-color: transparent;
+}

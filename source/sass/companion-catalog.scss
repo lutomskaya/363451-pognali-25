@@ -18,3 +18,53 @@
 .companion-catalog__img img {
   border-radius: 50%;
 }
+
+.companion-catalog__title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+
+  color: $basic-blue-light;
+}
+
+.companion-catalog__hashtags {
+  font-size: 15px;
+}
+
+.companion-catalog legend {
+  font-size: 15px;
+  line-height: 16px;
+
+  color: $special-grey;
+}
+
+.companion-catalog__show {
+  position: relative;
+  padding-left: 118px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: $basic-blue-light;
+  background-color: transparent;
+}
+
+.companion-catalog__show::before,
+.companion-catalog__show::after {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  left: 70px;
+
+  width: 18px;
+  height: 2px;
+
+  background-color: $basic-blue-light;
+}
+
+.companion-catalog__show::after {
+  transform: rotate(90deg);
+}
