@@ -118,35 +118,33 @@ input[type=radio].visually-hidden {
 .main-header__logo {
   outline: 5px solid rgba(0, 135, 0, 0.8);
   outline-offset: -5px;
+  height: 73px;
+}
+@media (min-width: 768px) {
+  .main-header__logo {
+    width: 166px;
+  }
 }
 
 .main-header__logo path {
   fill: #ffffff;
 }
 
-.main-nav {
+.main-header__toggle {
+  outline: 5px solid #ff6347;
   position: relative;
-  outline: 5px solid #0000ff;
-}
-
-.main-nav__toggle {
-  position: absolute;
-  z-index: 2;
-  top: -12px;
-  right: 18px;
   display: block;
-  width: 44px;
-  height: 33px;
+  width: 60px;
+  height: 73px;
   background-color: transparent;
   cursor: pointer;
   border: none;
-  outline: none;
 }
 
-.main-nav--closed .main-nav__toggle::before {
+.main-header__toggle::before {
   content: "";
   position: absolute;
-  top: 18px;
+  top: 0;
   left: 10px;
   width: 25px;
   height: 3px;
@@ -154,8 +152,12 @@ input[type=radio].visually-hidden {
   box-shadow: 0 8px 0 0 #000000, 0 13px 0 0 #ffffff;
 }
 
+.main-nav {
+  position: relative;
+  outline: 5px solid #0000ff;
+}
+
 .main-nav__list {
-  outline: 5px solid #ff6347;
   display: none;
 }
 @media (min-width: 768px) {
