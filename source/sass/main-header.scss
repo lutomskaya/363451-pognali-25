@@ -1,8 +1,23 @@
 .main-header {
-  /*временно*/
-  width: 320px;
+  min-width: 320px;
+  min-height: 73px;
   margin: 0 auto;
 
-  background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+
+  background-color: $basic-blue;
   color: $color-blue;
+}
+
+.main-header__logo {
+  outline: 5px solid rgba(0, 135, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.main-header__logo path {
+  fill: $color-white;
 }

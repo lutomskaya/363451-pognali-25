@@ -1,5 +1,7 @@
 .contacts-list {
   @include reset;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts-list__item {
@@ -14,6 +16,10 @@
   font-weight: 700;
 
   color: $color-blue;
+}
+
+.contacts-list__link--hide {
+  display: none;
 }
 
 .contacts-list__link::before {
