@@ -3,34 +3,7 @@
   outline: 5px solid #0000ff;
 }
 
-.main-nav__toggle {
-  position: absolute;
-  z-index: 2;
-  top: -12px;
-  right: 18px;
-  display: block;
-  width: 44px;
-  height: 33px;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 18px;
-  left: 10px;
-  width: 25px;
-  height: 3px;
-  background-color: $color-white;
-  box-shadow: 0 8px 0 0 $color-black,
-    0 13px 0 0 $color-white;
-}
-
 .main-nav__list {
-  outline: 5px solid #ff6347;
   display: none;
 
   @media (min-width: $tablet-width) {
