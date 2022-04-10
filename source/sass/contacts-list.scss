@@ -1,7 +1,15 @@
 .contacts-list {
+  outline: 5px solid rgba(0, 135, 0, 0.8);
+
   @include reset;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
+  width: 270px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    order: 1;
+  }
 }
 
 .contacts-list__item {
@@ -20,6 +28,10 @@
 
 .contacts-list__link--hide {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .contacts-list__link::before {
@@ -45,7 +57,7 @@
 }
 
 .contacts-list__login {
-  padding: 10px 80px;
+  padding: 10px 70px;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -61,5 +73,11 @@
 
   &:active {
     color: $link-opacity;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 12px 28px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
