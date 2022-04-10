@@ -1,0 +1,29 @@
+.plan-filters__field {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.plan-filters__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.plan-filters__title {
+  position: relative;
+
+  letter-spacing: 0.09em;
+
+  color: $basic-blue-light;
+}
+
+.plan-filters__text {
+  letter-spacing: 0.07em;
+  opacity: 0.3;
+}

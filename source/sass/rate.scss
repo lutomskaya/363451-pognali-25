@@ -1,0 +1,137 @@
+.rate {
+  /*временно*/
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: $background-rate;
+}
+
+.rate__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 46px;
+  padding-right: 146px;
+  padding-left: 48px;
+
+  position: relative;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: $special-orange;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 35px;
+    right: 30px;
+    background-image: url("../img/rates.png");
+  }
+}
+
+.rate__list {
+  @include reset;
+  padding-left: 48px;
+  padding-right: 72px;
+  padding-top: 30px;
+}
+
+.rate__item {
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+
+  color: $special-grey;
+  border-top: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: 1px solid $border-color;
+  }
+
+  &--special-orange::before {
+    content: "1";
+    position: absolute;
+    top: 27px;
+    right: -40px;
+    width: 34px;
+    height: 34px;
+    vertical-align: middle;
+    text-align: center;
+    color: $color-white;
+    border-radius: 50%;
+    background-color: $special-orange;
+  }
+
+  &--yellow-dark::before {
+    content: "2";
+    position: absolute;
+    top: 27px;
+    right: -40px;
+    width: 34px;
+    height: 34px;
+    vertical-align: middle;
+    text-align: center;
+    color: $color-white;
+    border-radius: 50%;
+    background-color: $special-yellow-dark;
+  }
+
+  &--basic-yellow::before {
+    content: "3";
+    position: absolute;
+    top: 27px;
+    right: -40px;
+    width: 34px;
+    height: 34px;
+    vertical-align: middle;
+    text-align: center;
+    color: $color-white;
+    border-radius: 50%;
+    background-color: $basic-yellow;
+  }
+}
+
+.rate__button {
+  padding-bottom: 30px;
+  line-height: 16px;
+  font-weight: 700;
+  text-decoration: none;
+
+
+  color: $button-color;
+}
+
+.rate-business {
+  margin: 0 25px;
+  padding: 25px;
+  width: 270px;
+  box-sizing: border-box;
+  background-color: $color-white;
+  border-radius: 20px;
+}
+
+.rate-business__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 34px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+
+  color: $special-orange;
+}
+
+.rate-business__list {
+  @include reset;
+}
+
+.rate-business__button {
+  width: 100%;
+  border: none;
+}

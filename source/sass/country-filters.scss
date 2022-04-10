@@ -1,0 +1,34 @@
+.country-filters {
+  /*временно*/
+  width: 320px;
+  margin: 0 auto;
+
+  color: $color-blue;
+  background-color: $background-country;
+}
+
+.country-filters__title {
+  position: relative;
+  margin: 0;
+  padding: 25px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    width: 15px;
+    height: 10px;
+
+    background-image: url("../img/icon-filter.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

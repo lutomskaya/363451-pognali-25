@@ -1,0 +1,48 @@
+.level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 4px solid $special-orange;
+  background-color: $level-opacity;
+  color: $color-white;
+
+  &--big {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.level__number {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+
+  &--big {
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 700;
+
+    color: $basic-blue;
+  }
+}
+
+.level__description {
+  margin: 0;
+  padding: 5px 12px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+
+  &--big {
+    font-size: 18px;
+    line-height: 18px;
+
+    color: $special-grey;
+  }
+}

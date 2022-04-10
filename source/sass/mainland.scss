@@ -1,0 +1,22 @@
+.mainland {
+  @include reset;
+}
+
+.mainland__item {
+  padding-left: 25px;
+}
+
+.mainland__link {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+
+  color: rgba($color-blue, 0.3);
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  &--current {
+    color: $color-blue;
+  }
+}

@@ -1,0 +1,107 @@
+.interested {
+  /*временно*/
+  width: 320px;
+  margin: 0 auto;
+
+  padding: 0 20px;
+  padding-top: 80px;
+  font-weight: 300;
+  box-sizing: border-box;
+  color: $color-white;
+  background-color: $color-blue;
+}
+
+.interested__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+
+  color: $special-orange;
+}
+
+.interested__text {
+  padding: 0 53px;
+  text-align: center;
+}
+
+.interested__link {
+  text-decoration: none;
+
+  color: $basic-yellow;
+}
+
+.interested__form {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+
+  color: $special-grey;
+  background-color: $color-white;
+
+  border-radius: 10px;
+}
+
+.interested__input {
+  width: 170px;
+  padding: 24px;
+  padding-top: 19px;
+  padding-bottom: 22px;
+
+  font-size: 18px;
+  line-height: 18px;
+
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: rgba($special-grey, 0.3);
+  }
+
+  &:hover {
+    background-color: $background-directions;
+    border-color: $background-directions;
+    color: $special-grey;
+  }
+
+  &:hover::placeholder {
+    color: rgba($special-grey, 0.5);
+  }
+
+  &:focus,
+  &:active {
+    background-color: $color-blue;
+    outline: 4px solid $color-white;
+    color: $color-white;
+  }
+
+  &:focus::placeholder {
+    color: $color-white;
+  }
+}
+
+.interested__button {
+  position: relative;
+
+  padding: 0;
+  width: 60px;
+  height: 62px;
+  flex-shrink: 0;
+
+  background-color: $basic-yellow;
+
+  border: none;
+  border-radius: 10px;
+}
+
+.interested__button::after {
+  top: 23px;
+  right: 23px;
+}

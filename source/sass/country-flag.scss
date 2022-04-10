@@ -1,0 +1,18 @@
+.country-flag__list {
+  @include reset;
+  display: flex;
+  justify-content: center;
+}
+
+.country-flag__list--column {
+  flex-direction: column;
+}
+
+.country-flag__item {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  color: $basic-blue-light;
+}

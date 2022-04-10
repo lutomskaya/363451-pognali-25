@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -19,10 +21,10 @@
           <path d="M93.1598 12.7451C93.1598 13.9835 92.1101 14.9875 90.8153 14.9875C89.5204 14.9875 88.4707 13.9835 88.4707 12.7451C88.4707 11.5066 89.5204 10.5027 90.8153 10.5027C92.1101 10.5027 93.1598 11.5066 93.1598 12.7451Z" fill="#192144"/>
         </svg>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-nav main-nav--closed">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link">О сервисе</a>
@@ -36,10 +38,14 @@
         </ul>
         <ul class="main-nav__list contacts-list">
           <li class="contacts-list__item">
-            <a class="contacts-list__phone" href="tel:78128121212">8 800 555-86-28</a>
+            <a class="contacts-list__link contacts-list__link--hide contacts-list__phone" href="tel:78128121212">
+              <span class="visually-hidden">8 800 555-86-28</span>
+            </a>
           </li>
           <li class="contacts-list__item">
-            <a class="contacts-list__email" href="#">mail@htmlacademy.ru</a>
+            <a class="contacts-list__link contacts-list__link--hide contacts-list__email" href="#">
+              <span class="visually-hidden">mail@htmlacademy.ru</span>
+            </a>
           </li>
           <li class="contacts-list__item">
             <a class="contacts-list__login" href="#">Авторизация</a>
@@ -48,15 +54,18 @@
         <ul class="main-nav__list social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.facebook.com/htmlacademy">
-              <img src="./img/facebook.svg" alt="Фейсбук" width="23" height="23">Фейсбук</a>
+              <img src="./img/facebook.svg" alt="Фейсбук" width="23" height="23">
+            </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.vk.com/htmlacademy">
-              <img src="./img/vkontakte.svg" alt="Вконтакте" width="23" height="23">Вконтакте</a>
+              <img src="./img/vkontakte.svg" alt="Вконтакте" width="23" height="23">
+            </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.instagram.com/htmlacademy">
-              <img src="./img/instagram.svg" alt="Инстаграм" width="23" height="23">Инстаграм</a>
+              <img src="./img/instagram.svg" alt="Инстаграм" width="23" height="23">
+            </a>
           </li>
         </ul>
       </nav>
@@ -65,26 +74,34 @@
       <h1 class="visually-hidden">Погнали</h1>
       <section class="intro">
         <h2 class="intro__title">В путешествие с крутыми попутчиками!</h2>
+        <ul class="intro__list">
+          <li class="intro__item">
+            <a class="intro__phone" href="tel:78128121212"></a>
+          </li>
+          <li class="intro__item">
+            <a class="intro__email" href="#"></a>
+          </li>
+          <li class="intro__item">
+            <a class="intro__login" href="#">Авторизация</a>
+          </li>
+        </ul>
         <blockquote class="intro__text">
           «Лучшее приложение, что я видел в жизни!»
         </blockquote>
         <cite class="intro__author">
           Мурат Эльтазин главный редактор газеты «гаджетлайф»
         </cite>
-      </section>
-      <section class="features">
-        <h2 class="visually-hidden">Особенности</h2>
-        <ol class="features__list">
-          <li class="features__item">Выберите направление</li>
-          <li class="features__item">Изучите идеи путешественников</li>
-          <li class="features__item">Находите тех, кто похож на вас</li>
-          <li class="features__item">Путешествуйте вместе!</li>
+        <ol class="intro__nav features">
+          <li class="features__item features__item--special-orange">Выберите направление</li>
+          <li class="features__item features__item--basic-orange">Изучите идеи путешественников</li>
+          <li class="features__item features__item--yellow-dark">Находите тех, кто похож на вас</li>
+          <li class="features__item features__item--basic-yellow">Путешествуйте вместе!</li>
         </ol>
       </section>
       <section class="service">
         <h2 class="service__title">О сервисе</h2>
         <p class="service__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-        <p class="service__text service__text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+        <p class="service__text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
       </section>
       <section class="directions">
         <h2 class="directions__title">Направления</h2>
@@ -92,29 +109,35 @@
         <ul class="directions__list">
           <li class="directions__item">
             <img src="./img/thailand-mobile.png" alt="Таиланд" width="270" height="110">
-            <h3 class="directions__subtitle">Таиланд</h3>
-            <span>18321</span>
-            <p>Джунгли зовут!</p>
+            <div class="directions__inner">
+              <h3 class="directions__subtitle">Таиланд</h3>
+              <span>18321</span>
+              <p>Джунгли зовут!</p>
+            </div>
           </li>
           <li class="directions__item">
             <img src="./img/france-mobile.png" alt="Франция" width="270" height="110">
-            <h3 class="directions__subtitle">Франция</h3>
-            <span>12518</span>
-            <p>Трэ бьен, манифик!</p>
+            <div class="directions__inner">
+              <h3 class="directions__subtitle">Франция</h3>
+              <span>12518</span>
+              <p>Трэ бьен, манифик!</p>
+            </div>
           </li>
           <li class="directions__item">
             <img src="./img/czech-mobile.png" alt="Чехия" width="270" height="110">
-            <h3 class="directions__subtitle">Чехия</h3>
-            <span>5326</span>
-            <p>Закоулки старой Европы</p>
+            <div class="directions__inner">
+              <h3 class="directions__subtitle">Чехия</h3>
+              <span>5326</span>
+              <p>Закоулки старой Европы</p>
+            </div>
           </li>
         </ul>
-        <button class="directions__button">Показать все</button>
+        <button class="directions__button button">Показать все</button>
       </section>
       <section class="companions">
         <h2 class="companions__title">Попутчики</h2>
         <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p class="companions__text companions__text--bold">Теперь можно легко найти единомышленников!</p>
+        <p class="companions__text--bold">Теперь можно легко найти единомышленников!</p>
         <ul class="companions__list">
           <li class="companions__item">
             <div class="companions__level level">
@@ -135,46 +158,48 @@
                 </li>
               </ul>
             </div>
-            <h3 class="companions__subtitle">Таня Фирсова</h3>
-            <p class="companions__hashtags hashtags">
-              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-            </p>
-            <fieldset class="companions__transport transport">
-              <ul class="transport__list">
-                <li class="transport__item">
-                  <label class="transport__label">
-                    <input type="checkbox" class="transport__input" name="transport" value="plane" checked>
-                    <span>
-                      <img src="./img/plane.svg" alt="Авиаперелет">
-                    </span>
-                  </label>
-                </li>
-                <li class="transport__item">
-                  <label class="transport__label">
-                    <input type="checkbox" class="transport__input" name="transport" value="bus">
-                    <span>
-                      <img src="./img/bus.svg" alt="Автотранспорт">
-                    </span>
-                  </label>
-                </li>
-                <li class="transport__item">
-                  <label class="transport__label">
-                    <input type="checkbox" class="transport__input" name="transport" value="bike">
-                    <span>
-                      <img src="./img/bicycle.svg" alt="Велосипед">
-                    </span>
-                  </label>
-                </li>
-                <li class="transport__item">
-                  <label class="transport__label">
-                    <input type="checkbox" class="transport__input" name="transport" value="foot">
-                    <span>
-                      <img src="./img/run.svg" alt="Пешком">
-                    </span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="companions__inner">
+              <h3 class="companions__subtitle">Таня Фирсова</h3>
+              <p class="companions__hashtags hashtags">
+                #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+              </p>
+              <fieldset class="companions__transport transport">
+                <ul class="transport__list">
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input type="checkbox" class="transport__input" name="transport" value="plane" checked>
+                      <span>
+                        <img src="./img/plane.svg" alt="Авиаперелет">
+                      </span>
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input type="checkbox" class="transport__input" name="transport" value="bus">
+                      <span>
+                        <img src="./img/bus.svg" alt="Автотранспорт">
+                      </span>
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input type="checkbox" class="transport__input" name="transport" value="bike">
+                      <span>
+                        <img src="./img/bicycle.svg" alt="Велосипед">
+                      </span>
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input type="checkbox" class="transport__input" name="transport" value="foot">
+                      <span>
+                        <img src="./img/run.svg" alt="Пешком">
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
           </li>
           <li class="companions__item">
             <div class="companions__level level">
@@ -192,108 +217,116 @@
                 </li>
               </ul>
             </div>
-            <h3 class="companions__subtitle">Петя Демин</h3>
-            <p class="companions__hashtags hashtags">
-              #бургер #бар #футбол #концерт #крафт
-            </p>
-            <fieldset class="companions__transport transport">
-              <ul class="transport__list">
-                <li class="transport__item">
-                  <label class="transport__label">
-                    <input type="checkbox" class="transport__input" name="transport" value="plane" checked>
-                    <span>
-                      <img src="./img/plane.svg" alt="Авиаперелет">
-                    </span>
-                  </label>
-                </li>
-                <li class="transport__item">
-                  <label class="transport__label">
-                    <input type="checkbox" class="transport__input" name="transport" value="bus">
-                    <span>
-                      <img src="./img/bus.svg" alt="Автотранспорт">
-                    </span>
-                  </label>
-                </li>
-                <li class="transport__item">
-                  <label class="transport__label">
-                    <input type="checkbox" class="transport__input" name="transport" value="bike">
-                    <span>
-                      <img src="./img/bicycle.svg" alt="Велосипед">
-                    </span>
-                  </label>
-                </li>
-                <li class="transport__item">
-                  <label class="transport__label">
-                    <input type="checkbox" class="transport__input" name="transport" value="foot">
-                    <span>
-                      <img src="./img/run.svg" alt="Пешком">
-                    </span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="companions__inner">
+              <h3 class="companions__subtitle">Петя Демин</h3>
+              <p class="companions__hashtags hashtags">
+                #бургер #бар #футбол #концерт #крафт
+              </p>
+              <fieldset class="companions__transport transport">
+                <ul class="transport__list">
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input type="checkbox" class="transport__input" name="transport" value="plane" checked>
+                      <span>
+                        <img src="./img/plane.svg" alt="Авиаперелет">
+                      </span>
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input type="checkbox" class="transport__input" name="transport" value="bus">
+                      <span>
+                        <img src="./img/bus.svg" alt="Автотранспорт">
+                      </span>
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input type="checkbox" class="transport__input" name="transport" value="bike">
+                      <span>
+                        <img src="./img/bicycle.svg" alt="Велосипед">
+                      </span>
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input type="checkbox" class="transport__input" name="transport" value="foot">
+                      <span>
+                        <img src="./img/run.svg" alt="Пешком">
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
           </li>
         </ul>
-        <a href="#" class="companions__button">Показать всех</a>
+        <a href="#" class="companions__button button">Показать всех</a>
       </section>
       <section class="rate">
         <h2 class="rate__title">Добавьте свой профиль</h2>
         <ol class="rate__list">
-          <li class="rate__item">
+          <li class="rate__item rate__item--special-orange">
             <p class="rate__name">Базовое размещение</p>
             <p class="rate__price">Бесплатно</p>
           </li>
-          <li class="rate__item">
+          <li class="rate__item rate__item--yellow-dark">
             <p class="rate__name">Вывод на первых позициях</p>
             <p class="rate__price">99 руб./мес</p>
           </li>
-          <li class="rate__item">
+          <li class="rate__item rate__item--basic-yellow">
             <p class="rate__name">Кастомный цвет карточки</p>
             <p class="rate__price">59 руб./мес</p>
           </li>
         </ol>
         <a class="rate__button" href="#">Показать тарифы для бизнеса</a>
-        <div class="modal rate-business">
+        <div class="modal rate-business rate">
           <h2 class="rate-business__title">Бизнес-тарифы</h2>
           <ul class="rate-business__list">
-            <li class="rate-business__item">
+            <li class="rate__item">
               <p class="rate__name">Реклама у блоггера</p>
               <p class="rate__price">300 000 руб./пост</p>
             </li>
-            <li class="rate-business__item">
+            <li class="rate__item">
               <p class="rate__name">Накрутка подписчиков</p>
               <p class="rate__price">от 1 руб./шт.т</p>
             </li>
-            <li class="rate-business__item">
+            <li class="rate__item">
               <p class="rate__name">Лайки от ботов</p>
               <p class="rate__price">от 20 коп./лайк</p>
             </li>
-            <li class="rate-business__item">
+            <li class="rate__item">
               <p class="rate__name">Ваш продакт-плейсмент</p>
               <p class="rate__price">Индивидуально</p>
             </li>
           </ul>
+          <button class="rate-business__button" type="button">Закрыть окно</button>
         </div>
       </section>
       <section class="interested">
         <h2 class="interested__title">Заинтересовались?</h2>
         <p class="interested__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
-          <a href="#">авторизуйтесь.</a>
+          <a class="interested__link" href="#">авторизуйтесь.</a>
         </p>
         <form class="interested__form" action="https://echo.htmlacademy.ru" method="POST">
           <input class="interested__input" type="text" placeholder="E-mail" name="email">
           <button class="interested__button"  type="submit" aria-label="Зарегистрироваться">
-            Регистрация
           </button>
         </form>
         <p class="interested__text">Остались вопросы? Мы с радостью на них ответим!</p>
-        <a class="interested__phone" href="tel:78005558628">8 800 555-86-28</a>
-        <a class="interested__email" href="#">mail@htmlacademy.ru</a>
+        <ul class="interested__list contacts-list">
+          <li class="contacts-list__item">
+            <a class="contacts-list__link contacts-list__phone interested__link" href="tel:78128121212">8 800 555-86-28</a>
+          </li>
+          <li class="contacts-list__item">
+            <a class="contacts-list__link contacts-list__email interested__link" href="#">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
       </section>
       <section class="route">
         <h3 class="visually-hidden">Маршрут</h3>
         <p class="route__address">ул. Большая Конюшенная, 19/8</p>
-        <a href="#" class="route__button">Проложить маршрут</a>
+        <a href="#" class="route__button button">Проложить маршрут</a>
       </section>
       <section class="map">
         <h3 class="visually-hidden">Карта</h3>
@@ -319,21 +352,23 @@
       </a>
       <ul class="footer__social social-list">
         <li class="social-list__item">
-          <a href="https://www.telegram.org/htmlacademy">
-            <img src="./img/telegram.svg" alt="Телеграм" width="23" height="23"> Телеграм</a>
+          <a class="socials__link socials__link--footer" href="https://www.telegram.org/htmlacademy">
+            <img src="./img/telegram.svg" alt="Телеграм" width="23" height="23"></a>
         </li>
         <li class="social-list__item">
-          <a href="https://www.vk.com/htmlacademy">
-            <img src="./img/vkontakte.svg" alt="Вконтакте" width="23" height="23"> Вконтакте</a>
+          <a class="socials__link socials__link--footer" href="https://www.vk.com/htmlacademy">
+            <img src="./img/vkontakte.svg" alt="Вконтакте" width="23" height="23"></a>
         </li>
         <li class="social-list__item">
-          <a href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <img src="./img/youtube.svg" alt="Youtube" width="23" height="23">Youtube</a>
+          <a class="socials__link socials__link--footer" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <img src="./img/youtube.svg" alt="Youtube" width="23" height="23"></a>
         </li>
       </ul>
       <div class="footer__copyright">
-        <a href="#" class="footer__link">
+        <a class="footer__link" href="#">
           Разработано
+        </a>
+        <a class="footer__link" href="#">
           <img src="./img/logo-html.svg" alt="htmlacademy" width="27" height="33">
         </a>
       </div>
