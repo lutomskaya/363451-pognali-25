@@ -5,7 +5,7 @@
   color: $color-white;
   background-image: url("../img/globe-back-mobile\ 1.png");
   background-repeat: no-repeat;
-  background-position: -75px -33px;
+  background-position: center;
   background-size: 400px 440px;
 
   @media (min-width: $tablet-width) {
@@ -26,18 +26,27 @@
 }
 
 .intro__inner {
-  padding: 25px;
+  width: 270px;
+  padding: 0 25px;
+  margin: 0 auto;
   background-image: url("../img/traveller-illustration-mobile.svg");
   background-repeat: no-repeat;
   background-position: 80px 150px;
 
   @media (min-width: $tablet-width) {
+    width: 688px;
+    padding: 0 40px; 
     background-image: url("../img/traveller-illustration-tablet.png");
     background-repeat: no-repeat;
     background-position: 284px 285px;
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 418px 1fr;
+    grid-template-rows: 420px 1fr;
+    width: 1320px;
+    padding: 0 60px;
     background-image: url("../img/traveller-illustration-desktop.png");
     background-repeat: no-repeat;
     background-position: 605px 0;
@@ -49,24 +58,24 @@
   margin: 0;
   padding: 0;
   padding-top: 20px;
-  margin-bottom: 200px;
+  margin-bottom: 225px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 0 185px;
+    padding: 0 155px;
     padding-top: 50px;
     font-size: 60px;
     line-height: 70px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 418px;
     vertical-align: top;
     text-align: left;
-    padding-left: 127px;
-    padding-right: 895px;
+    padding-left: 69px;
   }
 }
 
@@ -135,7 +144,8 @@
   @media (min-width: $desktop-width) {
     margin-left: auto;
     vertical-align: middle;
-    padding-top: 6px;
+    padding-top: 122px;
+    padding-right: 40px;
   }
 }
 
@@ -154,6 +164,7 @@
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 211px;
     font-size: 21px;
     line-height: 25px;
   }

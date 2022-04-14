@@ -1,17 +1,48 @@
 .rate {
-  /*временно*/
-  width: 320px;
+  position: relative;
+  background-color: $background-rate;
+  border-radius: 0 0 20px 20px;
+}
+
+.rate__container {
+  width: 270px;
+  padding: 0 25px;
+  padding-top: 53px;
+  padding-bottom: 38px;
   margin: 0 auto;
 
-  background-color: $background-rate;
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    padding: 0 40px;
+    padding-top: 74px;
+  }  
+
+  @media (min-width: $desktop-width) {
+    width: 1320px;
+    padding: 0 60px;
+  }  
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 45px;
+    right: 25px;
+    background-image: url("../img/rates.png");
+
+    @media (min-width: $tablet-width) {
+      bottom: 0;
+    }
+  }
 }
 
 .rate__title {
   margin: 0;
   padding: 0;
-  padding-top: 46px;
-  padding-right: 146px;
-  padding-left: 48px;
+  padding-right: 138px;
+  padding-left: 25px;
+  padding-bottom: 43px;
 
   position: relative;
 
@@ -21,22 +52,18 @@
 
   color: $special-orange;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 35px;
-    right: 30px;
-    background-image: url("../img/rates.png");
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
   }
 }
 
 .rate__list {
   @include reset;
-  padding-left: 48px;
+  padding-left: 25px;
   padding-right: 72px;
-  padding-top: 30px;
+  margin-bottom: 31px;
 }
 
 .rate__item {
@@ -55,7 +82,7 @@
   &--special-orange::before {
     content: "1";
     position: absolute;
-    top: 27px;
+    top: 0;
     right: -40px;
     width: 34px;
     height: 34px;
