@@ -1,0 +1,46 @@
+.button {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  padding-right: 45px;
+  padding-bottom: 21px;
+  padding-left: 24px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  color: $basic-blue-light;
+  background-color: $basic-yellow;
+
+  border-radius: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba($basic-blue-light, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 27px;
+    padding-left: 33px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 20px;
+
+    &::before {
+      top: 40px;
+      right: 27px;
+    }
+  }
+}

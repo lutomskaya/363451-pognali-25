@@ -1,30 +1,66 @@
 .interested {
-  /*временно*/
-  width: 320px;
-  margin: 0 auto;
-
-  padding: 0 20px;
-  padding-top: 80px;
   font-weight: 300;
   box-sizing: border-box;
   color: $color-white;
   background-color: $color-blue;
+  border-radius: 0 0 20px 20px;
+}
+
+.interested__container {
+  @include container;
+  padding-top: 72px;
+  padding-bottom: 44px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 109px;
+    padding-bottom: 132px;
+  }
 }
 
 .interested__title {
   margin: 0;
   padding: 0;
+  padding-bottom: 19px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
 
   color: $special-orange;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .interested__text {
-  padding: 0 53px;
+  width: 210px;
+  margin: 0;
+  margin-bottom: 29px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 655px;
+  }
 }
 
 .interested__link {
@@ -35,14 +71,18 @@
 
 .interested__form {
   display: flex;
-  width: 100%;
-
   justify-content: space-between;
 
   color: $special-grey;
   background-color: $color-white;
 
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 60px;
+  }
 }
 
 .interested__input {
@@ -85,6 +125,14 @@
   &:focus::placeholder {
     color: $color-white;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 536px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 850px;
+  }
 }
 
 .interested__button {
@@ -95,13 +143,55 @@
   height: 62px;
   flex-shrink: 0;
 
+  font-size: 0;
+
   background-color: $basic-yellow;
 
   border: none;
   border-radius: 10px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 23px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 14px solid $basic-blue-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 330px;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 40px;
+
+    color: $basic-blue-light;
+  }
 }
 
 .interested__button::after {
   top: 23px;
   right: 23px;
+}
+
+.interested__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

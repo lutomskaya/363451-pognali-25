@@ -1,8 +1,10 @@
 // Начните писать стили здесь
 @import "./variables.scss";
-@import "./global.scss";
+@import "./visually-hidden.scss";
 @import "./mixin.scss";
 @import "./font-face.scss";
+@import "./button.scss";
+@import "./page.scss";
 @import "./main-header.scss";
 @import "./main-nav.scss";
 @import "./site-list.scss";
@@ -18,6 +20,7 @@
 @import "./hashtags.scss";
 @import "./transport.scss";
 @import "./rate.scss";
+@import "./rate-business.scss";
 @import "./modal.scss";
 @import "./interested.scss";
 @import "./route.scss";

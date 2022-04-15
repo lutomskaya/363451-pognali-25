@@ -1,15 +1,16 @@
 .main-header {
-  min-width: 320px;
   margin: 0;
+
+  background-color: $basic-blue;
+  color: $color-blue;
+}
+
+.main-header__container {
+  @include container;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-
-  background-color: $basic-blue;
-  color: $color-blue;
 }
 
 .main-header__logo {
@@ -25,7 +26,6 @@
 }
 
 .main-header__toggle {
-  outline: 5px solid #ff6347;
   position: relative;
   display: block;
   width: 40px;

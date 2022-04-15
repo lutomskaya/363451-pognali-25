@@ -1,6 +1,4 @@
 .intro {
-  min-width: 320px;
-
   background-color: $basic-blue;
   color: $color-white;
   background-image: url("../img/globe-back-mobile\ 1.png");
@@ -25,17 +23,13 @@
   }
 }
 
-.intro__inner {
-  width: 270px;
-  padding: 0 25px;
-  margin: 0 auto;
+.intro__container {
+  @include container;
   background-image: url("../img/traveller-illustration-mobile.svg");
   background-repeat: no-repeat;
   background-position: 80px 150px;
 
   @media (min-width: $tablet-width) {
-    width: 688px;
-    padding: 0 40px; 
     background-image: url("../img/traveller-illustration-tablet.png");
     background-repeat: no-repeat;
     background-position: 284px 285px;
@@ -45,8 +39,6 @@
     display: grid;
     grid-template-columns: 418px 1fr;
     grid-template-rows: 420px 1fr;
-    width: 1320px;
-    padding: 0 60px;
     background-image: url("../img/traveller-illustration-desktop.png");
     background-repeat: no-repeat;
     background-position: 605px 0;

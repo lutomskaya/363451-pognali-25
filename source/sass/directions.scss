@@ -1,21 +1,16 @@
 .directions {
-  min-width: 320px;
-
   background-color: $background-directions;
   color: $special-grey;
   border-radius: 0 0 20px 20px;
 }
 
-.directions__wrapper {
-  width: 270px;
-  padding: 0 25px;
+.directions__container {
+  @include container;
   padding-top: 70px;
   padding-bottom: 34px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 688px;
-    padding: 0 40px;
     padding-top: 73px;
     padding-bottom: 80px;
     background-image: url("../img/flags-back.png");
@@ -24,16 +19,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1320px;
-    padding: 0 60px;
     padding-top: 166px;
     padding-bottom: 138px;
     background-position: top 80px right 60px;
     display: grid;
     grid-template-areas:
-    "list title"
-    "list text"
-    "list button"
+      "list title"
+      "list text"
+      "list button";
   }
 }
 
@@ -157,7 +150,6 @@
     }
   }
 
-  
   @media (min-width: $tablet-width) {
     font-size: 20px;
     order: 3;
@@ -169,10 +161,6 @@
   grid-area: button;
   width: 270px;
   height: 62px;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  color: $basic-blue-light;
 
   @media (min-width: $tablet-width) {
     width: 618px;
@@ -182,6 +170,18 @@
     font-size: 24px;
     line-height: 24px;
     text-align: left;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 20px;
+      right: 23px;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 14px solid $basic-blue-light;
+    }
   }
 
   @media (min-width: $desktop-width) {

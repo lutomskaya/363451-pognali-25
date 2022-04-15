@@ -1,18 +1,50 @@
 .route {
-  padding: 20px;
-  box-sizing: border-box;
-
   background-color: $basic-yellow;
+  border-radius: 0 0 20px 20px;
+}
+
+.route__container {
+  @include container;
+  padding-top: 33px;
+  padding-bottom: 35px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 87px;
+    padding-bottom: 61px;
+
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .route__address {
   position: relative;
-  padding: 0 68px;
+  padding-left: 61px;
+  margin-right: 65px;
+  margin-bottom: 32px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: left;
 
   color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 75px;
+    margin-bottom: 62px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 340px;
+  }
+
 
   &::after {
     content: "";
@@ -26,6 +58,35 @@
 }
 
 .route__button {
-  padding-right: 100px;
+  width: 270px;
+  height: 62px;
+
+  color: $basic-blue-light;
   border: 3px solid $color-blue;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    height: 80px;
+    padding-left: 38px;
+    padding-top: 25px;
+    text-align: left;
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 324px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 23px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 14px solid $basic-blue-light;
+  }
 }
