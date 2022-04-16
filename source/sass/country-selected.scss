@@ -7,17 +7,20 @@
 .country-selected__item {
   position: relative;
   display: flex;
-  width: 224px;
+  align-items: center;
+  width: 100%;
   margin-bottom: 22px;
 }
 
 .country-selected__field {
   width: 168px;
+  height: 40px;
 }
 
 .country-selected__button {
   display: flex;
   position: relative;
+  width: 220px;
   padding: 10px;
   font-size: 14px;
   line-height: 18px;
@@ -52,5 +55,8 @@
   align-items: center;
   flex-shrink: 0;
   width: 50px;
+  height: 40px;
   border: 1px solid $background-directions;
+  border-radius: 4px;
+  box-sizing: border-box;
 }

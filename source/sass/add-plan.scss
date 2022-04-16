@@ -1,11 +1,13 @@
 .add-plan {
-  width: 320px;
-  margin: 0 auto;
-
   background-color: $background-plan;
+  border-radius: 20px 20px 0 0;
 }
 
-.add-plan__inner {
+.add-plan__container {
+  @include container;
+}
+
+.add-plan__wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -24,11 +26,23 @@
 .add-plan__controls {
   @include reset;
   display: flex;
+  justify-content: space-between;
+  width: 50px;
+}
+
+.add-plan__controls-item {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgba($basic-blue-light, 0.3);
+
+  &--active {
+    background-color: $basic-blue-light;
+  }
 }
 
 .add-plan__list {
   @include reset;
-  padding: 0 25px;
 }
 
 .add-plan__item {
@@ -49,6 +63,10 @@
 
 .add-plan__text {
   color: $special-grey;
+}
+
+.add-plan__buttons {
+  text-align: center;
 }
 
 .add-plan__calendar {

@@ -1,9 +1,8 @@
 .country-letters {
   @include reset;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
-  margin: 0 50px;
   width: 220px;
   box-sizing: border-box;
   background-color: $color-white;
