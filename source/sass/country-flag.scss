@@ -1,6 +1,7 @@
 .country-flag__list {
   @include reset;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 

@@ -1,12 +1,16 @@
 .contacts-list {
   @include reset;
-  display: flex;
-  flex-wrap: wrap;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    order: 1;
+  }
 }
 
 .contacts-list__item {
   position: relative;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .contacts-list__link {
@@ -14,12 +18,23 @@
 
   line-height: 18px;
   font-weight: 700;
+  text-transform: uppercase;
 
   color: $color-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    padding-left: 80px;
+  }
 }
 
 .contacts-list__link--hide {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .contacts-list__link::before {
@@ -32,20 +47,27 @@
   border-radius: 50%;
   background-color: $blue-icon;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+  }
 }
 
 .contacts-list__phone::before {
+  background-color: $special-orange;
   background-image: url("../img/icon-telephone.svg");
-  background-position: 8px 8px;
+  background-position: center;
 }
 
 .contacts-list__email::before {
+  background-color: $special-yellow-dark;
   background-image: url("../img/icon-mail.svg");
-  background-position: 5px 5px;
+  background-position: center;
 }
 
 .contacts-list__login {
-  padding: 10px 80px;
+  padding: 10px 70px;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -61,5 +83,11 @@
 
   &:active {
     color: $link-opacity;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 12px 28px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

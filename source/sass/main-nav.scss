@@ -1,12 +1,9 @@
 .main-nav {
   position: relative;
-  outline: 5px solid #0000ff;
-}
-
-.main-nav__list {
   display: none;
+  justify-content: space-between;
 
-  @media (min-width: $tablet-width) {
-    display: block;
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }

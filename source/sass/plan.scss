@@ -1,38 +1,70 @@
 .plan {
-  /*временно*/
-  width: 320px;
-  margin: 0 auto;
+  background-color: $button-grey;
+  border-radius: 20px 20px 0 0;
+}
 
-  background-color: $button-phone;
+.plan__container {
+  @include container;
+  padding-top: 28px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 66px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+    padding-bottom: 64px;
+    padding-left: 131px;
+    padding-right: 131px;
+  }
 }
 
 .plan__title {
   margin: 0;
-  padding: 25px;
+  margin-bottom: 29px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
 
   color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .plan__list {
   @include reset;
   counter-reset: item;
-  padding-bottom: 30px;
 }
 
 .plan__item {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   padding-top: 24px;
-  padding-right: 25px;
-  padding-left: 25px;
   padding-bottom: 20px;
-  margin: 10px 25px;
+  margin-bottom: 10px;
 
   background-color: $color-white;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 .plan__item::before {
@@ -46,30 +78,66 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+    right: 43px;
+    left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 43px;
+    left: 43px;
+    right: auto;
+  }
 }
 
 .plan__subtitle {
   margin: 0;
   padding: 0;
-  padding-left: 17px;
+  padding-left: 45px;
 
   line-height: 16px;
   font-weight: 700;
 
   color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    padding-bottom: 34px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-bottom: 1px solid $background-profile;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    padding-left: 95px;
+    padding-bottom: 0;
+    border: none;
+  }
 }
 
 .plan__text {
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
+  padding-left: 25px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 
   color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .plan__button {
+  padding-left: 25px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
@@ -77,4 +145,9 @@
   text-decoration: none;
   letter-spacing: 0.03em;
   color: rgba($color-black, 0.3);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

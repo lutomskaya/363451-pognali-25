@@ -1,6 +1,13 @@
 .site-list {
   @include reset;
-  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 390px;
+  }
 }
 
 .site-list__link {
@@ -10,5 +17,10 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  color: $color-blue;
+  color: $color-white;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   width: 56px;
   height: 56px;
@@ -22,6 +23,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
+  border-bottom: 1px solid $color-white;
 
   &--big {
     font-size: 38px;
@@ -29,6 +31,7 @@
     font-weight: 700;
 
     color: $basic-blue;
+    border-bottom: 1px solid rgba($special-grey, 0.3);
   }
 }
 

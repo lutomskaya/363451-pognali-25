@@ -1,31 +1,121 @@
 .service {
-  /*временно*/
-  width: 320px;
-  margin: 0 auto;
-
-  background-image: url("../img/about-mobile.png");
-  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 8px;
   background-color: $color-blue;
   color: $color-white;
+  border-radius: 0 0 20px 20px;
+  box-sizing: border-box;
+}
+
+.service__container {
+  @include container;
+  padding-top: 33px;
+  padding-bottom: 82px;
+  padding-left: 29px;
+  padding-right: 52px;
+  margin: 0 auto;
+  background-image: url("../img/about-mobile.png");
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 89px;
+
+    background-image: url("../img/about-tablet.png");
+    background-position: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
+    padding-bottom: 163px;
+
+    background-image: url("../img/about-desktop.png");
+    background-position: right;
+  }
 }
 
 .service__title {
   margin: 0;
   padding: 0;
+  padding-bottom: 19px;
 
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
 
   color: $special-orange;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 57px;
+  }
 }
 
 .service__text {
   margin: 0;
+  padding-bottom: 20px;
   font-weight: 300;
 
   &--bold {
     margin: 0;
     font-weight: 700;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    padding-bottom: 33px;
+    font-size: 28px;
+    line-height: 33px;
+
+    &--bold {
+      width: 265px;
+      padding-bottom: 50px;
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 619px;
+
+    &--bold {
+      width: 425px;
+      padding-bottom: 85px;
+    }
+  }
+}
+
+.service__button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 276px;
+    height: 80px;
+    padding-left: 30px;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+
+    color: $basic-blue-light;
+    border-radius: 20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 20px;
+      right: 23px;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 14px solid $basic-blue-light;
+    }
   }
 }

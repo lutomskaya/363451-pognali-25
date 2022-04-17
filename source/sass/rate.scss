@@ -1,137 +1,198 @@
 .rate {
-  /*временно*/
-  width: 320px;
-  margin: 0 auto;
-
+  position: relative;
   background-color: $background-rate;
+  border-radius: 0 0 20px 20px;
 }
 
-.rate__title {
-  margin: 0;
-  padding: 0;
-  padding-top: 46px;
-  padding-right: 146px;
-  padding-left: 48px;
+.rate__container {
+  @include container;
+  padding-top: 53px;
+  padding-bottom: 38px;
+  margin: 0 auto;
 
-  position: relative;
+  @media (min-width: $tablet-width) {
+    padding-top: 74px;
+    padding-bottom: 85px;
+  }
 
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 700;
-
-  color: $special-orange;
+  @media (min-width: $desktop-width) {
+    padding-top: 107px;
+    padding-bottom: 165px;
+  }
 
   &::before {
     content: "";
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 35px;
-    right: 30px;
+    top: 45px;
+    right: 25px;
     background-image: url("../img/rates.png");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 422px;
+      right: 47px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 73px;
+    }
+  }
+}
+
+.rate__title {
+  margin: 0;
+  padding: 0;
+  padding-right: 138px;
+  padding-left: 25px;
+  padding-bottom: 43px;
+
+  position: relative;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: $special-orange;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
   }
 }
 
 .rate__list {
   @include reset;
-  padding-left: 48px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
   padding-right: 72px;
-  padding-top: 30px;
+  margin-bottom: 31px;
+  counter-reset: rate;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 61px;
+    margin-top: 134px;
+    margin-bottom: 59px;
+  }
 }
 
 .rate__item {
   position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
   font-size: 16px;
   line-height: 16px;
   font-weight: 300;
+  counter-reset: number;
 
   color: $special-grey;
   border-top: 1px solid $border-color;
+
 
   &:last-child {
     border-bottom: 1px solid $border-color;
   }
 
-  &--special-orange::before {
-    content: "1";
+  &::before {
+    counter-increment: rate;
+    content: counter(rate);
     position: absolute;
-    top: 27px;
-    right: -40px;
+    top: 6px;
+    right: -44px;
+    display: inline-block;
     width: 34px;
     height: 34px;
-    vertical-align: middle;
+    padding-top: 8px;
+    line-height: 16px;
     text-align: center;
     color: $color-white;
     border-radius: 50%;
     background-color: $special-orange;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+      left: 0;
+      right: auto;
+      top: 0;
+      padding-top: 17px;
+
+      font-size: 28px;
+      line-height: 28px;
+    }
   }
 
-  &--yellow-dark::before {
-    content: "2";
-    position: absolute;
-    top: 27px;
-    right: -40px;
-    width: 34px;
-    height: 34px;
-    vertical-align: middle;
-    text-align: center;
-    color: $color-white;
-    border-radius: 50%;
+  &:nth-of-type(2)::before {
     background-color: $special-yellow-dark;
   }
 
-  &--basic-yellow::before {
-    content: "3";
-    position: absolute;
-    top: 27px;
-    right: -40px;
-    width: 34px;
-    height: 34px;
-    vertical-align: middle;
-    text-align: center;
-    color: $color-white;
-    border-radius: 50%;
+  &:nth-of-type(3)::before {
     background-color: $basic-yellow;
   }
 }
 
+.rate__name {
+  margin: 20px 0;
+  line-height: 16px;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    padding-left: 90px;
+  }
+}
+
+.rate__price {
+  line-height: 16px;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
 .rate__button {
+  position: relative;
   padding-bottom: 30px;
   line-height: 16px;
   font-weight: 700;
   text-decoration: none;
+  text-align: center;
 
 
   color: $button-color;
-}
 
-.rate-business {
-  margin: 0 25px;
-  padding: 25px;
-  width: 270px;
-  box-sizing: border-box;
-  background-color: $color-white;
-  border-radius: 20px;
-}
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 100px;
 
-.rate-business__title {
-  margin: 0;
-  padding: 0;
-  padding-top: 34px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 68px;
+      height: 68px;
+      top: -20px;
+      left: 23px;
+      background-color: $background-country;
+      background-image: url("../img/icon-businessman.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+    }
+  }
 
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 700;
-  text-align: center;
-
-  color: $special-orange;
-}
-
-.rate-business__list {
-  @include reset;
-}
-
-.rate-business__button {
-  width: 100%;
-  border: none;
+  @media (min-width: $desktop-width) {
+    margin-left: 61px;
+  }
 }
