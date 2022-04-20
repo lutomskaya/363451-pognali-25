@@ -5,6 +5,10 @@
   margin-bottom: 20px;
 
   border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
 }
 
 .calendar__weekday {
@@ -13,14 +17,25 @@
   font-weight: 400;
 
   color: $special-grey;
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .calendar__weekend {
   color: $color-weekend;
-}
-
-.calendar__weekday--desktop {
-  display: none;
 }
 
 .calendar__row {
@@ -49,6 +64,11 @@
   background-color: $background-directions;
   color: $basic-blue-light;
   opacity: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 69px;
+    font-size: 18px;
+  }
 }
 
 .calendar__date--disabled {
@@ -64,6 +84,6 @@
   background-color: $basic-blue-light;
 }
 
-.calendar__date--check-in {
-  border: $color-weekend;
+.calendar__cell--active {
+  border: 4px solid $color-weekend;
 }
