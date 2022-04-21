@@ -6,6 +6,15 @@
   width: 220px;
   box-sizing: border-box;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: 373px;
+    padding-top: 35px;
+    padding-left: 27px;
+    padding-right: 80px;
+    padding-bottom: 33px;
+    border-right: 1px solid $background-profile;
+  }
 }
 
 .country-letters__item {
@@ -21,23 +30,46 @@
   &--current {
     background-color: $background-directions;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 51px;
+    height: 70px;
+  }
 }
 
-.country-letters__title {
-  @include reset;
-  display: none;
+.country-letters__name {
   width: 220px;
+  height: 100%;
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 20px;
   box-sizing: border-box;
 
   border: 1px solid $background-profile;
-  box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
-  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 208px;
+    padding-top: 38px;
+    padding-left: 25px;
+
+    border: none;
+  }
+}
+
+.country-letters__title {
+  @include reset;
+  display: none;
 
   &--current {
     display: block;
+  }
+}
+
+.country-letters__title-item {
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
   }
 }
 
@@ -45,6 +77,11 @@
   text-decoration: none;
 
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .country-letters__index {

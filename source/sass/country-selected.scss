@@ -15,6 +15,13 @@
       background-color: $border-color;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 0;
+      right: 226px;
+    }
+  }
 }
 
 .country-selected__item {
@@ -33,6 +40,10 @@
     background-repeat: no-repeat;
     bottom: -15px;
     left: 165px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -65,9 +76,9 @@
 
   &::before {
     content: "";
-    z-index: 10;
-    top: 15px;
-    right: -4px;
+    z-index: 2;
+    top: 29px;
+    right: -51px;
     position: absolute;
     width: 8px;
     height: 8px;
@@ -75,9 +86,27 @@
     border-radius: 50%;
   }
 
+  &--active::before {
+    background-color: $color-white;
+    border: 1px solid $border-color;
+  }
+
+  &--add::before {
+    background-color: $background-directions;
+    border: 1px solid $background-profile;
+  }
+
+  &--add {
+    background-color: $button-grey;
+  }
+
   @media (min-width: $tablet-width) {
     width: 369px;
     height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
   }
 }
 
@@ -155,6 +184,10 @@
   @media (min-width: $tablet-width) {
     width: 369px;
     height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
   }
 }
 

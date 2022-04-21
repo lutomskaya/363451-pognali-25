@@ -1,53 +1,130 @@
 .plan-filters {
-  display: flex;
-  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+  }
 }
 
 .plan-filters__field {
   margin: 0;
   padding: 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   border: none;
 
   @media (min-width: $tablet-width) {
-    &--companions {
+    border-top: 1px solid $border-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 3px;
+    width: 485px;
+    margin-left: -13px;
+    border-top: none;
+  }
+
+  &--companions {
+    @media (min-width: $tablet-width) {
       order: 1;
     }
+  }
 
-    &--kids {
+  &--kids {
+    @media (min-width: $tablet-width) {
       order: 2;
+      padding-bottom: 27px;
+      border-top: none;
     }
 
-    &--days {
+    @media (min-width: $desktop-width) {
+      align-self: flex-end;
+    }
+  }
+
+  &--days {
+    @media (min-width: $tablet-width) {
       order: 3;
     }
   }
 }
 
 .plan-filters__label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  padding-bottom: 8px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
+  color: $basic-blue-light;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 18px;
     padding-bottom: 24px;
+    padding-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    width: 194px;
+    margin-left: 10px;
+
+    &--kids {
+      margin-left: auto;
+    }
   }
 }
 
-.plan-filters__input-wrapper {
-  display: flex;
-  position: relative;
-  margin-bottom: 20px;
+.plan-filters__text {
+  line-height: 16px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: $basic-blue-light;
+  opacity: 0.3;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 58px;
+    font-size: 20px;
+    line-height: 18px;
+    padding-bottom: 24px;
+    padding-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+    opacity: 1;
+    font-weight: 500;
+    width: 45px;
+  }
+}
+
+
+.plan-filters__input-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 162px;
+    order: 2;
+    height: 70px;
+    margin-bottom: 0;
+    margin-left: 5px;
   }
 }
 
@@ -63,6 +140,11 @@
     height: 70px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    order: 2;
   }
 }
 
@@ -181,17 +263,4 @@
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.plan-filters__title {
-  position: relative;
-
-  letter-spacing: 0.09em;
-
-  color: $basic-blue-light;
-}
-
-.plan-filters__text {
-  letter-spacing: 0.07em;
-  opacity: 0.3;
 }

@@ -1,6 +1,6 @@
 .footer {
   box-sizing: border-box;
-  border-radius: 20px 20px 0 0;
+  background-color: $background-plan;
 }
 
 .footer__container {
@@ -8,6 +8,8 @@
   padding-top: 37px;
   padding-bottom: 30px;
   margin: 0 auto;
+  background-color: $color-white;
+  border-radius: 20px 20px 0 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 46px;
@@ -16,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 60px 60px 0 0;
   }
 
   @media (min-width: $desktop-width) {
