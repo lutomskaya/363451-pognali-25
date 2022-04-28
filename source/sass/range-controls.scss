@@ -1,0 +1,127 @@
+.range-controls {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+
+.range-controls__price {
+  position: relative;
+  margin-bottom: 21px;
+
+  display: flex;
+
+  color: $basic-blue-light;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    right: 102px;
+    z-index: 30;
+
+    width: 16px;
+    height: 1px;
+
+    background-color: $background-profile;
+    border-top: 5px solid $color-white;
+    border-bottom: 5px solid $color-white;
+
+    @media (min-width: $tablet-width) {
+      right: 70px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 148px;
+    margin-left: 30px;
+  }
+}
+
+.range-controls__input {
+  width: 110px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  box-sizing: border-box;
+  border: 1px solid $background-profile;
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus {
+    border-color: $basic-blue-light;
+  }
+
+  &--min {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  &--max {
+    position: relative;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+  }
+}
+
+.range-controls__scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 21px;
+
+  background-color: rgba($basic-blue-light, 0.2);
+
+  @media (min-width: $tablet-width) {
+    width: 281px;
+    margin-left: 65px;
+  }
+}
+
+.range-controls__bar {
+  position: absolute;
+  width: 138px;
+  height: 2px;
+  right: 0;
+
+  background-color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+  }
+}
+
+.range-controls__toggle {
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: $basic-blue-light;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--min {
+    top: -5px;
+    left: -5px;
+  }
+
+  &--max {
+    top: -5px;
+    right: -5px;
+  }
+}

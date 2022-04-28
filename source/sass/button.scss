@@ -25,6 +25,18 @@
     color: rgba($basic-blue-light, 0.3);
   }
 
+  &--hide {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 23px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 14px solid #1d2e5b;
+  }
+
   &--grey {
     font-size: 20px;
     font-weight: 500;

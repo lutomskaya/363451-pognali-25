@@ -1,21 +1,29 @@
 .companion-filters {
-  /*временно*/
-  width: 320px;
-  margin: 0 auto;
+  @include container;
+  padding-top: 21px;
 
   background-color: $background-directions;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+  }
 }
 
 .companion-filters__inner {
-  width: 270px;
-  margin: 0 25px;
+  margin: 0 auto;
+  padding: 0 25px;
 
   font-size: 15px;
   line-height: 15px;
 
-  background-color: $background-yellow;
+  background-color: $basic-yellow;
   color: $special-grey;
   border-radius: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    margin-left: auto;
+  }
 }
 
 .companion-filters__title {
@@ -27,4 +35,11 @@
   letter-spacing: 0.02em;
 
   color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+    padding-bottom: 38px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
