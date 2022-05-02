@@ -7,7 +7,7 @@
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header main-header--index main-header--nojs">
       <div class="main-header__container">
         <a class="main-header__logo logo">
           <svg width="96" height="15" viewBox="0 0 96 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,25 +22,25 @@
             <path d="M93.1598 12.7451C93.1598 13.9835 92.1101 14.9875 90.8153 14.9875C89.5204 14.9875 88.4707 13.9835 88.4707 12.7451C88.4707 11.5066 89.5204 10.5027 90.8153 10.5027C92.1101 10.5027 93.1598 11.5066 93.1598 12.7451Z" fill="#192144"/>
           </svg>
         </a>
-        <button class="main-header__toggle" type="button">
+        <button class="main-header__toggle main-header__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-header__list contacts-list">
-          <li class="contacts-list__item">
-            <a class="contacts-list__link contacts-list__link--hide contacts-list__phone" href="tel:78128121212">
-              <span class="visually-hidden">8 800 555-86-28</span>
-            </a>
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__link contacts-list__link--hide contacts-list__email" href="#">
-              <span class="visually-hidden">mail@htmlacademy.ru</span>
-            </a>
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__login" href="#">Авторизация</a>
-          </li>
-        </ul>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--opened">
+          <ul class="main-nav__list contacts-list">
+            <li class="contacts-list__item contacts-list__item--hide">
+              <a class="contacts-list__link contacts-list__link contacts-list__phone" href="tel:78128121212">
+                <span class="">8 800 555-86-28</span>
+              </a>
+            </li>
+            <li class="contacts-list__item contacts-list__item--hide">
+              <a class="contacts-list__link contacts-list__link contacts-list__email" href="#">
+                <span class="">mail@htmlacademy.ru</span>
+              </a>
+            </li>
+            <li class="contacts-list__item contacts-list__item--login">
+              <a class="contacts-list__login" href="#">Авторизация</a>
+            </li>
+          </ul>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link">О сервисе</a>
@@ -54,8 +54,8 @@
           </ul>
           <ul class="main-nav__list social-list">
             <li class="social-list__item">
-              <a class="social-list__link" href="https://www.facebook.com/htmlacademy">
-                <img src="./img/facebook.svg" alt="Фейсбук" width="23" height="23">
+              <a class="social-list__link" href="#">
+                <img src="./img/telegram.svg" alt="Телеграм" width="23" height="23">
               </a>
             </li>
             <li class="social-list__item">
@@ -64,8 +64,8 @@
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href="https://www.instagram.com/htmlacademy">
-                <img src="./img/instagram.svg" alt="Инстаграм" width="23" height="23">
+              <a class="social-list__link" href="#">
+                <img src="./img/youtube.svg" alt="Youtube" width="23" height="23">
               </a>
             </li>
           </ul>
@@ -441,5 +441,6 @@
         </div>
       </div>
     </section>
+    <script src="./js/script.js"></script>
   </body>
 </html>

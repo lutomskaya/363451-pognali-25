@@ -1,6 +1,7 @@
 .social-list {
   @include reset;
-  display: none;
+  order: 3;
+  display: flex;
 }
 
 .social-list__link {
