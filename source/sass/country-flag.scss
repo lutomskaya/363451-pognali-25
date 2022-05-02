@@ -7,13 +7,29 @@
 
 .country-flag__list--column {
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .country-flag__item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
   font-size: 15px;
   line-height: 16px;
   font-weight: 500;
   text-transform: uppercase;
 
   color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
 }

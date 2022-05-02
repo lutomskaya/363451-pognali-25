@@ -1,0 +1,13 @@
+.companion {
+  background-color: $background-directions;
+}
+
+.companion__container {
+  @include container;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}

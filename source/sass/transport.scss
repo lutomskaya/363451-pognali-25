@@ -15,6 +15,18 @@
   border-radius: 50%;
 }
 
+.transport__title {
+  &--hidden {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
 .transport__label {
   display: flex;
   justify-content: center;
