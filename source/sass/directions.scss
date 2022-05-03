@@ -35,6 +35,7 @@
   margin: 0;
   padding: 0;
   padding-left: 25px;
+  padding-bottom: 3px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
@@ -49,7 +50,8 @@
 .directions__text {
   grid-area: text;
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 50px;
+  margin-bottom: 60px;
   font-weight: 300;
 
   @media (min-width: $tablet-width) {
@@ -61,6 +63,7 @@
 
 .directions__list {
   @include reset;
+  position: relative;
   grid-area: list;
 }
 
@@ -76,14 +79,21 @@
 }
 
 .directions__image {
+  display: block;
+  width: 100%;
+  min-height: 110px;
+  z-index: 1;
+  overflow: hidden;
   order: 2;
 }
 
 .directions__inner {
-  width: 270px;
-  padding-top: 26px;
+  position: relative;
+  width: 100%;
+  padding-top: 25px;
   padding-left: 24px;
-  margin-bottom: 27px;
+  margin-top: -10px;
+  z-index: 2;
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-color: $color-white;
