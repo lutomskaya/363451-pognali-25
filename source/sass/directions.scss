@@ -65,9 +65,11 @@
   @include reset;
   position: relative;
   grid-area: list;
+  margin-bottom: 16px;
 }
 
 .directions__item {
+  position: relative;
   padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
@@ -106,6 +108,15 @@
   }
 }
 
+.directions__flag {
+  position: absolute;
+  width: 35px;
+  height: 25px;
+  top: 89px;
+  left: 25px;
+  z-index: 3;
+}
+
 .directions__subtitle {
   margin: 0;
   padding: 0;
@@ -132,6 +143,10 @@
   font-weight: 500;
 
   color: rgba($special-grey, 0.3);
+
+  &--last {
+    padding-bottom: 5px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -171,6 +186,18 @@
   grid-area: button;
   width: 270px;
   height: 62px;
+  text-align: left;
+  padding-left: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 23px;
+    right: 22px;
+    width: 12px;
+    height: 15px;
+    background-image: url("../img/svg/polygon.svg");
+  }
 
   @media (min-width: $tablet-width) {
     width: 618px;

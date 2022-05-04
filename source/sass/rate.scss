@@ -1,7 +1,7 @@
 .rate {
   position: relative;
   background-color: $background-rate;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
 }
 
 .rate__container {
@@ -70,8 +70,8 @@
   display: flex;
   flex-direction: column;
   padding-left: 25px;
-  padding-right: 72px;
-  margin-bottom: 31px;
+  padding-right: 50px;
+  margin-bottom: 24px;
   counter-reset: rate;
 
   @media (min-width: $desktop-width) {
@@ -85,7 +85,7 @@
   position: relative;
 
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 
   font-size: 16px;
   line-height: 16px;
@@ -104,8 +104,8 @@
     counter-increment: rate;
     content: counter(rate);
     position: absolute;
-    top: 6px;
-    right: -44px;
+    top: 4px;
+    right: -50px;
     display: inline-block;
     width: 34px;
     height: 34px;
@@ -140,7 +140,9 @@
 }
 
 .rate__name {
-  margin: 20px 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 7px;
   line-height: 16px;
   font-weight: 300;
 
@@ -152,8 +154,10 @@
 }
 
 .rate__price {
+  margin: 0;
   line-height: 16px;
   font-weight: 300;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
@@ -164,6 +168,7 @@
 .rate__button {
   position: relative;
   padding-bottom: 30px;
+  padding-left: 25px;
   line-height: 16px;
   font-weight: 700;
   text-decoration: none;

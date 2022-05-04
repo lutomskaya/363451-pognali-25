@@ -11,7 +11,7 @@
     }
 
     .main-header__toggle {
-      background-image: url("../img/menu-close.svg");
+      background-image: url("../img/svg/menu-close.svg");
     }
 
     .main-nav {
@@ -55,7 +55,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
-  background-image: url("../img/icon-menu-mobile.svg");
+  background-image: url("../img/svg/icon-menu-mobile.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $desktop-width) {

@@ -131,6 +131,9 @@
                 <source media="(min-width: 768px)" srcset="./img/png/thailand-desktop.png">
                 <img class="directions__image" src="./img/png/thailand-mobile.png" alt="Таиланд" width="270" height="110">
               </picture>
+              <div class="directions__flag">
+                <img src="./img/png/thailand1.png" alt="Таиланд" width="35" height="25">
+              </div>
               <div class="directions__inner">
                 <h3 class="directions__subtitle">Таиланд</h3>
                 <span class="directions__lead--span">18321</span>
@@ -142,6 +145,9 @@
                 <source media="(min-width: 768px)" srcset="./img/png/france-desktop.png">
                 <img class="directions__image" src="./img/png/france-mobile.png" alt="Франция" width="270" height="110">
               </picture>
+              <div class="directions__flag">
+                <img src="./img/svg/france.svg" alt="Франция" width="35" height="25">
+              </div>
               <div class="directions__inner">
                 <h3 class="directions__subtitle">Франция</h3>
                 <span class="directions__lead--span">12518</span>
@@ -153,10 +159,13 @@
                 <source media="(min-width: 768px)" srcset="./img/png/czech-desktop.png">
                 <img class="directions__image" src="./img/png/czech-mobile.png" alt="Чехия" width="270" height="110">
               </picture>
+              <div class="directions__flag">
+                <img src="./img/svg/czech.svg" alt="Чехия" width="35" height="25">
+              </div>
               <div class="directions__inner">
                 <h3 class="directions__subtitle">Чехия</h3>
                 <span class="directions__lead--span">5326</span>
-                <p class="directions__lead">Закоулки старой Европы</p>
+                <p class="directions__lead directions__lead--last">Закоулки старой Европы</p>
               </div>
             </li>
           </ul>
@@ -174,17 +183,17 @@
                 <p class="level__number">99</p>
                 <p class="level__description">level</p>
               </div>
-              <img src="./img/companions1.png" alt="Таня Фирсова" width="270" height="270">
+              <img src="./img/png/companions1.png" alt="Таня Фирсова" width="270" height="270">
               <div class="companions__country country-flag">
                 <ul class="companions__list country-flag__list">
                   <li class="country-flag__item">
-                    <img src="./img/sri-Lanka.svg" alt="Шри-Ланка" width="35" height="20">
+                    <img src="./img/png/sri-Lanka1.png" alt="Шри-Ланка" width="35" height="25">
                   </li>
                   <li class="country-flag__item">
-                    <img src="./img/thailand.svg" alt="Таиланд" width="35" height="20">
+                    <img src="./img/png/thailand1.png" alt="Таиланд" width="35" height="25">
                   </li>
                   <li class="country-flag__item">
-                    <img src="./img/seychelles.svg" alt="Сейшелы" width="35" height="20">
+                    <img src="./img/png/seychelles1.png" alt="Сейшелы" width="35" height="25">
                   </li>
                 </ul>
               </div>
@@ -255,14 +264,14 @@
                 <p class="level__number">80</p>
                 <p class="level__description">level</p>
               </div>
-              <img src="./img/companions2.png" alt="Петя Демин" width="270" height="270">
+              <img src="./img/png/companions2.png" alt="Петя Демин" width="270" height="270">
               <div class="companions__country country-flag">
                 <ul class="companions__list country-flag__list">
                   <li class="country-flag__item">
-                    <img src="./img/belgium.svg" alt="Бельгия" width="35" height="20">
+                    <img src="./img/svg/belgium.svg" alt="Бельгия" width="35" height="20">
                   </li>
                   <li class="country-flag__item">
-                    <img src="./img/czech.svg" alt="Чехия" width="35" height="20">
+                    <img src="./img/svg/czech.svg" alt="Чехия" width="35" height="20">
                   </li>
                 </ul>
               </div>
@@ -377,7 +386,7 @@
       <section class="interested">
         <div class="interested__container">
           <h2 class="interested__title">Заинтересовались?</h2>
-          <p class="interested__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
+          <p class="interested__text">Зарегистрируйтесь, это&nbsp;быстро и бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее
             <a class="interested__link" href="#">авторизуйтесь.</a>
           </p>
           <form class="interested__form" action="https://echo.htmlacademy.ru" method="POST">
@@ -385,7 +394,7 @@
             <button class="interested__button"  type="submit" aria-label="Зарегистрироваться">Регистрация
             </button>
           </form>
-          <p class="interested__text">Остались вопросы? Мы с радостью на них ответим!</p>
+          <p class="interested__text interested__text--last">Остались вопросы? Мы&nbsp;с&nbsp;радостью на них ответим!</p>
           <ul class="interested__list contacts-list">
             <li class="contacts-list__item">
               <a class="contacts-list__link contacts-list__phone interested__link" href="tel:78128121212">8 800 555-86-28</a>
@@ -406,7 +415,7 @@
       <section class="map">
         <h3 class="visually-hidden">Карта</h3>
         <div>
-          <img src="./img/background-map.png" alt="Карта" width="320" height="352">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586828!2d30.32085335172623!3d59.93871648178729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1651674835775!5m2!1sru!2sru" width="320" height="260" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта"></iframe>
         </div>
       </section>
     </main>
@@ -429,15 +438,15 @@
         <ul class="footer__social social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--footer" href="https://www.telegram.org/htmlacademy">
-              <img src="./img/telegram.svg" alt="Телеграм" width="23" height="23"></a>
+              <img src="./img/svg/telegram.svg" alt="Телеграм" width="23" height="23"></a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link--footer" href="https://www.vk.com/htmlacademy">
-              <img src="./img/vkontakte.svg" alt="Вконтакте" width="23" height="23"></a>
+              <img src="./img/svg/vkontakte.svg" alt="Вконтакте" width="23" height="23"></a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link--footer" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <img src="./img/youtube.svg" alt="Youtube" width="23" height="23"></a>
+              <img src="./img/svg/youtube.svg" alt="Youtube" width="23" height="23"></a>
           </li>
         </ul>
         <div class="footer__copyright">
@@ -445,7 +454,7 @@
             Разработано
           </a>
           <a class="footer__link" href="#">
-            <img src="./img/logo-html.svg" alt="htmlacademy" width="27" height="33">
+            <img src="./img/svg/logo-html.svg" alt="htmlacademy" width="27" height="33">
           </a>
         </div>
       </div>

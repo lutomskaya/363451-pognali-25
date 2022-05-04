@@ -3,13 +3,13 @@
   box-sizing: border-box;
   color: $color-white;
   background-color: $color-blue;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
 }
 
 .interested__container {
   @include container;
-  padding-top: 72px;
-  padding-bottom: 44px;
+  padding-top: 70px;
+  padding-bottom: 1px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -46,10 +46,18 @@
 }
 
 .interested__text {
-  width: 210px;
+  width: 74%;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
+  padding-left: 32px;
   text-align: center;
+
+  &--last {
+    width: 84%;
+    margin-top: 27px;
+    margin-bottom: 17px;
+    padding-left: 20px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 618px;
@@ -86,7 +94,7 @@
 }
 
 .interested__input {
-  width: 170px;
+  width: 163px;
   padding: 24px;
   padding-top: 19px;
   padding-bottom: 22px;
@@ -153,13 +161,11 @@
   &::before {
     position: absolute;
     content: "";
-    top: 20px;
-    right: 23px;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 14px solid $basic-blue-light;
+    top: 23px;
+    right: 24px;
+    width: 12px;
+    height: 15px;
+    background-image: url("../img/svg/polygon.svg");
   }
 
   @media (min-width: $desktop-width) {
@@ -185,6 +191,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     margin-left: 35px;

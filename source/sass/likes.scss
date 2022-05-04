@@ -33,7 +33,7 @@
   width: 13px;
   height: 11px;
 
-  background-image: url("../img/heart.svg");
+  background-image: url("../img/svg/heart.svg");
   background-size: 13px 11px;
 
   @media (min-width: $tablet-width) {
@@ -43,7 +43,7 @@
 }
 
 .like__button--active::after {
-  background-image: url("../img/heart-active.svg");
+  background-image: url("../img/svg/heart-active.svg");
 }
 
 .like__count {
