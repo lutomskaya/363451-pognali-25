@@ -1,6 +1,7 @@
 .social-list {
   @include reset;
-  display: none;
+  order: 3;
+  display: flex;
 }
 
 .social-list__link {
@@ -15,6 +16,8 @@
   background-color: $color-white;
 
   &--footer {
+    width: 45px;
+    height: 45px;
     background-color: $basic-yellow;
   }
 }

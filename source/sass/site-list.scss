@@ -1,9 +1,11 @@
 .site-list {
   @include reset;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  order: 1;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 390px;
@@ -17,7 +19,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  color: $color-white;
+  color: $color-blue;
 
   @media (min-width: $desktop-width) {
     font-size: 20px;

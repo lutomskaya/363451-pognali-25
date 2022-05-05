@@ -1,6 +1,15 @@
 .plan-description {
   display: flex;
   flex-direction: column;
+  padding-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
+  }
 }
 
 .plan-description__item {
@@ -9,6 +18,10 @@
   flex-direction: column;
   width: 220px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
 }
 
 .plan-description__text {
@@ -22,6 +35,15 @@
   border: 1px solid $background-directions;
   border-radius: 4px;
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+    height: 142px;
+  }
 }
 
 .plan-description__country {

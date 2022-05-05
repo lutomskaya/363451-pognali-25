@@ -1,0 +1,62 @@
+.like {
+  display: flex;
+  align-items: center;
+}
+
+.like__button {
+  position: relative;
+
+  display: flex;
+  width: 31px;
+  height: 31px;
+  margin-right: 7px;
+  margin-left: -25px;
+  flex-shrink: 0;
+
+  background-color: $background-like;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+}
+
+.like__button::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 9px;
+
+  width: 13px;
+  height: 11px;
+
+  background-image: url("../img/svg/heart.svg");
+  background-size: 13px 11px;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.like__button--active::after {
+  background-image: url("../img/svg/heart-active.svg");
+}
+
+.like__count {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+
+  color: $basic-blue;
+
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

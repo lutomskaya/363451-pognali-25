@@ -8,7 +8,7 @@
   height: 56px;
   border-radius: 50%;
   border: 4px solid $special-orange;
-  background-color: $level-opacity;
+  background-color: #00000099;
   color: $color-white;
 
   &--big {
@@ -18,12 +18,20 @@
 }
 
 .level__number {
+  position: relative;
   margin: 0;
-  padding: 5px 10px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-  border-bottom: 1px solid $color-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    top: 23px;
+    left: -3px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
 
   &--big {
     font-size: 38px;
@@ -37,7 +45,6 @@
 
 .level__description {
   margin: 0;
-  padding: 5px 12px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -47,5 +54,9 @@
     line-height: 18px;
 
     color: $special-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

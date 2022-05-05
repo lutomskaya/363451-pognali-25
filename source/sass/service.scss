@@ -9,19 +9,19 @@
 
 .service__container {
   @include container;
-  padding-top: 33px;
+  padding-top: 32px;
   padding-bottom: 82px;
   padding-left: 29px;
   padding-right: 52px;
   margin: 0 auto;
-  background-image: url("../img/about-mobile.png");
+  background-image: url("../img/png/about-mobile.png");
   background-repeat: no-repeat;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 89px;
 
-    background-image: url("../img/about-tablet.png");
+    background-image: url("../img/png/about-tablet.png");
     background-position: right;
   }
 
@@ -29,7 +29,7 @@
     padding-top: 40px;
     padding-bottom: 163px;
 
-    background-image: url("../img/about-desktop.png");
+    background-image: url("../img/png/about-desktop.png");
     background-position: right;
   }
 }

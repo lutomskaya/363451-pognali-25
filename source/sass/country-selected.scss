@@ -1,52 +1,163 @@
 .country-selected {
   @include reset;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 125px;
+      width: 1px;
+      height: 100%;
+      background-color: $border-color;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 0;
+      right: 226px;
+    }
+  }
 }
 
 .country-selected__item {
   position: relative;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   width: 100%;
   margin-bottom: 22px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 10px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    bottom: -15px;
+    left: 165px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
 }
 
-.country-selected__field {
-  width: 168px;
-  height: 40px;
-}
-
-.country-selected__button {
-  display: flex;
-  position: relative;
-  width: 220px;
-  padding: 10px;
+.country-selected__name {
+  width: 130px;
+  padding-right: 15px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  text-align: left;
   white-space: nowrap;
-
-  background-color: transparent;
-  color: $basic-blue-light;
-  border: 1px solid $background-directions;
 }
 
-.country-selected__button--delete {
-  position: absolute;
-  top: -10px;
-  right: 0;
-  width: 20px;
-  height: 20px;
+.country-selected__field {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 168px;
+  height: 42px;
+  padding: 10px;
+  border: 1px solid $background-directions;
+  border-radius: 4px;
+  box-sizing: border-box;
 
-  background-color: $background-directions;
-  background-image: url("../img/icon-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
+  &::before {
+    content: "";
+    z-index: 2;
+    top: 29px;
+    right: -51px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: $basic-blue-light;
+    border-radius: 50%;
+  }
+
+  &--active::before {
+    background-color: $color-white;
+    border: 1px solid $border-color;
+  }
+
+  &--add::before {
+    background-color: $background-directions;
+    border: 1px solid $background-profile;
+  }
+
+  &--add {
+    background-color: $button-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+    height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
+}
+
+.country-selected__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+    height: 70px;
+  }
+
+  &--select {
+    z-index: 3;
+    width: 15px;
+    height: 15px;
+
+    background-image: url("../img/small-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 1px 4px;
+    background-size: 12px 7px;
+
+    opacity: 0.3;
+  }
+
+  &--delete {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+
+    background-color: $background-directions;
+    background-image: url("../img/icon-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 22px;
+      height: 24px;
+      top: 20px;
+      background-color: transparent;
+    }
+  }
+
+  &--add {
+    background-color: $background-directions;
+  }
 }
 
 .country-selected__flag {
@@ -55,8 +166,34 @@
   align-items: center;
   flex-shrink: 0;
   width: 50px;
-  height: 40px;
   border: 1px solid $background-directions;
   border-radius: 4px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 141px;
+    height: 70px;
+    border: none;
+  }
+}
+
+.country-selected__item--whole .country-selected__field {
+  width: 220px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+    height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
+}
+
+.country-selected__item--active .country-selected__field {
+  color: $color-white;
+  background-color: $basic-blue-light;
+  border-color: $basic-blue-light;
+  border-radius: 4px 4px 0 0;
 }

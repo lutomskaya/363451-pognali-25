@@ -1,0 +1,40 @@
+.catalog-container__title-wrapper {
+  margin-top: -3px;
+  padding-top: 40px;
+  padding-left: 25px;
+  background-color: $basic-blue;
+  color: $color-white;
+  border-radius: 0 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 124px;
+  }
+}
+
+.catalog-container__title {
+  margin: 0;
+  width: 173px;
+  padding-bottom: 10px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+
+  border-bottom: 5px solid $special-orange;
+
+  @media (min-width: $tablet-width) {
+    width: 358px;
+    padding-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 64px;
+  }
+}

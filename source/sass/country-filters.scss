@@ -1,28 +1,82 @@
 .country-filters {
-  /*временно*/
-  width: 320px;
-  margin: 0 auto;
-
   color: $color-blue;
-  background-color: $background-country;
+  background-color: $bacground-check;
+}
+
+.country-filters__container {
+  @include container;
+  position: relative;
+}
+
+.country-filters__toggle {
+  position: absolute;
+  top: 26px;
+  right: 19px;
+  z-index: 2;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.country-filters__modal--closed .country-filters__toggle::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: $color-blue;
+  box-shadow: 6px 0 0 0 $color-blue, 12px 0 0 0 $color-blue;
+}
+
+.country-filters__modal--opened .country-filters__toggle {
+  top: 10px;
+  right: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 12px;
+    height: 2px;
+    background-color: $color-blue;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .country-filters__title {
   position: relative;
   margin: 0;
-  padding: 25px;
+  padding-top: 25px;
+  padding-bottom: 17px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  background-color: $background-country;
+  border-radius: 0 0 20px 20px;
 
   &::before {
     content: "";
 
     position: absolute;
     top: 30px;
-    left: 30px;
+    left: -4px;
 
     width: 15px;
     height: 10px;
@@ -31,4 +85,16 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+}
+
+.country-filters__modal--closed .country-filters__mainland {
+  display: none;
+}
+
+.country-filters__modal--closed .country-filters-modal {
+  display: none;
+}
+
+.country-filters__modal--closed .country-filters__button {
+  display: none;
 }

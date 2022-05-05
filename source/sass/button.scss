@@ -9,10 +9,12 @@
 
   text-decoration: none;
   cursor: pointer;
+  box-sizing: border-box;
 
   color: $basic-blue-light;
   background-color: $basic-yellow;
 
+  border: none;
   border-radius: 10px;
 
   &:hover,
@@ -22,6 +24,18 @@
 
   &:active {
     color: rgba($basic-blue-light, 0.3);
+  }
+
+  &--hide {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 23px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 14px solid #1d2e5b;
   }
 
   &--grey {
