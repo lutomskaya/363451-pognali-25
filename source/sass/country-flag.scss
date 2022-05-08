@@ -22,7 +22,6 @@
 .country-flag__item {
   display: flex;
   align-items: center;
-  padding-bottom: 10px;
   font-size: 15px;
   line-height: 16px;
   font-weight: 500;
@@ -32,9 +31,5 @@
 
   &:not(:first-child) {
     margin-left: 20px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-right: 25px;
   }
 }

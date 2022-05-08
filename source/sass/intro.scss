@@ -14,8 +14,8 @@
     background-color: $intro-tablet;
     background-image: url("../img/png/globe-back-tablet.png");
     background-repeat: no-repeat;
-    background-position: 0 235px;
-    background-size: auto;
+    background-position: -5px 225px;
+    background-size: 770px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/png/globe-back-tablet2.png");
@@ -44,7 +44,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/png/traveller-illustration-tablet.png");
     background-repeat: no-repeat;
-    background-position: 284px 285px;
+    background-position: 285px 248px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,10 +69,10 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 0 155px;
-    padding-top: 50px;
+    padding: 0 148px;
     font-size: 60px;
     line-height: 70px;
+    margin-bottom: 83px;
   }
 
   @media (min-width: $desktop-width) {
@@ -143,7 +143,8 @@
 
   @media (min-width: $tablet-width) {
     width: 260px;
-    padding-left: 70px;
+    padding-left: 33px;
+    margin-bottom: 212px;
   }
 
   @media (min-width: $desktop-width) {
@@ -160,6 +161,7 @@
   font-weight: 300;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
     font-size: 28px;
     line-height: 33px;
   }
@@ -169,7 +171,6 @@
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 211px;
     font-size: 21px;
     line-height: 25px;
   }

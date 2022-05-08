@@ -1,9 +1,28 @@
 .interested {
+  position: relative;
   font-weight: 300;
   box-sizing: border-box;
   color: $color-white;
   background-color: $color-blue;
   border-radius: 0 0 30px 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    background-color: $basic-yellow;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      height: 50px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .interested__container {
@@ -13,7 +32,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding-top: 76px;
+    padding-top: 72px;
     padding-bottom: 77px;
   }
 
@@ -37,7 +56,7 @@
   @media (min-width: $tablet-width) {
     font-size: 45px;
     line-height: 45px;
-    margin-bottom: 59px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,22 +71,27 @@
   padding-left: 32px;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 68px;
+    padding-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 655px;
+  }
+
   &--last {
     width: 84%;
     margin-top: 27px;
     margin-bottom: 17px;
     padding-left: 20px;
-  }
 
-  @media (min-width: $tablet-width) {
-    width: 618px;
-    font-size: 28px;
-    line-height: 32px;
-    margin-bottom: 65px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 655px;
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+    }
   }
 }
 
@@ -84,7 +108,7 @@
   color: $special-grey;
   background-color: $color-white;
 
-  border-radius: 10px;
+  border-radius: 20px;
 
   @media (min-width: $tablet-width) {
     margin-left: 36px;
@@ -95,22 +119,27 @@
 
 .interested__input {
   width: 163px;
-  padding: 24px;
-  padding-top: 19px;
-  padding-bottom: 22px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 34px;
 
   font-size: 18px;
   line-height: 18px;
 
   border: none;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 
   &::placeholder {
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
     color: rgba($special-grey, 0.3);
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 
   &:hover {
@@ -136,6 +165,8 @@
 
   @media (min-width: $tablet-width) {
     width: 536px;
+    font-size: 24px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -156,7 +187,9 @@
   background-color: $basic-yellow;
 
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
+  border-top-left-radius: initial;
+  border-bottom-left-radius: initial;
 
   &::before {
     position: absolute;
@@ -167,6 +200,12 @@
     height: 15px;
     background-image: url("../img/svg/polygon.svg");
   }
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+
 
   @media (min-width: $desktop-width) {
     width: 330px;
