@@ -4,10 +4,12 @@
   justify-content: center;
   flex-wrap: wrap;
   order: 1;
+  margin-bottom: 52px;
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     align-items: center;
+    text-align: left;
     width: 390px;
   }
 }

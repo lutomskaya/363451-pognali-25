@@ -1,4 +1,12 @@
-.map iframe {
-  border: none;
+.map {
+  position: relative;
+  margin-top: -50px;
+  z-index: -1;
+}
+
+.map__image {
+  width: 100%;
+  margin: 0 auto;
   display: block;
+  border: none;
 }

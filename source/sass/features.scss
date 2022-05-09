@@ -8,7 +8,7 @@
   counter-reset: number;
 
   @media (min-width: $tablet-width) {
-    width: 700px;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 96px;
@@ -35,13 +35,13 @@
   font-weight: 700;
   color: $basic-blue;
   box-sizing: border-box;
-  border-radius: 10px 10px 0 0;
 
   &--special-orange {
     background-color: $special-orange;
+    border-radius: 10px 10px 0 0;
 
     @media (min-width: $tablet-width) {
-      border-radius: 10px 0 0 0;
+      border-radius: 20px 0 0 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -51,14 +51,27 @@
 
   &--basic-orange {
     background-color: $basic-orange;
+    border-radius: 10px 10px 0 0;
+
+    @media (min-width: $tablet-width) {
+      border-radius: 0 20px 0 0;
+    }
   }
 
   &--yellow-dark {
     background-color: $special-yellow-dark;
+
+    @media (min-width: $tablet-width) {
+      border-radius: 0 0 0 20px;
+    }
   }
 
   &--basic-yellow {
     background-color: $basic-yellow;
+
+    @media (min-width: $tablet-width) {
+      border-radius: 0 0 20px 0;
+    }
 
     @media (max-width: $mobile-width-only) {
       min-height: 80px;
@@ -83,17 +96,18 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    width: 100%;
+    width: 50%;
     min-height: 140px;
+    padding-top: 29px;
+    padding-left: 32px;
     font-size: 24px;
     line-height: 24px;
-    border-radius: initial;
 
     &::after {
       font-size: 30px;
       line-height: 30px;
       left: 34px;
-      bottom: 28px;
+      bottom: 25px;
       top: auto;
       right: auto;
     }
