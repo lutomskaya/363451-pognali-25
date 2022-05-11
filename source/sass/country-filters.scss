@@ -10,8 +10,8 @@
 
 .country-filters__toggle {
   position: absolute;
-  top: 26px;
-  right: 19px;
+  top: 20px;
+  right: 29px;
   z-index: 2;
   display: block;
   width: 16px;
@@ -61,12 +61,12 @@
 .country-filters__title {
   position: relative;
   margin: 0;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 17px;
+  padding-left: 27px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   background-color: $background-country;
   border-radius: 0 0 20px 20px;
@@ -75,13 +75,13 @@
     content: "";
 
     position: absolute;
-    top: 30px;
-    left: -4px;
+    top: 25px;
+    left: 0px;
 
     width: 15px;
     height: 10px;
 
-    background-image: url("../img/icon-filter.svg");
+    background-image: url("../img/svg/icon-filter.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
