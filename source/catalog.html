@@ -9,7 +9,7 @@
   <body class="page__body">
     <header class="main-header main-header--opened main-header--nojs">
       <div class="main-header__container">
-        <a class="main-header__logo">
+        <a class="main-header__logo" href="./index.html">
           <picture class="main-header__logo-image">
             <source media="(min-width: 1200px)" srcset="./img/svg/logo_full.svg">
             <source media="(min-width: 768px)" srcset="./img/svg/logo_full.svg">
@@ -68,13 +68,13 @@
         </ul>
         <ul class="main-header__site-list">
           <li class="main-header__site-item">
-            <a class="main-header__site-link">О сервисе</a>
+            <a class="main-header__site-link" href="./index.html">О сервисе</a>
           </li>
           <li class="main-header__site-item">
             <a class="main-header__site-link" href="./form.html">Направления</a>
           </li>
           <li class="main-header__site-item">
-            <a class="main-header__site-link" href="./catalog.html">Попутчики</a>
+            <a class="main-header__site-link">Попутчики</a>
           </li>
         </ul>
         <ul class="main-header__social-list social-list">
@@ -100,13 +100,18 @@
       <h1 class="visually-hidden">Выбор попутчиков</h1>
       <div class="catalog-container__title-wrapper">
         <h2 class="catalog-container__title">Попутчики</h2>
+        <a class="catalog-container__link" href="./index.html">На&nbsp;главную</a>
       </div>
       <section class="country-filters">
         <div class="country-filters__container">
           <h2 class="country-filters__title">Фильтрация по странам:</h2>
-          <div class="country-filters__modal country-filters__modal--closed">
+          <div class="country-filters__modal country-filters__modal--nojs country-filters__modal--closed">
             <button class="country-filters__toggle" type="button">
-              <span class="visually-hidden">Показать</span>
+              <span class="country-filters__text">Показать всё</span>
+              <svg width="16" height="16" viewBox="0 0 9 9" fill="192144" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.875 1.125L1.125 7.875" stroke="#192144" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.125 1.125L7.875 7.875" stroke="#192144" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </button>
             <ul class="country-filters__mainland mainland">
               <li class="mainland__item">
@@ -876,7 +881,7 @@
             <h2 class="visually-hidden">Попутчики</h2>
             <article class="companion-catalog__item">
               <a class="companion-catalog__img" href="#">
-                <img src="./img/jpg/image1.jpg" alt="Таня Фирсова">
+                <img src="./img/image1.jpg" alt="Таня Фирсова">
               </a>
               <h3 class="companion-catalog__title">Таня Фирсова</h3>
               <div class="companion-catalog__likes like">
@@ -892,15 +897,15 @@
                 <legend class="transport__title--desktop">хочет посетить:</legend>
                 <ul class="companion-catalog__country-list country-flag__list country-flag__list--column">
                   <li class="country-flag__item">
-                    <img src="./img/svg/sri-Lanka.svg" alt="Шри-Ланка" width="35" height="20">
+                    <img src="./img/sri-Lanka.svg" alt="Шри-Ланка" width="35" height="20">
                     Шри-Ланка
                   </li>
                   <li class="country-flag__item">
-                    <img src="./img/svg/thailand.svg" alt="Таиланд" width="35" height="20">
+                    <img src="./img/thailand.svg" alt="Таиланд" width="35" height="20">
                     Таиланд
                   </li>
                   <li class="country-flag__item">
-                    <img src="./img/svg/seychelles.svg" alt="Сейшелы" width="35" height="20">
+                    <img src="./img/seychelles.svg" alt="Сейшелы" width="35" height="20">
                     Сейшелы
                   </li>
                 </ul>
@@ -971,7 +976,7 @@
             </article>
             <article class="companion-catalog__item">
               <a class="companion-catalog__img" href="#">
-                <img src="./img/jpg/image2.jpg" alt="Петя Демин">
+                <img src="./img/image2.jpg" alt="Петя Демин">
               </a>
               <h3 class="companion-catalog__title">Петя Демин</h3>
               <div class="companion-catalog__likes like">
@@ -987,11 +992,11 @@
                 <legend class="transport__title--desktop">хочет посетить:</legend>
                 <ul class="companion-catalog__country-list country-flag__list country-flag__list--column">
                   <li class="country-flag__item">
-                    <img src="./img/svg/belgium.svg" alt="Бельгия" width="35" height="20">
+                    <img src="./img/belgium.svg" alt="Бельгия" width="35" height="20">
                     Бельгия
                   </li>
                   <li class="country-flag__item">
-                    <img src="./img/svg/czech.svg" alt="Чехия" width="35" height="20">
+                    <img src="./img/czech.svg" alt="Чехия" width="35" height="20">
                     Чехия
                   </li>
                 </ul>
@@ -1062,7 +1067,7 @@
             </article>
             <article class="companion-catalog__item">
               <a class="companion-catalog__img" href="#">
-                <img src="./img/jpg/image3.jpg" alt="Марк Смолов">
+                <img src="./img/image3.jpg" alt="Марк Смолов">
               </a>
               <h3 class="companion-catalog__title">Марк Смолов</h3>
               <div class="companion-catalog__likes like">
@@ -1078,15 +1083,15 @@
                 <legend class="transport__title--desktop">хочет посетить:</legend>
                 <ul class="companion-catalog__country-list country-flag__list country-flag__list--column">
                   <li class="country-flag__item">
-                    <img src="./img/svg/usa.svg" alt="США" width="35" height="20">
+                    <img src="./img/usa.svg" alt="США" width="35" height="20">
                     США
                   </li>
                   <li class="country-flag__item">
-                    <img src="./img/svg/australia.svg" alt="Австралия" width="35" height="20">
+                    <img src="./img/australia.svg" alt="Австралия" width="35" height="20">
                     Австралия
                   </li>
                   <li class="country-flag__item">
-                    <img src="./img/svg/dominica.svg" alt="Доминика" width="35" height="20">
+                    <img src="./img/dominica.svg" alt="Доминика" width="35" height="20">
                     Доминика
                   </li>
                 </ul>
@@ -1157,7 +1162,7 @@
             </article>
             <article class="companion-catalog__item">
               <a class="companion-catalog__img" href="#">
-                <img src="./img/jpg/image4.jpg" alt="Лариса Роговая">
+                <img src="./img/image4.jpg" alt="Лариса Роговая">
               </a>
               <h3 class="companion-catalog__title">Лариса Роговая</h3>
               <div class="companion-catalog__likes like">
@@ -1173,11 +1178,11 @@
                 <legend class="transport__title--desktop">хочет посетить:</legend>
                 <ul class="companion-catalog__country-list country-flag__list country-flag__list--column">
                   <li class="country-flag__item">
-                    <img src="./img/svg/united-kingdom.svg" alt="Великобритания" width="35" height="20">
+                    <img src="./img/united-kingdom.svg" alt="Великобритания" width="35" height="20">
                     Великобритания
                   </li>
                   <li class="country-flag__item">
-                    <img src="./img/svg/germany.svg" alt="Германия" width="35" height="20">
+                    <img src="./img/germany.svg" alt="Германия" width="35" height="20">
                     Германия
                   </li>
                 </ul>

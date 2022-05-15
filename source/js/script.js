@@ -13,3 +13,18 @@ mainToggle.addEventListener('click', function () {
     mainHeader.classList.add("main-header--opened");
   }
 });
+
+const countryFilters = document.querySelector(".country-filters__modal");
+const countryFiltersToggle = document.querySelector(".country-filters__toggle");
+
+countryFilters.classList.remove("country-filters__modal--nojs");
+
+countryFiltersToggle.addEventListener('click', function () {
+  if (countryFilters.classList.contains("country-filters__modal--opened")) {
+    countryFilters.classList.remove("country-filters__modal--opened");
+    countryFilters.classList.add("country-filters__modal--closed");
+  } else {
+    countryFilters.classList.remove("country-filters__modal--closed");
+    countryFilters.classList.add("country-filters__modal--opened");
+  }
+});

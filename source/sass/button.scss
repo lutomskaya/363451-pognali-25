@@ -39,9 +39,10 @@
   }
 
   &--grey {
+    text-align: center;
     font-size: 20px;
     font-weight: 500;
-    background-color: $button-grey;
+    background-color: $button-grey1;
 
     &:hover,
     &:focus {

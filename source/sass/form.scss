@@ -56,7 +56,6 @@
   padding: 0;
   padding-top: 12px;
   padding-bottom: 12px;
-  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -71,12 +70,13 @@
   &::after {
     content: "";
     position: absolute;
-    top: 20px;
-    right: 0;
+    top: 16px;
+    right: 5px;
     width: 10px;
     height: 6px;
-    background-image: url("../img/svg/fildset-arrow.svg");
+    background-image: url("../img/svg/form-arrow.svg");
     background-repeat: no-repeat;
+    background-color: transparent;
   }
 
   @media (min-width: $tablet-width) {
