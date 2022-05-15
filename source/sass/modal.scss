@@ -1,4 +1,5 @@
 .modal {
+  grid-area: modal;
   width: 100%;
   margin-top: 12px;
   margin-left: 25px;
@@ -9,12 +10,12 @@
 
   color: $color-blue;
   background-color: $bacground-check;
-  box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
   border-radius: 4px;
 
   @media (min-width: $tablet-width) {
-    display: none;
-    box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
+    flex-direction: row;
+    margin-left: 15px;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {

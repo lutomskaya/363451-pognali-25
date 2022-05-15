@@ -2,7 +2,12 @@
   padding-top: 21px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 37px;
+    padding-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 22%;
+    padding-top: 0;
   }
 }
 
@@ -16,7 +21,6 @@
   border-radius: 20px;
 
   @media (min-width: $desktop-width) {
-    width: 285px;
     margin-left: auto;
   }
 }
@@ -33,9 +37,17 @@
   color: $basic-blue-light;
 
   @media (min-width: $tablet-width) {
-    padding-top: 37px;
+    padding-top: 35px;
     padding-bottom: 38px;
+    padding-left: 8px;
     font-size: 30px;
     line-height: 30px;
+    letter-spacing: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 43px;
+    padding-left: 28px;
+    padding-bottom: 0;
   }
 }

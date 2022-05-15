@@ -8,12 +8,28 @@
   background-color: $color-white;
 
   @media (min-width: $tablet-width) {
-    width: 373px;
+    width: 63%;
     padding-top: 35px;
-    padding-left: 27px;
-    padding-right: 80px;
-    padding-bottom: 33px;
-    border-right: 1px solid $background-profile;
+    padding-bottom: 63px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.country-letters__title--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-blue;
   }
 }
 
@@ -33,22 +49,40 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 51px;
-    height: 70px;
+    width: 76px;
+    height: 82px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    border: none;
+    color: rgba($basic-blue-light, 0.3);
+
+    &--current {
+      color: rgba($basic-blue-light, 1);
+      background-color: transparent;
+    }
   }
 }
 
 .country-letters__name {
-  padding-bottom: 20px;
+  padding-bottom: 28px;
   padding-top: 10px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 208px;
-    padding-top: 38px;
-    padding-left: 25px;
+    padding-top: 52px;
+    padding-left: 48px;
 
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 32%);
+    grid-template-rows: 652px 496px 452px 494px;
+    padding-top: 44px;
+    padding-left: 10px;
+    padding-bottom: 60px;
   }
 }
 
@@ -59,11 +93,17 @@
   &--current {
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-right: 3px;
+    padding-bottom: 7px;
+  }
 }
 
 .country-letters__title-item {
   @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 

@@ -24,6 +24,10 @@
       width: 288px;
       height: 8px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 126px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -38,6 +42,8 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 124px;
+    padding-top: 120px;
+    padding-bottom: 62px;
   }
 }
 
@@ -53,10 +59,6 @@
     width: 358px;
     font-size: 60px;
     line-height: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 64px;
   }
 }
 
@@ -83,6 +85,14 @@
       right: 75px;
       background-image: url("../img/svg/icon-arrow-bend.svg");
       background-repeat: no-repeat;
+
+      @media (min-width: $desktop-width) {
+        right: 123px;
+      }
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 183px;
   }
 }
