@@ -108,7 +108,7 @@
             <p class="level__description level__description--big">level</p>
           </div>
           <div class="profile__image">
-            <img src="./img/image2.jpg" alt="Петя Демин" width="100" height="100">
+            <img src="./img/jpg/image2.jpg" alt="Петя Демин" width="100" height="100">
           </div>
           <a href="#" class="profile__button button button--grey"><span class="profile__button--span">Сменить</span> фото</a>
           <fieldset class="profile__hashtags">
@@ -117,7 +117,7 @@
           </fieldset>
           <fieldset class="profile__transport transport">
             <legend class="profile__transport-title">транспорт:</legend>
-            <ul class="transport__list">
+            <ul class="transport__list profile__transport-list">
               <li class="transport__item">
                 <input  class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-plane" value="plane">
                 <label class="transport__label" for="transport-plane">
@@ -180,7 +180,7 @@
             <li class="plan__item">
               <h3 class="plan__subtitle">Франция, Италия</h3>
               <p class="plan__text"> 3 попутчика</p>
-              <p class="plan__text">
+              <p class="plan__data">
                 <time datetime="2019-03-26">26 мар</time> &mdash; <time datetime="2019-03-29">29 мар</time>
               </p>
               <a class="plan__button" href="#">Изменить</a>
@@ -188,7 +188,7 @@
             <li class="plan__item">
               <h3 class="plan__subtitle">Таиланд, Индонезия</h3>
               <p class="plan__text"> 1 попутчик</p>
-              <p class="plan__text">
+              <p class="plan__data">
                 <time datetime="2019-07-01">1 июл</time> &mdash; <time datetime="2019-07-15">15 июл</time>
               </p>
               <a href="#" class="plan__button">Изменить</a>
@@ -441,7 +441,7 @@
                     <button class="country-selected__button country-selected__button--select" type="button" name="country-add"></button>
                   </div>
                   <div class="country-selected__flag" data-tooltip="Босния и Герцеговина">
-                    <img class="country-selected__img" src="./img/bosnia-and-herzegovina.svg" alt="Боснии и Герцеговины" width="35" height="24">
+                    <img class="country-selected__img" src="./img/svg/bosnia-and-herzegovina.svg" alt="Боснии и Герцеговины" width="35" height="24">
                   </div>
                   <button class="country-selected__button country-selected__button--delete" type="button" name="country-remove">
                     <span class="visually-hidden">Удалить</span>
@@ -453,7 +453,7 @@
                     <button class="country-selected__button country-selected__button--select" type="button" name="country-add"></button>
                   </div>
                   <div class="country-selected__flag" data-tooltip="Чехия">
-                    <img class="country-selected__img" src="./img/czech.svg" alt="Чехия" width="35" height="24">
+                    <img class="country-selected__img" src="./img/svg/czech.svg" alt="Чехия" width="35" height="24">
                   </div>
                   <button class="country-selected__button country-selected__button--delete" type="button" name="country-remove">
                     <span class="visually-hidden">Удалить</span>
@@ -466,9 +466,8 @@
                       <button type="button" class="country-selected__button country-selected__button--active" aria-label="Выбрать страну"></button>
                     </div>
                     <div class="country-selected__modal">
-                      <ul class="country-selected__letters country-letters">
+                      <ul class="country-selected__letters country-letters country-letters--form">
                         <li class="country-letters__item country-letters__item--current">А
-
                         </li>
                         <li class="country-letters__item">Б
                         </li>
@@ -519,8 +518,8 @@
                         <li class="country-letters__item">Я
                         </li>
                       </ul>
-                      <div class="country-letters__name">
-                        <ul class="country-letters__title country-letters__title--current">
+                      <div class="country-letters__name country-letters__name--form">
+                        <ul class="country-selected__letters-list country-letters__title country-letters__title--current">
                           <li class="country-letters__title-item">
                             <a href="#" class="country-letters__link">Австралия</a>
                           </li>

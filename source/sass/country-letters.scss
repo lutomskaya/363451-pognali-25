@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width: 220px;
+  width: 100%;
   box-sizing: border-box;
   background-color: $color-white;
 
@@ -12,6 +12,11 @@
     padding-top: 35px;
     padding-bottom: 63px;
     background-color: transparent;
+
+    &--form {
+      width: 52%;
+      padding-top: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -48,19 +53,28 @@
     color: $color-white;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 76px;
-    height: 82px;
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 700;
-    border: none;
-    color: rgba($basic-blue-light, 0.3);
-
-    &--current {
-      color: rgba($basic-blue-light, 1);
-      background-color: transparent;
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      width: 76px;
+      height: 82px;
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 700;
+      border: none;
+      color: rgba($basic-blue-light, 0.3);
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 51px;
+    height: 69px;
+  }
+}
+
+.country-letters__item--catalog-current {
+  @media (min-width: $tablet-width) {
+    color: rgba($basic-blue-light, 1);
+    background-color: transparent;
   }
 }
 
@@ -68,6 +82,10 @@
   padding-bottom: 28px;
   padding-top: 10px;
   box-sizing: border-box;
+
+  &--form {
+    border: 1px solid $background-profile;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 52px;
@@ -102,6 +120,8 @@
 }
 
 .country-letters__title-item {
+  padding-bottom: 4px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 8px;
   }

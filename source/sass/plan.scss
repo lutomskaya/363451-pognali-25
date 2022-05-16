@@ -1,15 +1,27 @@
 .plan {
   background-color: $button-grey;
-  border-radius: 20px 20px 0 0;
+  border-radius: 30px 30px 0 0;
 }
 
 .plan__container {
   @include container;
+  position: relative;
   padding-top: 28px;
   padding-bottom: 20px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    left: 0;
+    bottom: -20px;
+    background-color: $button-grey;
+    z-index: -1;
+  }
+
   @media (min-width: $tablet-width) {
-    padding-top: 57px;
+    padding-top: 54px;
     padding-bottom: 66px;
     padding-left: 75px;
     padding-right: 75px;
@@ -33,6 +45,7 @@
   color: $basic-blue-light;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -54,7 +67,7 @@
   flex-wrap: wrap;
 
   padding-top: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   margin-bottom: 10px;
 
   background-color: $color-white;
@@ -63,7 +76,11 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    padding-top: 38px;
+    padding-left: 15px;
+    padding-right: 40px;
+    letter-spacing: 0.1em;
+    padding-bottom: 13px;
   }
 }
 
@@ -72,16 +89,19 @@
   content: counters(item, ".") ". ";
 
   position: absolute;
-  top: 24px;
-  left: 25px;
+  top: 23px;
+  left: 24px;
 
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
-    top: 30px;
-    right: 43px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    top: 42px;
+    right: 33px;
     left: auto;
   }
 
@@ -95,8 +115,10 @@
 .plan__subtitle {
   margin: 0;
   padding: 0;
-  padding-left: 45px;
+  padding-left: 25px;
+  margin-bottom: 20px;
 
+  font-size: 16px;
   line-height: 16px;
   font-weight: 700;
 
@@ -105,6 +127,7 @@
   @media (min-width: $tablet-width) {
     width: 618px;
     padding-bottom: 34px;
+    margin-bottom: 18px;
 
     font-size: 24px;
     line-height: 24px;
@@ -121,10 +144,13 @@
 }
 
 .plan__text {
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
   padding-left: 25px;
+  padding-bottom: 5px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 
@@ -133,11 +159,37 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 27px;
+
+    &:first-child {
+      padding-left: 10px;
+    }
+  }
+}
+
+.plan__data {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  padding-left: 25px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 43px;
   }
 }
 
 .plan__button {
   padding-left: 25px;
+  margin-top: 20px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
@@ -149,5 +201,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-top: 0;
+    letter-spacing: 0.1em;
+    padding-left: 85px;
   }
 }

@@ -1,12 +1,15 @@
 .companion-catalog {
   padding-top: 30px;
+  padding-bottom: 70px;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
+    padding-bottom: 109px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
+    padding-bottom: 130px;
   }
 }
 
@@ -50,8 +53,10 @@
   @media (min-width: $desktop-width) {
     width: 951px;
     padding-top: 0;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
+    padding-bottom: 0;
+    margin-bottom: 32px;
+    grid-template-columns: 1fr 204px 1fr 1fr 1fr;
+    grid-template-rows: 90px 90px 103px;
 
     grid-template-areas:
       "photo title title country country"
@@ -68,9 +73,14 @@
     padding-left: 35px;
     margin-bottom: 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
 }
 
-.companion-catalog__img img {
+.companion-catalog__image img {
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
@@ -78,9 +88,16 @@
     height: 190px;
     border-radius: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    height: 285px;
+    border-radius: initial;
+  }
 }
 
 .companion-catalog__title {
+  position: relative;
   grid-area: title;
   font-size: 20px;
   line-height: 20px;
@@ -91,6 +108,28 @@
 
   color: $basic-blue-light;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 11px;
+    right: 22px;
+    background-color: #f97676;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 8px;
+      height: 8px;
+      right: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 35px;
+      top: 55px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 30px;
@@ -98,8 +137,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 64px;
-    padding-top: 46px;
+    padding-left: 62px;
+    padding-top: 41px;
   }
 }
 
@@ -111,20 +150,23 @@
   grid-area: hashtags;
   font-size: 15px;
   margin: 0;
-  margin-top: 8px;
+  margin-top: 10px;
   margin-bottom: 13px;
-  padding-left: 36px;
-  padding-right: 20px;
+  padding-left: 26px;
+  padding-right: 50px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 23px;
+    padding-left: 36px;
+    margin-top: 6px;
   }
 
   @media (min-width: $desktop-width) {
     width: 226px;
-    padding-left: 64px;
+    padding-left: 62px;
     margin-bottom: 45px;
+    margin-top: 0;
   }
 }
 
@@ -153,6 +195,7 @@
 
   @media (min-width: $desktop-width) {
     border: none;
+    padding-left: 5px;
   }
 }
 
@@ -164,12 +207,18 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 28px;
+    padding-top: 50px;
+  }
 }
 
 .companion-catalog__transport {
   grid-area: transport;
   margin: 0;
   padding: 0;
+  padding-left: 14px;
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -181,7 +230,9 @@
 }
 
 .companion-catalog__transport-list {
-  padding-top: 10px;
+  padding-top: 18px;
+  justify-content: flex-start;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -206,6 +257,11 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding-left: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 47px;
+    padding-top: 0;
   }
 }
 
@@ -234,14 +290,18 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+  }
 }
 
 .companion-catalog__show {
   position: relative;
   display: block;
   text-align: center;
-  padding-left: 93px;
-  padding-top: 22px;
+  padding-left: 31px;
+  padding-top: 14px;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -258,6 +318,12 @@
     padding-top: 10px;
     padding-bottom: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-left: 395px;
+    padding-top: 35px;
+  }
 }
 
 .companion-catalog__show::before,
@@ -265,7 +331,7 @@
   content: "";
 
   position: absolute;
-  top: 13px;
+  top: 28px;
   left: 60px;
 
   width: 18px;
@@ -278,6 +344,11 @@
     left: 249px;
     width: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 45px;
+    left: 346px;
+  }
 }
 
 .companion-catalog__show::after {
@@ -286,5 +357,8 @@
 
 .companion-catalog__pagination {
   margin-top: 22px;
-  padding-bottom: 46px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+  }
 }

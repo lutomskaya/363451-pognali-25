@@ -28,8 +28,13 @@
   }
 
   &--big {
-    width: 100px;
-    height: 100px;
+    width: 95px;
+    height: 95px;
+
+    @media (min-width: $tablet-width) {
+      width: 90px;
+      height: 90px;
+    }
   }
 }
 

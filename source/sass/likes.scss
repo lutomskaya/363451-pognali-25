@@ -1,6 +1,5 @@
 .like {
   display: flex;
-  align-items: center;
 }
 
 .like__button {
@@ -20,6 +19,10 @@
     width: 50px;
     height: 50px;
     margin-left: 0;
+    margin-top: -8px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-top: 5px;
   }
 }
@@ -63,6 +66,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-top: 8px;
+    margin-top: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
   }
 }
