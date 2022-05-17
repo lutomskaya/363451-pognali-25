@@ -1,5 +1,9 @@
 .companion {
   background-color: $background-directions;
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-country;
+  }
 }
 
 .companion__container {
@@ -9,5 +13,6 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding-top: 105px;
   }
 }

@@ -1,6 +1,5 @@
 .like {
   display: flex;
-  align-items: center;
 }
 
 .like__button {
@@ -19,7 +18,12 @@
   @media (min-width: $tablet-width) {
     width: 50px;
     height: 50px;
-    margin-left: 10px;
+    margin-left: 0;
+    margin-top: -8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
   }
 }
 
@@ -34,11 +38,15 @@
   height: 11px;
 
   background-image: url("../img/svg/heart.svg");
+  background-repeat: no-repeat;
   background-size: 13px 11px;
 
   @media (min-width: $tablet-width) {
-    top: 20px;
-    left: 20px;
+    width: 20px;
+    height: 20px;
+    top: 17px;
+    left: 17px;
+    background-size: 20px 17px;
   }
 }
 
@@ -58,5 +66,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-top: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
   }
 }

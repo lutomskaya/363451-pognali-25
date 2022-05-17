@@ -46,7 +46,7 @@
   &--kids {
     @media (min-width: $tablet-width) {
       order: 2;
-      padding-bottom: 27px;
+      padding-bottom: 10px;
       border-top: none;
     }
 
@@ -76,7 +76,7 @@
     font-size: 20px;
     line-height: 18px;
     padding-bottom: 24px;
-    padding-top: 28px;
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,7 +102,7 @@
     font-size: 20px;
     line-height: 18px;
     padding-bottom: 24px;
-    padding-top: 28px;
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -117,7 +117,6 @@
 .plan-filters__input-wrapper {
   position: relative;
   width: 100%;
-  margin-bottom: 20px;
 
   @media (min-width: $desktop-width) {
     width: 162px;
@@ -231,7 +230,7 @@
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 0;
-    padding-top: 34px;
+    padding-top: 29px;
     padding-left: 56px;
   }
 

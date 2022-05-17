@@ -1,32 +1,70 @@
 .pagination {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 28px;
+    padding-top: 26px;
+    padding-bottom: 25px;
+    background-color: $color-white;
+    justify-content: space-between;
+    border-radius: 20px;
+  }
 }
 
 .pagination__list {
   @include reset;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .pagination__direction {
   @include reset;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+  }
 }
 
 .pagination__arrow {
+  display: block;
+  width: 135px;
+  min-height: 50px;
+  position: relative;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+  }
 }
 
 .pagination__link {
   position: relative;
 
   display: block;
-  width: 135px;
-  min-height: 50px;
+  width: 50px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: transparent;
+  color: $basic-blue-light;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 50%;
+
+  &--current {
+    background-color: $basic-yellow;
+  }
 }
 
 
-.pagination__link::before {
+.pagination__arrow::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -35,14 +73,22 @@
   width: 10px;
   height: 20px;
 
-  background-image: url("../img/page-arrows.svg");
+  background-image: url("../img/svg/page-arrows.svg");
   background-size: 10px 20px;
+
+  @media (min-width: $tablet-width) {
+    left: 3px;
+  }
 }
 
 .pagination__arrow--prev {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-right: 1px solid $background-directions;
+
+  @media (min-width: $tablet-width) {
+    border-right: 0;
+  }
 }
 
 .pagination__arrow--next {
@@ -50,6 +96,6 @@
   border-bottom-right-radius: 20px;
 }
 
-.pagination__link--next::before {
+.pagination__arrow--next::before {
   transform: rotate(180deg);
 }

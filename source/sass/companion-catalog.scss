@@ -1,5 +1,16 @@
 .companion-catalog {
-  padding-top: 28px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 109px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 130px;
+  }
 }
 
 .companion-catalog__item {
@@ -17,8 +28,8 @@
     "transport transport level"
     "button button button";
   margin-bottom: 10px;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 13px;
+  padding-bottom: 24px;
   padding-left: 0;
   padding-right: 0;
 
@@ -27,9 +38,10 @@
 
   @media (min-width: $tablet-width) {
     width: 688px;
-    padding-top: 35px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
+    padding-top: 33px;
+    margin-bottom: 38px;
+    grid-template-columns: 1fr 26% 1fr 1fr;
+    grid-template-rows: 40px 90px auto auto;
 
     grid-template-areas:
       "photo title title transport"
@@ -41,8 +53,10 @@
   @media (min-width: $desktop-width) {
     width: 951px;
     padding-top: 0;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
+    padding-bottom: 0;
+    margin-bottom: 32px;
+    grid-template-columns: 1fr 204px 1fr 1fr 1fr;
+    grid-template-rows: 90px 90px 103px;
 
     grid-template-areas:
       "photo title title country country"
@@ -57,14 +71,33 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 35px;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-bottom: 0;
   }
 }
 
-.companion-catalog__img img {
+.companion-catalog__image img {
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    height: 285px;
+    border-radius: initial;
+  }
 }
 
 .companion-catalog__title {
+  position: relative;
   grid-area: title;
   font-size: 20px;
   line-height: 20px;
@@ -75,9 +108,37 @@
 
   color: $basic-blue-light;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 11px;
+    right: 22px;
+    background-color: #f97676;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 8px;
+      height: 8px;
+      right: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 35px;
+      top: 55px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 33px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-left: 64px;
-    padding-top: 46px;
+    padding-left: 62px;
+    padding-top: 41px;
   }
 }
 
@@ -88,20 +149,31 @@
 .companion-catalog__hashtags {
   grid-area: hashtags;
   font-size: 15px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 13px;
   padding-left: 26px;
-  padding-right: 20px;
+  padding-right: 50px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+    padding-left: 36px;
+    margin-top: 6px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 226px;
-    padding-left: 64px;
+    padding-left: 62px;
     margin-bottom: 45px;
+    margin-top: 0;
   }
 }
 
 .companion-catalog legend {
   font-size: 15px;
   line-height: 16px;
-  padding-left: 10px;
+  padding-left: 13px;
   padding-right: 10px;
 
   color: $special-grey;
@@ -113,21 +185,40 @@
   border-right: none;
   border-bottom: none;
   border-color: $background-directions;
+  margin: 0;
+  padding: 0;
+  padding-left: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 25px;
+  }
 
   @media (min-width: $desktop-width) {
     border: none;
+    padding-left: 5px;
   }
 }
 
 .companion-catalog__country-list {
   padding-left: 10px;
-  padding-top: 18px;
-  padding-bottom: 12px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 28px;
+    padding-top: 50px;
+  }
 }
 
 .companion-catalog__transport {
   grid-area: transport;
   margin: 0;
+  padding: 0;
+  padding-left: 14px;
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -139,8 +230,13 @@
 }
 
 .companion-catalog__transport-list {
+  padding-top: 18px;
+  justify-content: flex-start;
+  margin-bottom: 7px;
+
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -151,6 +247,8 @@
 .companion-catalog__level {
   grid-area: level;
   margin: 0;
+  width: 45px;
+  height: 45px;
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -160,6 +258,11 @@
     border: none;
     padding-left: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 47px;
+    padding-top: 0;
+  }
 }
 
 .companion-catalog__button {
@@ -167,16 +270,38 @@
   width: 230px;
   text-align: center;
   margin: 0 20px;
+  margin-top: 10px;
+  padding-top: 12px;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 20px;
 
   @media (min-width: $tablet-width) {
     width: 150px;
     border-radius: 25px;
+    padding-top: 14px;
+    padding-bottom: 36px;
+    padding-left: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
   }
 }
 
 .companion-catalog__show {
   position: relative;
-  padding-left: 118px;
+  display: block;
+  text-align: center;
+  padding-left: 31px;
+  padding-top: 14px;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -185,6 +310,20 @@
 
   color: $basic-blue-light;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 44px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-left: 395px;
+    padding-top: 35px;
+  }
 }
 
 .companion-catalog__show::before,
@@ -192,13 +331,24 @@
   content: "";
 
   position: absolute;
-  top: 10px;
-  left: 70px;
+  top: 28px;
+  left: 60px;
 
   width: 18px;
   height: 2px;
 
   background-color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    left: 249px;
+    width: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 45px;
+    left: 346px;
+  }
 }
 
 .companion-catalog__show::after {
@@ -206,6 +356,9 @@
 }
 
 .companion-catalog__pagination {
-  margin-top: 18px;
-  padding-bottom: 46px;
+  margin-top: 22px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+  }
 }

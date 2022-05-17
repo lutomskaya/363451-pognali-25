@@ -1,9 +1,31 @@
 .mainland {
   @include reset;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-top: 62px;
+    padding-left: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
+    padding-left: 13px;
+  }
 }
 
 .mainland__item {
-  padding-left: 25px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 32px;
+  }
 }
 
 .mainland__link {
@@ -18,5 +40,10 @@
 
   &--current {
     color: $color-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
