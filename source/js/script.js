@@ -14,7 +14,7 @@ mainToggle.addEventListener('click', function () {
   }
 });
 
-const selectButton = document.querySelector(".country-selected__button--whole"); 
+const selectButton = document.querySelector(".country-selected__button--whole");
 const selectItem = document.querySelector(".country-selected__item--whole");
 
 selectButton.addEventListener('click', function () {
