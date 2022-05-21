@@ -22,3 +22,8 @@
     padding: 0 60px;
   }
 }
+
+@mixin text ($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}

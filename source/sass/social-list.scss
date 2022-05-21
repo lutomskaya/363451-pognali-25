@@ -18,6 +18,17 @@
     height: 45px;
     background-color: $basic-yellow;
 
+    &:hover,
+    &:focus {
+      background-color: $special-yellow-dark;
+    }
+
+    &:active {
+      svg {
+        opacity: 0.3;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       width: 62px;
       height: 62px;

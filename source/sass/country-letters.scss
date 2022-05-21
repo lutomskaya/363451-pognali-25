@@ -10,17 +10,27 @@
   @media (min-width: $tablet-width) {
     width: 63%;
     padding-top: 35px;
-    padding-bottom: 63px;
+    padding-bottom: 23px;
     background-color: transparent;
 
     &--form {
       width: 52%;
-      padding-top: 0;
+      padding-left: 30px;
+      padding-top: 33px;
+
+      @include text (20px, 20px);
+      font-weight: 500;
     }
   }
 
   @media (min-width: $desktop-width) {
     display: none;
+
+    &--form {
+      display: flex;
+      width: 57%;
+      padding-left: 25px;
+    }
   }
 }
 
@@ -53,6 +63,11 @@
     color: $color-white;
   }
 
+  &--current-form {
+    background-color: $background-directions;
+    color: $basic-blue-light;
+  }
+
   &--catalog {
     @media (min-width: $tablet-width) {
       width: 76px;
@@ -68,6 +83,21 @@
   @media (min-width: $tablet-width) {
     width: 51px;
     height: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    height: 70px;
+
+    &:not(:last-child) {
+      margin-right: 14px;
+      margin-bottom: 12px;
+    }
+
+    &--current-form {
+      background-color: $basic-blue-light;
+      color: $color-white;
+    }
   }
 }
 
@@ -85,6 +115,8 @@
 
   &--form {
     border: 1px solid $background-profile;
+    padding-left: 17px;
+    padding-top: 15px;
   }
 
   @media (min-width: $tablet-width) {
@@ -92,15 +124,28 @@
     padding-left: 48px;
 
     border: none;
+
+    &--form {
+      padding-top: 33px;
+      padding-left: 25px;
+      border-left: 1px solid #d6d9e6;
+      margin-left: 72px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(5, 32%);
-    grid-template-rows: 652px 496px 452px 494px;
+    row-gap: 40px;
     padding-top: 44px;
     padding-left: 10px;
     padding-bottom: 60px;
+
+    &--form {
+      display: block;
+      padding-top: 34px;
+      padding-left: 25px;
+    }
   }
 }
 
@@ -113,9 +158,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
-    padding-right: 3px;
-    padding-bottom: 7px;
+    &--catalog {
+      display: block;
+      padding-right: 3px;
+      padding-bottom: 7px;
+    }
   }
 }
 
@@ -123,7 +170,7 @@
   padding-bottom: 4px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 8px;
+    padding-bottom: 8px;
   }
 }
 

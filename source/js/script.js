@@ -14,24 +14,15 @@ mainToggle.addEventListener('click', function () {
   }
 });
 
-const countryFilters = document.querySelector(".country-filters__container");
-const countryFiltersToggle = document.querySelector(".country-filters__toggle");
+const selectButton = document.querySelector(".country-selected__button--whole"); 
+const selectItem = document.querySelector(".country-selected__item--whole");
 
-countryFilters.classList.remove(".country-filters__container--nojs");
-
-countryFiltersToggle.addEventListener('click', function () {
-  if (countryFilters.classList.contains("country-filters__container--opened")) {
-    countryFilters.classList.remove("country-filters__container--opened");
-    countryFilters.classList.add("country-filters__container--closed");
-  } else {
-    countryFilters.classList.remove("country-filters__container--closed");
-    countryFilters.classList.add("country-filters__container--opened");
-  }
+selectButton.addEventListener('click', function () {
+  if (selectItem.classList.contains("country-selected__item--closed")) {
+    selectItem.classList.remove("country-selected__item--closed");
+    selectItem.classList.add("country-selected__item--opened");
+    } else {
+      selectItem.classList.remove("country-selected__item--opened");
+      selectItem.classList.add("country-selected__item--closed");
+    }
 });
-
-const formButton = document.querySelectorAll(".form__title");
-const formList = document.querySelectorAll(".form__list");
-
-for (var j = 0; j < formList.length; j++) {
-  formList[j].classList.remove("form__list--nojs");
-}
