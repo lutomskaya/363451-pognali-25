@@ -86,135 +86,135 @@
 
 .country-selected__item--opened {
 
-  .country-selected__button--whole {
-    position: relative;
-    width: 220px;
-    padding-left: 15px;
-    padding-top: 12px;
-    letter-spacing: 0.02em;
-    color: $color-white;
-    background-color: $basic-blue-light;
+.country-selected__button--whole {
+  position: relative;
+  width: 220px;
+  padding-left: 15px;
+  padding-top: 12px;
+  letter-spacing: 0.02em;
+  color: $color-white;
+  background-color: $basic-blue-light;
 
-    &:hover::before,
-    &:hover::after {
-      opacity: 1;
-    }
+  &:hover::before,
+  &:hover::after {
+    opacity: 1;
+  }
 
-    &:active::before,
-    &:active::after {
-      opacity: 0.1;
-    }
+  &:active::before,
+  &:active::after {
+    opacity: 0.1;
+  }
 
-    &::after,
-    &::before {
-      content: "";
+  &::after,
+  &::before {
+    content: "";
 
-      position: absolute;
-      top: 20px;
-      right: 13px;
+    position: absolute;
+    top: 20px;
+    right: 13px;
 
-      z-index: 10;
+    z-index: 10;
 
-      display: block;
-      width: 13px;
-      height: 1px;
+    display: block;
+    width: 13px;
+    height: 1px;
 
-      background: none;
-      background-color: $color-white;
-      opacity: 0.3;
-    }
+    background: none;
+    background-color: $color-white;
+    opacity: 0.3;
+  }
 
-    &::before {
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 492px;
-      padding-left: 26px;
-      padding-top: 22px;
-      letter-spacing: 0.1em;
-
-      &::after,
-      &::before {
-        top: 33px;
-        right: 21px;
-
-        width: 24px;
-        height: 2px;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 730px;
-    }
+  &::before {
+    transform: rotate(45deg);
   }
 
   &::after {
-    display: none;
+    transform: rotate(-45deg);
+  }
 
-    @media (min-width: $desktop-width) {
-      display: block;
+  @media (min-width: $tablet-width) {
+    width: 492px;
+    padding-left: 26px;
+    padding-top: 22px;
+    letter-spacing: 0.1em;
+
+    &::after,
+    &::before {
+      top: 33px;
+      right: 21px;
+
+      width: 24px;
+      height: 2px;
     }
   }
 
-  .country-selected__button--delete {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
+  @media (min-width: $desktop-width) {
+    width: 730px;
   }
+}
 
-  .country-selected__modal {
-    display: flex;
+&::after {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
+}
+
+.country-selected__button--delete {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.country-selected__modal {
+  display: flex;
+}
 }
 
 .country-selected__item--closed {
 
-  .country-selected__button--whole {
-    width: 220px;
-    padding-left: 11px;
-    padding-top: 13px;
-    background-color: transparent;
-    border: 1px solid $background-profile;
-    border-radius: 4px;
+.country-selected__button--whole {
+  width: 220px;
+  padding-left: 11px;
+  padding-top: 13px;
+  background-color: transparent;
+  border: 1px solid $background-profile;
+  border-radius: 4px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 50px;
+    height: 100%;
+
+    background-image: url("../img/svg/small-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+    background-position: center right 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 492px;
+    padding-left: 26px;
+    padding-top: 22px;
 
     &::after {
-      content: "";
-
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      width: 50px;
-      height: 100%;
-
-      background-image: url("../img/svg/small-arrow.svg");
-      background-repeat: no-repeat;
-      background-size: 16px 12px;
-      background-position: center right 10px;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 492px;
-      padding-left: 26px;
-      padding-top: 22px;
-
-      &::after {
-        background-size: 20px 17px;
-        background-position: center right 26px;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 730px;
+      background-size: 20px 17px;
+      background-position: center right 26px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
+}
 }
 
 .country-selected__item:not(:last-child)::before {
