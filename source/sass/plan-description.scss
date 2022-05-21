@@ -47,7 +47,7 @@
       left: initial;
       right: -33px;
       border: none;
-      border-right: 2px solid $basic-blue-light;;
+      border-right: 2px solid $basic-blue-light;
     }
   }
 
@@ -92,7 +92,7 @@
 
   &--invalid {
     position: relative;
-    border-color: #ff0000;;
+    border-color: #ff0000;
   }
 
   &--invalid ~ .plan-description__error {

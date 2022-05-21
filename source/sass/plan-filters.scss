@@ -141,7 +141,7 @@
 
   &:hover,
   &:focus {
-    border: 1px solid #959BB2;
+    border: 1px solid #959bb2;
     outline: none;
   }
 
@@ -200,7 +200,7 @@
 .plan-filters__button--decrease {
   right: 0;
   background-image: url("../img/svg/plus.svg");
-  }
+}
 
 .plan-filters__button--increase {
   left: 0;
@@ -216,7 +216,7 @@
   line-height: 15px;
   font-weight: 400;
   text-transform: none;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   cursor: pointer;
 
   color: $basic-blue-light;
