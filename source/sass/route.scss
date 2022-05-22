@@ -88,6 +88,16 @@
   border: 3px solid $color-blue;
   box-sizing: border-box;
 
+  &:hover,
+  &:focus {
+    background-color: $color-blue;
+    color: $color-white;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 618px;
     height: 80px;

@@ -190,6 +190,15 @@
   cursor: pointer;
   border: none;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     top: 50px;
     right: 37px;
@@ -247,6 +256,14 @@
   padding-top: 10px;
   padding-left: 108px;
   letter-spacing: 0.05em;
+
+  &:active {
+    color: rgba($color-blue, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 
   &::after {
     content: "";

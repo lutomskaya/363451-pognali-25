@@ -7,6 +7,12 @@
   color: $color-white;
 }
 
+.main-header--nojs {
+  .main-header__toggle {
+    display: none;
+  }
+}
+
 .main-header--opened,
 .main-header--nojs {
   background-color: $color-white;

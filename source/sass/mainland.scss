@@ -42,6 +42,15 @@
     color: $color-blue;
   }
 
+  &:hover,
+  &:focus {
+    color: rgba($color-blue, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-blue, 1);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;

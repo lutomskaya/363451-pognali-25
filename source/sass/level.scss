@@ -1,21 +1,23 @@
 .level {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  border: 3px solid $special-orange;
   background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-size: 56px;
+  background-position: 0 0;
+
   color: $color-white;
 
   &--catalog {
-    width: 40px;
-    height: 40px;
-    margin-left: 11px;
-    margin-top: 5px;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    margin-top: 10px;
     background-color: $color-white;
     color: $basic-blue-light;
 
@@ -28,33 +30,65 @@
   }
 
   &--big {
-    width: 95px;
-    height: 95px;
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
 
     @media (min-width: $tablet-width) {
-      width: 90px;
-      height: 90px;
+      background-size: 93px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--80 {
+      background-image: url("../img/svg/level-80-tablet.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--80 {
+      background-image: url("../img/svg/level-80-desktop.svg");
+    }
+  }
+}
+
+.level__svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  fill: transparent;
+
+  &--25 {
+    width: 26px;
+    top: -7px;
+    left: 21px;
+  }
+
+  &--50 {
+    left: 10px;
+    top: 6px;
   }
 }
 
 .level__number {
   position: relative;
   margin: 0;
+  padding-top: 11px;
+  padding-left: 8px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    top: 23px;
-    left: -3px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
+  border-bottom: 1px solid rgba($color-white, 0.3);
 
   &--big {
+    padding-top: 18px;
+    margin-left: 27px;
+    margin-right: 27px;
     font-size: 38px;
     line-height: 38px;
     font-weight: 700;
@@ -62,15 +96,25 @@
     color: $basic-blue;
     border-bottom: 1px solid rgba($special-grey, 0.3);
   }
+
+  @media (min-width: $desktop-width) {
+    &--form {
+      color: $color-white;
+      border-bottom: 1px solid rgba($color-white, 0.3);
+    }
+  }
 }
 
 .level__description {
   margin: 0;
+  padding-left: 15px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
 
   &--big {
+    padding-left: 35px;
+    padding-top: 7px;
     font-size: 18px;
     line-height: 18px;
 
@@ -79,5 +123,14 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--form {
+      display: block;
+      color: $color-white;
+      padding-left: 32px;
+      padding-top: 4px;
+    }
   }
 }

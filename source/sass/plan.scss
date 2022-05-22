@@ -1,12 +1,16 @@
 .plan {
   background-color: $button-grey;
   border-radius: 30px 30px 0 0;
+
+  @media (min-width: $desktop-width) {
+    border-radius: 60px 60px 0 0;
+  }
 }
 
 .plan__container {
   @include container;
   position: relative;
-  padding-top: 28px;
+  padding-top: 25px;
   padding-bottom: 20px;
 
   &::before {
@@ -28,10 +32,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 54px;
-    padding-bottom: 64px;
-    padding-left: 131px;
-    padding-right: 131px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 128px;
+    padding-right: 60px;
+
+    &::before {
+      height: 50px;
+      bottom: -50px;
+    }
   }
 }
 
@@ -51,7 +60,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 49px;
+    margin-bottom: 55px;
   }
 }
 
@@ -82,6 +91,12 @@
     letter-spacing: 0.1em;
     padding-bottom: 13px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-bottom: 21px;
+    margin-bottom: 18px;
+  }
 }
 
 .plan__item::before {
@@ -106,8 +121,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 43px;
-    left: 43px;
+    top: 35px;
+    left: 38px;
     right: auto;
   }
 }
@@ -115,7 +130,7 @@
 .plan__subtitle {
   margin: 0;
   padding: 0;
-  padding-left: 25px;
+  padding-left: 42px;
   margin-bottom: 20px;
 
   font-size: 16px;
@@ -127,18 +142,21 @@
   @media (min-width: $tablet-width) {
     width: 618px;
     padding-bottom: 34px;
+    padding-left: 25px;
     margin-bottom: 18px;
 
     font-size: 24px;
     line-height: 24px;
+    letter-spacing: 0;
 
     border-bottom: 1px solid $background-profile;
   }
 
   @media (min-width: $desktop-width) {
-    width: 350px;
-    padding-left: 95px;
+    width: 508px;
+    padding-left: 74px;
     padding-bottom: 0;
+    padding-top: 5px;
     border: none;
   }
 }
@@ -198,11 +216,20 @@
   letter-spacing: 0.03em;
   color: rgba($color-black, 0.3);
 
+  &:hover,
+  &:focus {
+    color: rgba($color-black, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-black, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     margin-top: 0;
+    margin-left: auto;
     letter-spacing: 0.1em;
-    padding-left: 85px;
   }
 }

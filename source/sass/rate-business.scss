@@ -1,30 +1,123 @@
 .rate-business {
-  margin: 0 25px;
-  padding: 25px;
-  width: 270px;
-  box-sizing: border-box;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  left: 50%;
+  bottom: 0;
+  min-width: 270px;
+  height: 465px;
+  margin: 0 auto;
+  padding-top: 34px;
   background-color: $color-white;
   border-radius: 20px;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+  box-sizing: border-box;
+  z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    height: 526px;
+    padding-top: 54px;
+    box-shadow: 0 4px 22px rgba(29, 46, 91, 0.18);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 750px;
+  }
 }
 
 .rate-business__title {
   margin: 0;
   padding: 0;
-  padding-top: 34px;
+  padding-bottom: 25px;
 
-  font-size: 24px;
-  line-height: 24px;
+  @include text (24px, 24px);
   font-weight: 700;
   text-align: center;
 
   color: $special-orange;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+
+    @include text (45px, 45px);
+  }
 }
 
 .rate-business__list {
   @include reset;
+  width: calc(100% - 50px);
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 180px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 100px);
+  }
+}
+
+.rate-business__item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include text (16px, 22px);
+  font-weight: 300;
+
+  color: $special-grey;
+  border-bottom: 1px solid rgba($color-black, 0.05);
+
+  &:first-child {
+    border-top: 1px solid rgba($color-black, 0.05);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 15px;
+
+    @include text (22px, 28px);
+  }
+}
+
+.rate-business__name {
+  margin: 0;
+  padding: 0;
+}
+
+.rate-business__price {
+  margin: 0;
+  padding: 0;
 }
 
 .rate-business__button {
   width: 100%;
-  border: none;
+  padding: 18px;
+  margin-top: auto;
+
+  @include text (16px, 24px);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: $basic-blue-light;
+  background-color: #f3f4f8;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $background-directions;
+  }
+
+  &:active {
+    color: rgba($basic-blue-light, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    @include text (24px, 24px);
+    text-transform: inherit;
+  }
 }

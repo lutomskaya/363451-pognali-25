@@ -37,6 +37,15 @@
   position: relative;
   background-color: $color-white;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 40px;
   }
@@ -58,11 +67,16 @@
   padding-bottom: 15px;
   border-radius: 50%;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
   &--current {
     background-color: $basic-yellow;
+    opacity: 1;
   }
 }
-
 
 .pagination__arrow::before {
   content: "";

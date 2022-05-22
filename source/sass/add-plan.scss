@@ -2,6 +2,15 @@
   background-color: $background-plan;
   border-radius: 30px 30px 0 0;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 60px 60px 0 0;
+    padding-bottom: 80px;
+  }
 }
 
 .add-plan__container {
@@ -19,16 +28,21 @@
 }
 
 .add-plan__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 28px;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     padding-top: 49px;
     padding-bottom: 5px;
     align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -49,6 +63,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 69px;
+    padding-top: 50px;
   }
 }
 
@@ -58,6 +73,9 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    position: absolute;
+    top: 250px;
+    right: 190px;
   }
 }
 
@@ -125,7 +143,10 @@
 }
 
 .add-plan__item {
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 22px;
+  padding-bottom: 13px;
   border-radius: 10px;
   background-color: $color-white;
   margin-bottom: 10px;
@@ -134,13 +155,14 @@
     border-radius: 30px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 58px;
-    margin-bottom: 39px;
+    padding-bottom: 56px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 159px;
     padding-right: 159px;
+    padding-bottom: 56px;
 
     border-radius: 60px;
   }
@@ -156,14 +178,14 @@
   color: $basic-blue-light;
 
   @media (min-width: $tablet-width) {
-    padding-top: 18px;
+    padding-top: 20px;
     padding-bottom: 23px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 98px;
+    padding-top: 70px;
   }
 
   &--break {
@@ -177,7 +199,7 @@
   position: relative;
   padding: 0;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 23px;
   color: $special-grey;
 
   @media (min-width: $tablet-width) {
@@ -201,6 +223,7 @@
 
   @media (min-width: $desktop-width) {
     width: 581px;
+    padding-bottom: 55px;
 
     &::after {
       width: 998px;
@@ -225,9 +248,14 @@
   border-bottom: 1px solid $background-directions;
 
   @media (min-width: $tablet-width) {
-    padding-top: 27px;
+    padding-top: 10px;
     padding-bottom: 27px;
     margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 22px;
+    margin-bottom: 15px;
   }
 }
 
@@ -235,28 +263,27 @@
   width: 18px;
   height: 18px;
 
-  background-repeat: no-repeat;
-  background-color: transparent;
   opacity: 0.3;
   border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 35px;
-    height: 35px;
-    background-size: 19px 34px;
+    & svg {
+      width: 35px;
+      height: 35px;
+      background-size: 19px 34px;
+    }
   }
-}
-
-.add-plan__calendar-button--back {
-  background-image: url("../img/svg/arr-left.svg");
-
-  @media (min-width: $tablet-width) {
-    background-position: 18px;
-  }
-}
-
-.add-plan__calendar-button--next {
-  background-image: url("../img/svg/arr-right.svg");
 }
 
 .add-plan__calendar-name {
@@ -273,6 +300,9 @@
 }
 
 .add-plan__link {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 0;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -282,20 +312,72 @@
 
   color: $basic-blue-light;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: rgba($basic-blue-light, 0.7);
+
+    &::before {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    color: rgba($basic-blue-light, 0.3);
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 47%;
+    padding-top: 26px;
+    font-size: 24px;
+    line-height: 22px;
+    text-align: right;
+    text-transform: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 30px;
+      left: 70px;
+      width: 12px;
+      height: 15px;
+      background-image: url("../img/svg/polygon.svg");
+      transform: rotate(180deg);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 18%;
+  }
 }
 
 .add-plan__buttons-wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    padding-top: 3px;
+  }
 }
 
 .add-plan__button-next {
   position: relative;
-  font-size: 17px;
-  line-height: 30px;
   text-transform: uppercase;
   padding-top: 5px;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
 
+  @include text (17px, 30px);
+  font-family: "Blogger Sans", "Arial", sans-serif;
   text-align: center;
   border-radius: 20px;
 
@@ -303,6 +385,7 @@
     width: 53%;
     padding-left: 34px;
     padding-top: 24px;
+    padding-bottom: 20px;
     text-align: left;
     font-size: 24px;
     line-height: 24px;
@@ -326,5 +409,8 @@
 
   @media (min-width: $desktop-width) {
     width: 286px;
+    padding-top: 27px;
+    padding-bottom: 31px;
+    margin-bottom: 50px;
   }
 }
