@@ -14,6 +14,20 @@ mainToggle.addEventListener('click', function () {
   }
 });
 
+const rateButton = document.querySelector(".rate__button");
+const modalBusiness = document.querySelector(".modal-business");
+const rateButtonClose = document.querySelector(".rate-business__button");
+
+rateButton.addEventListener('click', function (event) {
+  event.preventDefault();
+  modalBusiness.classList.add('modal-business__open')
+  })
+
+rateButtonClose.addEventListener('click', function (event) {
+  event.preventDefault();
+  modalBusiness.classList.remove('modal-business__open')
+  })
+
 const selectButton = document.querySelector(".country-selected__button--whole");
 const selectItem = document.querySelector(".country-selected__item--whole");
 
