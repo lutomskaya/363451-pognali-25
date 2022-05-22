@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon32.ico"> <!-- 32×32 -->
+    <link rel="icon" href="favicon16.ico"> <!-- 16×16 -->
   </head>
   <body class="page__body">
-    <header class="main-header main-header--opened main-header--nojs">
+    <header class="main-header main-header--closed main-header--index main-header--nojs">
       <div class="main-header__container">
-        <a class="main-header__logo">
-          <picture class="main-header__logo-image">
+        <a class="main-header__logo" href="./index.html">
+          <picture>
             <source media="(min-width: 1200px)" srcset="./img/svg/logo_full.svg">
             <source media="(min-width: 768px)" srcset="./img/svg/logo_full.svg">
-            <img src="./img/svg/logo_mobile.svg" alt="логотип сайта Погнали">
+            <img  class="main-header__logo-image--dark" src="./img/svg/logo_mobile.svg" alt="логотип сайта Погнали">
           </picture>
-          <picture class="main-header__logo-image--dark">
-            <source media="(min-width: 1200px)" srcset="./img/svg/logo_full--dark.svg">
-            <source media="(min-width: 768px)" srcset="./img/svg/logo_full--dark.svg">
-            <img src="./img/svg/logo_mobile--dark.svg" alt="логотип сайта Погнали">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/svg/logo_full--white.svg">
+            <source media="(min-width: 768px)" srcset="./img/svg/logo_full--white.svg">
+            <img  class="main-header__logo-image--white" src="./img/svg/logo_mobile--white.svg" alt="логотип сайта Погнали">
           </picture>
         </a>
         <button class="main-header__toggle" type="button">
@@ -767,7 +769,7 @@
                   <ul class="form__list form__list--nojs form__list--closed">
                     <li class="form__item">
                       <label class="form__label" for="hobby-sport">Спортзал</label>
-                      <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="hobby" id="hobby-sport" value="sport" checked>
+                      <input class="visually-hidden form__input" type="checkbox" name="hobby" id="hobby-sport" value="sport" checked>
                     </li>
                     <li class="form__item">
                       <label class="form__label" for="hobby-smoke">Кальян</label>
@@ -790,11 +792,11 @@
                     </li>
                     <li class="form__item">
                       <label class="form__label" for="music-rap">Русский рэп</label>
-                      <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="music" id="music-rap" value="rap">
+                      <input type="checkbox" class="visually-hidden form__input" name="music" id="music-rap" value="rap">
                     </li>
                     <li class="form__item">
                       <label class="form__label" for="music-dance">Евроденс</label>
-                      <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="music" id="music-dance" value="dance">
+                      <input type="checkbox" class="visually-hidden form__input" name="music" id="music-dance" value="dance">
                     </li>
                   </ul>
                 </fieldset>
@@ -805,15 +807,15 @@
                   <ul class="form__list form__list--nojs form__list--closed">
                     <li class="form__item">
                       <label class="form__label" for="food-meat">Мясоед</label>
-                      <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="food" id="food-meat" value="meat" checked>
+                      <input type="checkbox" class="visually-hidden form__input" name="food" id="food-meat" value="meat" checked>
                     </li>
                     <li class="form__item">
                       <label class="form__label" for="food-pp">Сидит на ПП</label>
-                      <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="food" id="food-pp" value="pp">
+                      <input type="checkbox" class="visually-hidden form__input" name="food" id="food-pp" value="pp">
                     </li>
                     <li class="form__item">
                       <label class="form__label" for="food-vegan">Веган-сыроед</label>
-                      <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="food" id="food-vegan" value="vegan">
+                      <input type="checkbox" class="visually-hidden form__input" name="food" id="food-vegan" value="vegan">
                     </li>
                   </ul>
                 </fieldset>
@@ -902,6 +904,9 @@
             <article class="companion-catalog__item">
               <a class="companion-catalog__img" href="#">
                 <picture class="companion-catalog__image">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/companions/firsova-desktop.webp 1x, ./img/companions/firsova-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/companions/firsova-tablet.webp 1x, ./img/companions/firsova-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/companions/firsova-mobile.webp 1x, ./img/companions/firsova-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="./img/companions/firsova-desktop.png 1x, ./img/companions/firsova-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="./img/companions/firsova-tablet.png 1x, ./img/companions/firsova-tablet@2x.png 2x">
                   <img src="./img/companions/firsova-mobile.png" srcset="./img/companions/firsova-mobile@2x.png 2x" alt="Таня Фирсова.">
@@ -989,10 +994,11 @@
               <fieldset class="companion-catalog__level">
                 <legend class="companion-catalog__description">левел:</legend>
                 <div class="level level--99 level--catalog">
-                  <svg class="level__svg" width="46" height="45">
+                  <svg class="level__svg level__svg--99" width="46" height="45">
                     <use xlink:href="./img/svg/sprite.svg#level-99"></use>
                   </svg>
-                  <p class="level__number">99</p>
+                  <p class="level__number level__number--catalog">99</p>
+                  <p class="level__description--catalog">level</p>
                 </div>
               </fieldset>
               <a href="#" class="companion-catalog__button button">Позвать!</a>
@@ -1000,6 +1006,9 @@
             <article class="companion-catalog__item">
               <a class="companion-catalog__img" href="#">
                 <picture class="companion-catalog__image">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/companions/demin-desktop.webp 1x, ./img/companions/demin-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/companions/demin-tablet.webp 1x, ./img/companions/demin-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/companions/demin-mobile.webp 1x, ./img/companions/demin-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="./img/companions/demin-desktop.png 1x, ./img/companions/demin-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="./img/companions/demin-tablet.png 1x, ./img/companions/demin-tablet@2x.png 2x">
                   <img src="./img/companions/demin-mobile.png" srcset="./img/companions/demin-mobile@2x.png 2x" alt="Петя Демин.">
@@ -1082,10 +1091,11 @@
               <fieldset class="companion-catalog__level">
                 <legend class="companion-catalog__description">левел:</legend>
                 <div class="level level--80 level--catalog">
-                  <svg class="level__svg" width="46" height="45">
+                  <svg class="level__svg level__svg--99" width="46" height="45">
                     <use xlink:href="./img/svg/sprite.svg#level-80"></use>
                   </svg>
-                  <p class="level__number">80</p>
+                  <p class="level__number level__number--catalog">80</p>
+                  <p class="level__description--catalog">level</p>
                 </div>
               </fieldset>
               <a href="#" class="companion-catalog__button button">Позвать!</a>
@@ -1093,6 +1103,9 @@
             <article class="companion-catalog__item">
               <a class="companion-catalog__img" href="#">
                 <picture class="companion-catalog__image">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/companions/smolov-desktop.webp 1x, ./img/companions/smolov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/companions/smolov-tablet.webp 1x, ./img/companions/smolov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/companions/smolov-mobile.webp 1x, ./img/companions/smolov-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="./img/companions/smolov-desktop.png 1x, ./img/companions/smolov-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="./img/companions/smolov-tablet.png 1x, ./img/companions/smolov-tablet@2x.png 2x">
                   <img src="./img/companions/smolov-mobile.png" srcset="./img/companions/smolov-mobile@2x.png 2x" alt="Марк Смолов.">
@@ -1183,7 +1196,8 @@
                   <svg class="level__svg level__svg--25" width="25" height="24">
                     <use xlink:href="./img/svg/sprite.svg#level-25"></use>
                   </svg>
-                  <p class="level__number">25</p>
+                  <p class="level__number level__number--catalog">25</p>
+                  <p class="level__description--catalog">level</p>
                 </div>
               </fieldset>
               <a href="#" class="companion-catalog__button button">Позвать!</a>
@@ -1191,6 +1205,9 @@
             <article class="companion-catalog__item">
               <a class="companion-catalog__img" href="#">
                 <picture class="companion-catalog__image">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/companions/rogova-desktop.webp 1x, ./img/companions/rogova-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/companions/rogova-tablet.webp 1x, ./img/companions/rogova-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/companions/rogova-mobile.webp 1x, ./img/companions/rogova-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="./img/companions/rogova-desktop.png 1x, ./img/companions/rogova-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="./img/companions/rogova-tablet.png 1x, ./img/companions/rogova-tablet@2x.png 2x">
                   <img src="./img/companions/rogova-mobile.png" srcset="./img/companions/rogova-mobile@2x.png 2x" alt="Лариса Роговая.">
@@ -1276,7 +1293,8 @@
                   <svg class="level__svg level__svg--50" width="25" height="47">
                     <use xlink:href="./img/svg/sprite.svg#level-50"></use>
                   </svg>
-                  <p class="level__number">50</p>
+                  <p class="level__number level__number--catalog">50</p>
+                  <p class="level__description--catalog">level</p>
                 </div>
               </fieldset>
               <a href="#" class="companion-catalog__button button">Позвать!</a>
@@ -1315,7 +1333,7 @@
         <h3 class="visually-hidden">Footer</h3>
         <a href="#" class="footer__logo logo">
           <picture class="logo__image">
-            <source media="(min-width: 1200px)" srcset="./img/svg/logo_full.svg">
+            <source media="(min-width: 1440px)" srcset="./img/svg/logo_full.svg">
             <source media="(min-width: 768px)" srcset="./img/svg/logo_full.svg">
             <img src="./img/svg/logo_mobile.svg" alt="логотип сайта Погнали">
           </picture>

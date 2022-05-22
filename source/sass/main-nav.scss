@@ -74,7 +74,7 @@
     }
 
     &:active {
-      color: $link-opacity;
+      color: rgba($basic-blue, 0.3);
     }
 
     @media (min-width: $tablet-width) {

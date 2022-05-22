@@ -26,8 +26,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
-    padding-bottom: 35px;
+    padding-top: 65px;
+    padding-bottom: 40px;
     padding-left: 75px;
     padding-right: 75px;
     justify-content: space-between;
@@ -67,7 +67,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 85px;
+    padding-top: 125px;
     padding-left: 75px;
     border-radius: 0 0 60px 60px;
 
@@ -104,16 +104,8 @@
   }
 }
 
-/* .profile__image img {
-  border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    border-radius: 10px;
-    padding-top: 4px;
-  }
-} */
-
 .profile__level {
+  position: relative;
   background-color: transparent;
 
   @media (min-width: $desktop-width) {

@@ -45,7 +45,7 @@
     width: 50px;
     height: 50px;
     margin-left: 0;
-    margin-top: -8px;
+    margin-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,6 +84,7 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  padding-top: 7px;
 
   color: $basic-blue;
 
@@ -92,10 +93,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-top: -10px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 20px;
+    padding-top: 25px;
   }
 }

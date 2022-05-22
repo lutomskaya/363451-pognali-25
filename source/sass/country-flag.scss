@@ -4,6 +4,12 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+
+  &--index {
+    width: 145px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
 
 .country-flag__list--column {
