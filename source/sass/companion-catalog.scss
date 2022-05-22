@@ -36,6 +36,11 @@
   background-color: $color-white;
   border-radius: 20px;
 
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+  }
+
   @media (min-width: $tablet-width) {
     width: 688px;
     padding-top: 33px;
@@ -322,6 +327,21 @@
 
   color: $basic-blue-light;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

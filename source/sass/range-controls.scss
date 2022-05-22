@@ -148,6 +148,17 @@
   border-radius: 50%;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    width: 19px;
+    height: 19px;
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
+  }
+
+
   @media (min-width: $tablet-width) {
     width: 13px;
     height: 13px;

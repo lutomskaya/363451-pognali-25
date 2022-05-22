@@ -12,8 +12,34 @@
   margin-left: -25px;
   flex-shrink: 0;
 
-  background-color: $background-like;
   border-radius: 50%;
+
+  &:hover,
+  :focus {
+    background-color: $background-country;
+  }
+
+  &:active::after {
+    opacity: 0.1;
+  }
+
+  &--active {
+    background-color: $background-like;
+
+    &:hover,
+    &:focus {
+      background-color: #f9d8d8;
+    }
+
+    &:active {
+      background-color: #f9d8d8;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
+  }
+
 
   @media (min-width: $tablet-width) {
     width: 50px;
