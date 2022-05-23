@@ -1,5 +1,4 @@
 .level {
-  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -38,18 +37,6 @@
       background-size: 93px;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    &--80 {
-      background-image: url("../img/svg/level-80-tablet.svg");
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--80 {
-      background-image: url("../img/svg/level-80-desktop.svg");
-    }
-  }
 }
 
 .level__svg {
@@ -63,15 +50,60 @@
   bottom: 0;
   fill: transparent;
 
+  &--99 {
+    width: 46px;
+    top: 4px;
+    left: 10px;
+  }
+
   &--25 {
     width: 26px;
     top: -7px;
-    left: 21px;
+    left: 29px;
   }
 
   &--50 {
-    left: 10px;
-    top: 6px;
+    width: 26px;
+    left: 26px;
+    top: 8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--99 {
+      width: 64px;
+      top: -7px;
+      left: 42px;
+    }
+
+    &--25 {
+      width: 36px;
+      top: -14px;
+      left: 72px;
+    }
+
+    &--50 {
+      width: 34px;
+      left: 70px;
+      top: -6px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--99 {
+      top: -18px;
+      left: 33px;
+    }
+
+    &--25 {
+      width: 31px;
+      top: -32px;
+      left: 65px;
+    }
+
+    &--50 {
+      left: 64px;
+      top: -15px;
+    }
   }
 }
 
@@ -79,7 +111,7 @@
   position: relative;
   margin: 0;
   padding-top: 11px;
-  padding-left: 8px;
+  padding-left: 13px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
@@ -95,6 +127,18 @@
 
     color: $basic-blue;
     border-bottom: 1px solid rgba($special-grey, 0.3);
+  }
+
+  &--form {
+    padding-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--catalog {
+      padding-top: 15px;
+      padding-left: 4px;
+      border-bottom: 1px solid rgba($special-grey, 0.3);
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -121,8 +165,18 @@
     color: $special-grey;
   }
 
+  &--catalog {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
+
+    &--catalog {
+      display: block;
+      margin: 0;
+      color: rgba($color-black, 0.3);
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -202,6 +202,10 @@
   margin-bottom: 23px;
   color: $special-grey;
 
+  &--second {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     padding-bottom: 38px;

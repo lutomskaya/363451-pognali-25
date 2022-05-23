@@ -36,7 +36,7 @@
   padding-left: 49px;
   padding-right: 52px;
   margin: 0 auto;
-  background-image: url("../img/png/about-mobile.png");
+  background-image: url("../img/background/about-mobile.png");
   background-repeat: no-repeat;
   box-sizing: border-box;
 
@@ -45,16 +45,15 @@
     padding-top: 38px;
     padding-left: 75px;
 
-    background-image: url("../img/png/about-tablet.png");
+    background-image: url("../img/background/about-tablet.png");
     background-position: right 7px top 48px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 88px;
     padding-bottom: 163px;
     padding-left: 130px;
 
-    background-image: url("../img/png/about-desktop.png");
+    background-image: url("../img/background/about-desktop.png");
     background-position: top 0 right 60px;
   }
 }

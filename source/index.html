@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link href="./css/style.css" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="favicon32.ico"> <!-- 32×32 -->
+    <link rel="icon" href="favicon16.ico"> <!-- 16×16 -->
   </head>
   <body class="page__body">
-    <header class="main-header main-header--opened main-header--nojs">
+    <header class="main-header main-header--closed main-header--index main-header--nojs">
       <div class="main-header__container">
         <a class="main-header__logo">
-          <picture class="main-header__logo-image">
+          <picture>
             <source media="(min-width: 1200px)" srcset="./img/svg/logo_full.svg">
             <source media="(min-width: 768px)" srcset="./img/svg/logo_full.svg">
-            <img src="./img/svg/logo_mobile.svg" alt="логотип сайта Погнали">
+            <img  class="main-header__logo-image--dark" src="./img/svg/logo_mobile.svg" alt="логотип сайта Погнали">
           </picture>
-          <picture class="main-header__logo-image--dark">
-            <source media="(min-width: 1200px)" srcset="./img/svg/logo_full--dark.svg">
-            <source media="(min-width: 768px)" srcset="./img/svg/logo_full--dark.svg">
-            <img src="./img/svg/logo_mobile--dark.svg" alt="логотип сайта Погнали">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/svg/logo_full--white.svg">
+            <source media="(min-width: 768px)" srcset="./img/svg/logo_full--white.svg">
+            <img  class="main-header__logo-image--white" src="./img/svg/logo_mobile--white.svg" alt="логотип сайта Погнали">
           </picture>
         </a>
         <button class="main-header__toggle" type="button">
@@ -157,6 +158,8 @@
           <ul class="directions__list">
             <li class="directions__item">
               <picture class="directions__image">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/webp/thailand-desktop.webp 1x, ./img/webp/thailand-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="./img/webp/thailand-mobile.webp 1x, ./img/webp/thailand-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="./img/png/thailand-desktop.png 1x, ./img/png/thailand-desktop@2x.png 2x">
                 <img src="./img/png/thailand-mobile.png" srcset="./img/png/thailand-mobile@2x.png 2x" alt="Таиланд.">
               </picture>
@@ -172,6 +175,8 @@
             </li>
             <li class="directions__item">
               <picture class="directions__image">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/webp/france-desktop.webp 1x, ./img/webp/france-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="./img/webp/france-mobile.webp 1x, ./img/webp/france-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="./img/png/france-desktop.png 1x, ./img/png/france-desktop@2x.png 2x">
                 <img src="./img/png/france-mobile.png" srcset="./img/png/france-mobile@2x.png 2x" alt="Франция.">
               </picture>
@@ -188,6 +193,8 @@
             </li>
             <li class="directions__item">
               <picture class="directions__image">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/webp/czech-desktop.webp 1x, ./img/webp/czech-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="./img/webp/czech-mobile.webp 1x, ./img/webp/czech-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="./img/png/czech-desktop.png 1x, ./img/png/czech-desktop@2x.png 2x">
                 <img src="./img/png/czech-mobile.png" srcset="./img/png/czech-mobile@2x.png 2x" alt="Чехия.">
               </picture>
@@ -213,16 +220,21 @@
           <p class="companions__text--bold">Теперь можно легко найти&nbsp;единомышленников!</p>
           <ul class="companions__list">
             <li class="companions__item">
-              <div class="companions__level level">
+              <div class="companions__level level level--99">
+                <svg class="level__svg" width="46" height="45">
+                  <use xlink:href="./img/svg/sprite.svg#level-99"></use>
+                </svg>
                 <p class="level__number">99</p>
                 <p class="level__description">level</p>
               </div>
               <picture class="companions__image">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/webp/firsova-tablet.webp 1x, ./img/webp/firsova-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/webp/firsova-mobile.webp 1x, ./img/webp/firsova-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="./img/png/firsova-tablet.png 1x, ./img/png/firsova-tablet@2x.png 2x">
                 <img src="./img/png/firsova-mobile.png" srcset="./img/png/firsova-mobile@2x.png 2x" alt="Таня Фирсова.">
               </picture>
               <div class="companions__country country-flag">
-                <ul class="companions__list country-flag__list">
+                <ul class="country-flag__list country-flag__list--index">
                   <li class="country-flag__item tooltip">
                     <img src="./img/flags/sri-lanka-tablet.svg" alt="Шри-Ланка" width="35" height="25">
                     <span class="tooltip__text">Шри-Ланка</span>
@@ -294,15 +306,20 @@
             </li>
             <li class="companions__item">
               <div class="companions__level level level--80">
+                <svg class="level__svg" width="46" height="45">
+                    <use xlink:href="./img/svg/sprite.svg#level-80"></use>
+                </svg>
                 <p class="level__number">80</p>
                 <p class="level__description">level</p>
               </div>
               <picture class="companions__image">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/webp/demin-tablet.webp 1x, ./img/webp/demin-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/webp/demin-mobile.webp 1x, ./img/webp/demin-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="./img/png/demin-tablet.png 1x, ./img/png/demin-tablet@2x.png 2x">
                 <img src="./img/png/demin-mobile.png" srcset="./img/png/demin-mobile@2x.png 2x" alt="Петя Демин.">
               </picture>
               <div class="companions__country country-flag">
-                <ul class="companions__list country-flag__list">
+                <ul class="country-flag__list">
                   <li class="country-flag__item tooltip">
                     <img src="./img/flags/belgium-tablet.svg" alt="Бельгия" width="35" height="25">
                     <span class="tooltip__text">Бельгия</span>
@@ -461,7 +478,7 @@
         <iframe class="map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586828!2d30.32085335172623!3d59.93871648178729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1651674835775!5m2!1sru!2sru" width="320" height="424" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта"></iframe>
       </section>
     </main>
-    <section class="footer">
+    <section class="footer footer--index">
       <div class="footer__container">
         <h3 class="visually-hidden">Footer</h3>
         <a href="#" class="footer__logo logo">

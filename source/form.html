@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon32.ico"> <!-- 32×32 -->
+    <link rel="icon" href="favicon16.ico"> <!-- 16×16 -->
   </head>
   <body class="page__body">
-    <header class="main-header main-header--opened main-header--nojs">
+    <header class="main-header main-header--closed main-header--index main-header--nojs">
       <div class="main-header__container">
-        <a class="main-header__logo">
-          <picture class="main-header__logo-image">
+        <a class="main-header__logo" href="./index.html">
+          <picture>
             <source media="(min-width: 1200px)" srcset="./img/svg/logo_full.svg">
             <source media="(min-width: 768px)" srcset="./img/svg/logo_full.svg">
-            <img src="./img/svg/logo_mobile.svg" alt="логотип сайта Погнали">
+            <img  class="main-header__logo-image--dark" src="./img/svg/logo_mobile.svg" alt="логотип сайта Погнали">
           </picture>
-          <picture class="main-header__logo-image--dark">
-            <source media="(min-width: 1200px)" srcset="./img/svg/logo_full--dark.svg">
-            <source media="(min-width: 768px)" srcset="./img/svg/logo_full--dark.svg">
-            <img src="./img/svg/logo_mobile--dark.svg" alt="логотип сайта Погнали">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/svg/logo_full--white.svg">
+            <source media="(min-width: 768px)" srcset="./img/svg/logo_full--white.svg">
+            <img  class="main-header__logo-image--white" src="./img/svg/logo_mobile--white.svg" alt="логотип сайта Погнали">
           </picture>
         </a>
         <button class="main-header__toggle" type="button">
@@ -110,11 +112,17 @@
         </div>
         <div class="profile__container">
           <div class="profile__level level level--big level--80">
+            <svg class="level__svg level__svg--80" width="46" height="45">
+              <use xlink:href="./img/svg/sprite.svg#level-80"></use>
+            </svg>
             <p class="level__number level__number--form level__number--big">80</p>
             <p class="level__description level__description--form level__description--big">level</p>
           </div>
           <picture class="profile__image">
-            <source media="(min-width: 1200px)" srcset="./img/avatars/demin-desktop.png 1x, ./img/avatars/demin-desktop@2x.png 2x">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="./img/avatars/demin-desktop.webp 1x, ./img/avatars/demin-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/avatars/demin-tablet.webp 1x, ./img/avatars/demin-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/avatars/demin-mobile.webp 1x, ./img/avatars/demin-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="./img/avatars/demin-desktop.png 1x, ./img/avatars/demin-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="./img/avatars/demin-tablet.png 1x, ./img/avatars/demin-tablet@2x.png 2x">
             <img class="profile__image--img" src="./img/avatars/demin-mobile.png" srcset="./img/avatars/demin-mobile@2x.png 2x" alt="аватарка пользователя.">
           </picture>
@@ -447,7 +455,7 @@
               </li>
               <li class="add-plan__item" id="step-2">
                 <h3 class="add-plan__subtitle">Шаг 2. <br class="add-plan__subtitle--break"> Маршрут</h3>
-                <p class="add-plan__text">Укажите страны, которые вы хотели бы посетить. Это&nbsp;может&nbsp;быть&nbsp;одна или сразу несколько.</p>
+                <p class="add-plan__text add-plan__text--second">Укажите страны, которые вы хотели бы посетить. Это&nbsp;может&nbsp;быть&nbsp;одна или сразу несколько.</p>
                 <ul class="add-plan__select country-selected">
                   <li class="country-selected__item country-selected__item--select">
                     <div class="country-selected__field country-selected__field--select">
@@ -457,8 +465,8 @@
                     </div>
                     <div class="country-selected__flag tooltip">
                       <picture>
-                        <source media="(min-width: 768px)" srcset="./img/flags/bosnia-and-herzegovina-tablet.svg 1x, ./img/flags/bosnia-and-herzegovina-tablet@2x.svg 2x">
-                        <img src="./img/flags/bosnia-and-herzegovina-mobile.svg" srcset="./img/flags/bosnia-and-herzegovina-mobile@2x.svg 2x" alt="Босния.">
+                        <source media="(min-width: 768px)" srcset="./img/flags/bosnia-and-herzegovina-tablet.svg">
+                        <img src="./img/flags/bosnia-and-herzegovina-mobile.svg" alt="Босния.">
                       </picture>
                       <span class="tooltip__text">Босния и Герцеговина</span>
                     </div>
@@ -474,8 +482,8 @@
                     </div>
                     <div class="country-selected__flag tooltip">
                       <picture>
-                        <source media="(min-width: 768px)" srcset="./img/flags/czech-tablet.svg 1x, ./img/flags/czech-tablet@2x.svg 2x">
-                        <img src="./img/flags/czech-mobile.svg" srcset="./img/flags/czech-mobile@2x.svg 2x" alt="Чехия.">
+                        <source media="(min-width: 768px)" srcset="./img/flags/czech-tablet.svg">
+                        <img src="./img/flags/czech-mobile.svg" alt="Чехия.">
                       </picture>
                       <span class="tooltip__text">Чехия</span>
                     </div>
@@ -1137,8 +1145,8 @@
                       Босния и Герцеговина
                     </p>
                     <picture>
-                      <source media="(min-width: 768px)" srcset="./img/flags/bosnia-and-herzegovina-tablet.svg 1x, ./img/flags/bosnia-and-herzegovina-tablet@2x.svg 2x">
-                      <img class="plan-description__image" src="./img/flags/bosnia-and-herzegovina-mobile.svg" srcset="./img/flags/bosnia-and-herzegovina-mobile@2x.svg 2x" alt="Босния.">
+                      <source media="(min-width: 768px)" srcset="./img/flags/bosnia-and-herzegovina-tablet.svg">
+                      <img class="plan-description__image" src="./img/flags/bosnia-and-herzegovina-mobile.svg" alt="Босния.">
                     </picture>
                     <textarea class="plan-description__text" rows="8" cols="80" placeholder="План действий" required></textarea>
                     <p class="plan-description__error">Это поле должно быть заполнено</p>
@@ -1148,8 +1156,8 @@
                       Чехия
                     </p>
                     <picture>
-                      <source media="(min-width: 768px)" srcset="./img/flags/czech-tablet.svg 1x, ./img/flags/czech-tablet@2x.svg 2x">
-                      <img class="plan-description__image" src="./img/flags/czech-mobile.svg" srcset="./img/flags/czech-mobile@2x.svg 2x" alt="Чехия.">
+                      <source media="(min-width: 768px)" srcset="./img/flags/czech-tablet.svg">
+                      <img class="plan-description__image" src="./img/flags/czech-mobile.svg" alt="Чехия.">
                     </picture>
                     <textarea class="plan-description__text plan-description__text--invalid" rows="8" cols="80" placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                     <p class="plan-description__error">Это поле должно быть заполнено</p>
@@ -1211,5 +1219,6 @@
       </div>
     </section>
     <script src="./js/script.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
