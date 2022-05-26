@@ -15,12 +15,12 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/svg/logo_full.svg">
             <source media="(min-width: 768px)" srcset="./img/svg/logo_full.svg">
-            <img  class="main-header__logo-image main-header__logo-image--dark" src="./img/svg/logo_mobile.svg" alt="логотип сайта Погнали">
+            <img  class="main-header__logo-image main-header__logo-image--dark" src="./img/svg/logo_mobile.svg" width="95" height="15" alt="логотип сайта Погнали">
           </picture>
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/svg/logo_full--white.svg">
             <source media="(min-width: 768px)" srcset="./img/svg/logo_full--white.svg">
-            <img  class="main-header__logo-image main-header__logo-image--white" src="./img/svg/logo_mobile--white.svg" alt="логотип сайта Погнали">
+            <img  class="main-header__logo-image main-header__logo-image--white" src="./img/svg/logo_mobile--white.svg" width="95" height="15" alt="логотип сайта Погнали">
           </picture>
         </a>
         <button class="main-header__toggle" type="button">
@@ -42,7 +42,7 @@
             </a>
           </li>
           <li class="main-header__user-item">
-            <a class="main-header__user-item--login" href="#">Авторизация</a>
+            <a class="main-header__user-login" href="#">Авторизация</a>
           </li>
         </ul>
         <ul class="main-header__contacts">
@@ -59,7 +59,7 @@
           <li class="main-header__contacts-item">
             <a class="main-header__contacts-link" href="#">
               <div class="main-header__contacts-icon">
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="24" height="25">
                   <use xlink:href="./img/svg/sprite.svg#contact-email"></use>
                 </svg>
               </div>
@@ -108,23 +108,23 @@
       <section class="intro">
         <div class="intro__container">
           <h2 class="intro__title">В&nbsp;путешествие с&nbsp;крутыми попутчиками!</h2>
-          <ul class="main-header__user-list main-header__user-list--intro">
-            <li class="main-header__user-item main-header__user-item--hide">
-              <a class="main-header__user-link" href="tel:78128121212">
-                <svg class="main-header__user-icon" width="19" height="19">
+          <ul class="intro__list">
+            <li class="intro__item">
+              <a class="intro__link" href="tel:78128121212">
+                <svg class="intro__icon" width="19" height="19">
                   <use xlink:href="./img/svg/sprite.svg#user-phone"></use>
                 </svg>
               </a>
             </li>
-            <li class="main-header__user-item main-header__user-item--hide">
-              <a class="main-header__user-link main-header__user-link--email" href="#">
-                <svg class="main-header__user-icon" width="19" height="17">
+            <li class="intro__item">
+              <a class="intro__link intro__link--email" href="#">
+                <svg class="intro__icon" width="19" height="17">
                   <use xlink:href="./img/svg/sprite.svg#user-email"></use>
                 </svg>
               </a>
             </li>
-            <li class="main-header__user-item main-header__user--login">
-              <a class="main-header__user-link--login" href="#">Авторизация</a>
+            <li class="intro__item">
+              <a class="intro__link-login" href="#">Авторизация</a>
             </li>
           </ul>
           <div class="intro__review">
@@ -147,7 +147,7 @@
         <div class="service__container">
           <h2 class="service__title">О сервисе</h2>
           <p class="service__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в&nbsp;чужих.</p>
-          <p class="service__text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <p class="service__text-bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
           <button class="service__button button">Подробнее</button>
         </div>
       </section>
@@ -158,66 +158,61 @@
           <ul class="directions__list">
             <li class="directions__item">
               <picture class="directions__image">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/webp/thailand-desktop.webp 1x, ./img/webp/thailand-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="./img/webp/thailand-mobile.webp 1x, ./img/webp/thailand-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="./img/png/thailand-desktop.png 1x, ./img/png/thailand-desktop@2x.png 2x">
-                <img src="./img/png/thailand-mobile.png" srcset="./img/png/thailand-mobile@2x.png 2x" alt="Таиланд.">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/jpg/thailand-desktop.webp 1x, ./img/jpg/thailand-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="./img/jpg/thailand-mobile.webp 1x, ./img/jpg/thailand-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/jpg/thailand-desktop.jpg 1x, ./img/jpg/thailand-desktop@2x.jpg 2x">
+                <img src="./img/jpg/thailand-mobile.jpg" srcset="./img/jpg/thailand-mobile@2x.jpg 2x" width="270" height="110" alt="Таиланд.">
               </picture>
               <picture class="directions__flag">
-                <source media="(min-width: 768px)" srcset="./img/flags/thailand-tablet.svg 1x">
-                <img src="./img/flags/thailand-tablet.svg" alt="флаг Таиланда.">
+                <img src="./img/flags/thailand-tablet.svg" width="35" height="24" alt="флаг Таиланда.">
               </picture>
               <div class="directions__inner">
                 <h3 class="directions__subtitle">Таиланд</h3>
-                <span class="directions__lead--span">18321</span>
+                <span class="directions__total">18321</span>
                 <p class="directions__lead">Джунгли зовут!</p>
               </div>
             </li>
             <li class="directions__item">
               <picture class="directions__image">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/webp/france-desktop.webp 1x, ./img/webp/france-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="./img/webp/france-mobile.webp 1x, ./img/webp/france-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="./img/png/france-desktop.png 1x, ./img/png/france-desktop@2x.png 2x">
-                <img src="./img/png/france-mobile.png" srcset="./img/png/france-mobile@2x.png 2x" alt="Франция.">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/jpg/france-desktop.webp 1x, ./img/jpg/france-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="./img/jpg/france-mobile.webp 1x, ./img/jpg/france-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/jpg/france-desktop.jpg 1x, ./img/jpg/france-desktop@2x.jpg 2x">
+                <img src="./img/jpg/france-mobile.png" srcset="./img/jpg/france-mobile@2x.jpg 2x" width="270" height="110" alt="Франция.">
               </picture>
               <picture class="directions__flag">
-                <source media="(min-width: 768px)" srcset="./img/flags/france-tablet.svg">
-                <img src="./img/flags/france-tablet.svg" alt="флаг Франции.">
+                <img src="./img/flags/france-tablet.svg" width="35" height="24" alt="флаг Франции.">
               </picture>
-              <span class="tooltip__text">Чехия</span>
               <div class="directions__inner">
                 <h3 class="directions__subtitle">Франция</h3>
-                <span class="directions__lead--span">12518</span>
+                <span class="directions__total">12518</span>
                 <p class="directions__lead">Трэ бьен, манифик!</p>
               </div>
             </li>
             <li class="directions__item">
               <picture class="directions__image">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/webp/czech-desktop.webp 1x, ./img/webp/czech-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="./img/webp/czech-mobile.webp 1x, ./img/webp/czech-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="./img/png/czech-desktop.png 1x, ./img/png/czech-desktop@2x.png 2x">
-                <img src="./img/png/czech-mobile.png" srcset="./img/png/czech-mobile@2x.png 2x" alt="Чехия.">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/jpg/czech-desktop.webp 1x, ./img/jpg/czech-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="./img/jpg/czech-mobile.webp 1x, ./img/jpg/czech-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/jpg/czech-desktop.jpg 1x, ./img/png/czech-desktop@2x.jpg 2x">
+                <img src="./img/jpg/czech-mobile.jpg" srcset="./img/jpg/czech-mobile@2x.jpg 2x" width="270" height="110" alt="Чехия.">
               </picture>
               <picture class="directions__flag">
-                <source media="(min-width: 768px)" srcset="./img/flags/czech-tablet.svg">
-                <img src="./img/flags/czech-tablet.svg" alt="флаг Чехии.">
+                <img src="./img/flags/czech-tablet.svg" width="35" height="24" alt="флаг Чехии.">
               </picture>
-              <span class="tooltip__text">Чехия</span>
               <div class="directions__inner">
                 <h3 class="directions__subtitle">Чехия</h3>
-                <span class="directions__lead--span">5326</span>
+                <span class="directions__total">5326</span>
                 <p class="directions__lead directions__lead--last">Закоулки старой Европы</p>
               </div>
             </li>
           </ul>
-          <button class="directions__button button">Показать все</button>
+          <a href="./form.html" class="directions__button button">Показать все</a>
         </div>
       </section>
       <section class="companions">
         <div class="companions__container">
           <h2 class="companions__title">Попутчики</h2>
           <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-          <p class="companions__text--bold">Теперь можно легко найти&nbsp;единомышленников!</p>
+          <p class="companions__text-bold">Теперь можно легко найти&nbsp;единомышленников!</p>
           <ul class="companions__list">
             <li class="companions__item">
               <div class="companions__level level level--99">
@@ -228,10 +223,10 @@
                 <p class="level__description">level</p>
               </div>
               <picture class="companions__image">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/webp/firsova-tablet.webp 1x, ./img/webp/firsova-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/webp/firsova-mobile.webp 1x, ./img/webp/firsova-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="./img/png/firsova-tablet.png 1x, ./img/png/firsova-tablet@2x.png 2x">
-                <img src="./img/png/firsova-mobile.png" srcset="./img/png/firsova-mobile@2x.png 2x" alt="Таня Фирсова.">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/jpg/firsova-tablet.webp 1x, ./img/jpg/firsova-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/jpg/firsova-mobile.webp 1x, ./img/jpg/firsova-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/jpg/firsova-tablet.jpg 1x, ./img/jpg/firsova-tablet@2x.jpg 2x">
+                <img src="./img/jpg/firsova-mobile.jpg" srcset="./img/jpg/firsova-mobile@2x.jpg 2x" width="270" height="270" alt="Таня Фирсова.">
               </picture>
               <div class="companions__country country-flag">
                 <ul class="country-flag__list country-flag__list--index">
@@ -260,7 +255,7 @@
                       <input  class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-plane-firsova" value="plane">
                       <label class="transport__label" for="transport-plane-firsova">
                         <span>
-                          <svg class="transport__svg" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="transport__svg" width="18" height="20">
                             <use xlink:href="./img/svg/sprite.svg#plane"></use>
                           </svg>
                         </span>
@@ -271,7 +266,7 @@
                       <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-bus-firsova" value="bus">
                       <label class="transport__label" for="transport-bus-firsova">
                         <span>
-                          <svg class="transport__svg" width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="transport__svg" width="18" height="21">
                             <use xlink:href="./img/svg/sprite.svg#bus"></use>
                           </svg>
                         </span>
@@ -282,7 +277,7 @@
                       <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-bike-firsova" value="bike" checked>
                       <label class="transport__label" for="transport-bike-firsova">
                         <span>
-                          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="transport__svg" width="25" height="24">
                             <use xlink:href="./img/svg/sprite.svg#bike"></use>
                           </svg>
                         </span>
@@ -293,7 +288,7 @@
                       <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-foot-firsova" value="foot">
                       <label class="transport__label" for="transport-foot-firsova">
                         <span>
-                          <svg class="transport__svg" width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="transport__svg" width="21" height="24">
                             <use xlink:href="./img/svg/sprite.svg#foot"></use>
                           </svg>
                         </span>
@@ -313,10 +308,10 @@
                 <p class="level__description">level</p>
               </div>
               <picture class="companions__image">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/webp/demin-tablet.webp 1x, ./img/webp/demin-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/webp/demin-mobile.webp 1x, ./img/webp/demin-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="./img/png/demin-tablet.png 1x, ./img/png/demin-tablet@2x.png 2x">
-                <img src="./img/png/demin-mobile.png" srcset="./img/png/demin-mobile@2x.png 2x" alt="Петя Демин.">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/jpg/demin-tablet.webp 1x, ./img/jpg/demin-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/jpg/demin-mobile.webp 1x, ./img/jpg/demin-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/jpg/demin-tablet.jpg 1x, ./img/jpg/demin-tablet@2x.jpg 2x">
+                <img src="./img/jpg/demin-mobile.jpg" srcset="./img/jpg/demin-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин.">
               </picture>
               <div class="companions__country country-flag">
                 <ul class="country-flag__list">
@@ -341,7 +336,7 @@
                       <input  class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-plane-demin" value="plane">
                       <label class="transport__label" for="transport-plane-demin">
                         <span>
-                          <svg class="transport__svg" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="transport__svg" width="18" height="20">
                             <use xlink:href="./img/svg/sprite.svg#plane"></use>
                           </svg>
                         </span>
@@ -352,7 +347,7 @@
                       <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-bus-demin" value="bus">
                       <label class="transport__label" for="transport-bus-demin">
                         <span>
-                          <svg class="transport__svg" width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="transport__svg" width="18" height="21">
                             <use xlink:href="./img/svg/sprite.svg#bus"></use>
                           </svg>
                         </span>
@@ -363,7 +358,7 @@
                       <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-bike-demin" value="bike" checked>
                       <label class="transport__label" for="transport-bike-demin">
                         <span>
-                          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="transport__svg" width="25" height="24">
                             <use xlink:href="./img/svg/sprite.svg#bike"></use>
                           </svg>
                         </span>
@@ -374,7 +369,7 @@
                       <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-foot-demin" value="foot">
                       <label class="transport__label" for="transport-foot-demin">
                         <span>
-                          <svg class="transport__svg" width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="transport__svg" width="21" height="24">
                             <use xlink:href="./img/svg/sprite.svg#foot"></use>
                           </svg>
                         </span>
@@ -386,7 +381,7 @@
               </div>
             </li>
           </ul>
-          <a href="#" class="companions__button button">Показать всех</a>
+          <a href="./catalog.html" class="companions__button button">Показать всех</a>
         </div>
       </section>
       <section class="rate">
@@ -438,14 +433,15 @@
             <a class="interested__link" href="#">авторизуйтесь.</a>
           </p>
           <form class="interested__form" action="https://echo.htmlacademy.ru" method="POST">
-            <input class="interested__input" type="text" placeholder="E-mail" name="email">
+            <label class="visually-hidden" for="interested-mail">E-mail:</label>
+            <input class="interested__input" type="text" id="interested-mail" placeholder="E-mail" name="email">
             <button class="interested__button"  type="submit" aria-label="Зарегистрироваться">Регистрация
             </button>
           </form>
           <p class="interested__text interested__text--last">Остались вопросы? Мы&nbsp;с&nbsp;радостью на них ответим!</p>
           <ul class="interested__list">
             <li class="interested__item">
-              <a class="interested__link-contacts contacts-list__phone" href="tel:78128121212">
+              <a class="interested__link-contacts interested__link-contacts--phone" href="tel:78128121212">
                 <div class="interested__image">
                   <svg width="19" height="17">
                     <use xlink:href="./img/svg/sprite.svg#contacts-phone"></use>
@@ -454,7 +450,7 @@
                 8 800 555-86-28</a>
             </li>
             <li class="interested__item">
-              <a class="interested__link-contacts contacts-list__email" href="#">
+              <a class="interested__link-contacts interested__link-contacts--email" href="#">
                 <div class="interested__image">
                   <svg width="19" height="13">
                     <use xlink:href="./img/svg/sprite.svg#contacts-email"></use>
@@ -470,7 +466,7 @@
         <div class="route__container">
           <h3 class="visually-hidden">Маршрут</h3>
           <p class="route__address">ул. Большая Конюшенная, 19/8</p>
-          <a href="#" class="route__button button">Проложить маршрут</a>
+          <a href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387165,30.3208534,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474" class="route__button button">Проложить маршрут</a>
         </div>
       </section>
       <section class="map">
@@ -485,7 +481,7 @@
           <picture class="logo__image">
             <source media="(min-width: 1200px)" srcset="./img/svg/logo_full.svg">
             <source media="(min-width: 768px)" srcset="./img/svg/logo_full.svg">
-            <img src="./img/svg/logo_mobile.svg" alt="логотип сайта Погнали">
+            <img src="./img/svg/logo_mobile.svg" width="95" height="15" alt="логотип сайта Погнали">
           </picture>
         </a>
         <ul class="footer__social social-list">

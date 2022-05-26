@@ -125,15 +125,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    &--img {
-      position: absolute;
-      z-index: 20;
-      margin-top: 0;
-      top: 58px;
-      right: 155px;
-      width: 190px;
-      height: 190px;
-    }
+    position: absolute;
+    z-index: 20;
+    margin-top: 0;
+    top: 58px;
+    right: 155px;
+    width: 190px;
+    height: 190px;
   }
 }
 
@@ -176,10 +174,12 @@
 
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+  }
+}
 
-    &--span {
-      display: none;
-    }
+.profile__button-text {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 

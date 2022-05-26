@@ -459,6 +459,7 @@
 }
 
 .country-selected__letters-list {
+  @include reset;
   display: none;
 
   &--current {
@@ -490,7 +491,7 @@
   }
 }
 
-.country-selected__img {
+.country-selected img {
   @media (min-width: $tablet-width) {
     width: 70px;
     height: 47px;

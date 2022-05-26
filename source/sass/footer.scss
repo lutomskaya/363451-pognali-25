@@ -49,6 +49,13 @@
     margin-bottom: 0;
     margin-right: 85px;
   }
+
+  & img {
+    @media (min-width: $desktop-width) {
+      width: 200px;
+      height: 50px;
+    }
+  }
 }
 
 .footer__social {

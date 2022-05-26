@@ -120,13 +120,27 @@
   height: 40px;
   border-radius: 50%;
   background-color: $special-orange;
+  box-sizing: border-box;
 
   &--email {
     background-color: $special-yellow-dark;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $icon-hover;
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
 }
 
-.intro__login {
+.intro__link-login {
+  text-align: center;
   padding: 10px 40px;
   font-size: 17px;
   line-height: 30px;
@@ -135,7 +149,7 @@
   text-decoration: none;
   background-color: $basic-yellow;
   color: $basic-blue;
-  border-radius: 20px;
+  border-radius: 25px;
 
   &:hover {
     background-color: $special-yellow-dark;
@@ -151,7 +165,7 @@
   flex-direction: column;
   width: 155px;
   padding-left: 25px;
-  padding-top: 25px;
+  padding-top: 5px;
   padding-right: 100px;
 
   @media (min-width: $tablet-width) {

@@ -97,6 +97,7 @@
 
   &--invalid ~ .plan-description__error {
     display: block;
+    margin-bottom: -6px;
   }
 
   @media (min-width: $tablet-width) {
@@ -199,6 +200,6 @@
   background-color: #ffefef;
 
   @media (min-width: $desktop-width) {
-    width: 706px;
+    width: 711px;
   }
 }

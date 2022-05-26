@@ -25,6 +25,10 @@
 
   &:active {
     color: rgba($basic-blue-light, 0.3);
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 
   &--hide {
