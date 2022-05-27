@@ -14,7 +14,7 @@
 }
 
 .companion-catalog__item {
-  width: 270px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -42,7 +42,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 688px;
     padding-top: 33px;
     margin-bottom: 38px;
     padding-bottom: 24px;
@@ -107,8 +106,8 @@
 .companion-catalog__title {
   position: relative;
   grid-area: title;
-  font-size: 20px;
-  line-height: 20px;
+
+  @include text (20px, 20px);
   font-weight: 700;
   margin: 0;
   padding-left: 16px;
@@ -149,8 +148,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
-    line-height: 30px;
+    @include text (30px, 30px);
     padding-left: 33px;
   }
 
@@ -174,8 +172,7 @@
   padding-right: 50px;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 23px;
+    @include text (20px, 23px);
     padding-left: 36px;
     margin-top: 6px;
   }
@@ -189,8 +186,7 @@
 }
 
 .companion-catalog legend {
-  font-size: 15px;
-  line-height: 16px;
+  @include text (15px, 16px);
   padding-left: 13px;
   padding-right: 10px;
 
@@ -305,8 +301,8 @@
   margin: 0 20px;
   margin-top: 10px;
   padding-top: 12px;
-  font-size: 17px;
-  line-height: 17px;
+
+  @include text (17px, 17px);
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 20px;
@@ -320,8 +316,8 @@
     margin: 0;
     margin-left: auto;
     margin-top: 12px;
-    font-size: 20px;
-    line-height: 20px;
+
+    @include text (20px, 20px);
     align-self: flex-start;
   }
 
@@ -337,8 +333,8 @@
   text-align: center;
   padding-left: 31px;
   padding-top: 14px;
-  font-size: 17px;
-  line-height: 30px;
+
+  @include text (17px, 30px);
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -362,8 +358,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
+    @include text (20px, 20px);
     padding-left: 44px;
     padding-top: 10px;
     padding-bottom: 30px;

@@ -48,15 +48,14 @@
 
 .add-plan__title {
   margin: 0;
-  font-size: 24px;
-  line-height: 24px;
+
+  @include text (24px, 24px);
   font-weight: 700;
 
   color: $basic-blue-light;
 
   @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
+    @include text (36px, 36px);
     padding-bottom: 56px;
     padding-left: 0;
   }
@@ -130,8 +129,7 @@
     display: flex;
     padding-left: 43px;
 
-    font-size: 20px;
-    line-height: 24px;
+    @include text (20px, 24px);
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: rgba($color-black, 0.6);
@@ -171,8 +169,8 @@
 .add-plan__subtitle {
   margin: 0;
   margin-bottom: 15px;
-  font-size: 20px;
-  line-height: 20px;
+
+  @include text (20px, 20px);
   font-weight: 700;
 
   color: $basic-blue-light;
@@ -180,8 +178,8 @@
   @media (min-width: $tablet-width) {
     padding-top: 20px;
     padding-bottom: 23px;
-    font-size: 36px;
-    line-height: 36px;
+
+    @include text (36px, 36px);
   }
 
   @media (min-width: $desktop-width) {
@@ -209,8 +207,8 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding-bottom: 38px;
-    font-size: 20px;
-    line-height: 24px;
+
+    @include text (20px, 24px);
 
     &::after {
       content: "";
@@ -291,15 +289,13 @@
 }
 
 .add-plan__calendar-name {
-  font-size: 20px;
-  line-height: 20px;
+  @include text (20px, 20px);
   font-weight: 700;
 
   color: $basic-blue-light;
 
   @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
+    @include text (36px, 36px);
   }
 }
 
@@ -307,8 +303,8 @@
   position: relative;
   padding-top: 10px;
   padding-bottom: 0;
-  font-size: 17px;
-  line-height: 30px;
+
+  @include text (17px, 30px);
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -337,8 +333,8 @@
   @media (min-width: $tablet-width) {
     width: 47%;
     padding-top: 26px;
-    font-size: 24px;
-    line-height: 22px;
+
+    @include text (24px, 22px);
     text-align: right;
     text-transform: none;
 
@@ -349,7 +345,7 @@
       left: 70px;
       width: 12px;
       height: 15px;
-      background-image: url("../img/svg/polygon.svg");
+      background-image: url("../img/icon/polygon.svg");
       transform: rotate(180deg);
     }
   }
@@ -391,8 +387,8 @@
     padding-top: 24px;
     padding-bottom: 20px;
     text-align: left;
-    font-size: 24px;
-    line-height: 24px;
+
+    @include text (24px, 24px);
     text-transform: none;
 
     &::before {

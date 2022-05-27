@@ -36,7 +36,7 @@
   display: block;
 
   & img {
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       width: 200px;
       height: 50px;
     }

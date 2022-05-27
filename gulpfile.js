@@ -71,12 +71,12 @@ const createWebp = () => {
 // SVG
 
 const svg = () =>
-gulp.src(['source/img/*.svg', '!source/img/svg/*.svg'])
+gulp.src(['source/img/*.svg', 'source/img/**/*.svg', '!source/img/icon/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-return gulp.src('source/img/svg/*.svg')
+return gulp.src('source/img/icon/*.svg')
 .pipe(svgo())
 .pipe(svgstore({
 inlineSvg: true
