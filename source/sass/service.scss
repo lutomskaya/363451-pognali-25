@@ -85,33 +85,33 @@
   padding-bottom: 20px;
   font-weight: 300;
 
-  &--bold {
-    margin: 0;
-    font-weight: 700;
-  }
-
   @media (min-width: $tablet-width) {
     width: 300px;
     padding-bottom: 33px;
     font-size: 28px;
     line-height: 33px;
-
-    &--bold {
-      width: 265px;
-      padding-bottom: 53px;
-      font-size: 21px;
-      line-height: 25px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
     padding-bottom: 42px;
+  }
+}
 
-    &--bold {
-      width: 425px;
-      padding-bottom: 85px;
-    }
+.service__text-bold {
+  margin: 0;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    width: 265px;
+    padding-bottom: 53px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 425px;
+    padding-bottom: 85px;
   }
 }
 

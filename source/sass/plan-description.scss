@@ -16,7 +16,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 220px;
+  width: 100%;
   margin-bottom: 25px;
 
   &:first-child::before {
@@ -38,7 +38,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 500px;
     margin-bottom: 50px;
 
     &:first-child::before {
@@ -97,10 +96,10 @@
 
   &--invalid ~ .plan-description__error {
     display: block;
+    margin-bottom: -6px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 500px;
     height: 140px;
     font-size: 20px;
     line-height: 23px;
@@ -199,6 +198,6 @@
   background-color: #ffefef;
 
   @media (min-width: $desktop-width) {
-    width: 706px;
+    width: 711px;
   }
 }

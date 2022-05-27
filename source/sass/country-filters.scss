@@ -9,11 +9,11 @@
     bottom: 0;
     height: 25px;
     width: 100%;
-    background-color: $background-directions;
+    background-color: $background-country;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      height: 50px;
+      height: 60px;
     }
   }
 

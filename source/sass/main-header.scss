@@ -36,7 +36,7 @@
   display: block;
 
   & img {
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       width: 200px;
       height: 50px;
     }
@@ -215,19 +215,9 @@
 .main-header__user-list {
   @include reset;
   grid-area: user-list;
-  margin: 0;
-  padding: 0;
   display: flex;
   align-items: center;
   order: 1;
-
-  &--intro {
-    padding-top: 20px;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     order: 0;
@@ -265,55 +255,56 @@
     }
   }
 
-  &--email {
-    background-color: $special-yellow-dark;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: $special-orange;
-    }
-
-    &:active {
-      svg {
-        opacity: 0.3;
-      }
-    }
-  }
-
-  &--login {
-    display: block;
-    text-align: center;
-    padding: 12px 80px;
-    font-size: 17px;
-    line-height: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: $basic-yellow;
-    color: $basic-blue;
-    border-radius: 25px;
-
-    &:hover {
-      background-color: $special-yellow-dark;
-    }
-
-    &:active {
-      color: rgba($basic-blue, 0.3);
-    }
-
-    @media (min-width: $tablet-width) {
-      padding: 15px 29px;
-      font-size: 20px;
-      line-height: 20px;
-    }
-  }
-
   @media (min-width: $desktop-width) {
     width: 50px;
     height: 50px;
   }
 }
+
+.main-header__user-link--email {
+  background-color: $special-yellow-dark;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $special-orange;
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-header__user-login {
+  display: block;
+  text-align: center;
+  padding: 12px 80px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $basic-yellow;
+  color: $basic-blue;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba($basic-blue, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 29px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 
 .main-header__contacts {
   @include reset;
@@ -435,12 +426,12 @@
     line-height: 20px;
     color: $color-white;
 
-    &:hover,
-    &:focus {
+    &[href]:hover,
+    &[href]:focus {
       color: $basic-yellow;
     }
 
-    &:active {
+    &[href]:active {
       opacity: 0.3;
     }
   }

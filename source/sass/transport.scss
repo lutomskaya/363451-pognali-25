@@ -42,19 +42,9 @@
   }
 }
 
-.transport__title {
-  &--hidden {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: block;
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
+.transport-title {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

@@ -1,5 +1,20 @@
 .companion {
+  position: relative;
   background-color: $background-directions;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 25px;
+    width: 100%;
+    background-color: $background-country;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      height: 60px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     background-color: $background-country;
