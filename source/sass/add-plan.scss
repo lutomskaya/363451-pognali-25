@@ -149,12 +149,28 @@
   background-color: $color-white;
   margin-bottom: 10px;
 
+  &:nth-child(2) {
+    padding-bottom: 7px;
+  }
+
+  &:nth-child(3) {
+    padding-bottom: 4px;
+  }
+
   @media (min-width: $tablet-width) {
     border-radius: 30px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 56px;
+    padding-bottom: 50px;
     margin-bottom: 44px;
+
+    &:nth-child(2) {
+      padding-bottom: 54px;
+    }
+
+    &:nth-child(3) {
+      padding-bottom: 64px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -163,6 +179,14 @@
     padding-bottom: 56px;
 
     border-radius: 60px;
+
+    &:nth-child(2) {
+      padding-bottom: 49px;
+    }
+
+    &:nth-child(3) {
+      padding-bottom: 57px;
+    }
   }
 }
 
@@ -206,7 +230,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding-bottom: 38px;
+    padding-bottom: 35px;
 
     @include text (20px, 24px);
 
@@ -301,7 +325,7 @@
 
 .add-plan__link {
   position: relative;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-bottom: 0;
 
   @include text (17px, 30px);
