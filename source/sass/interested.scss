@@ -188,6 +188,8 @@
     font-size: 24px;
     line-height: 24px;
     padding-left: 34px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 }
 
@@ -267,13 +269,15 @@
   }
 }
 
-.interested__item {
+.interested__item:nth-child(1) {
   @media (min-width: $desktop-width) {
     padding-left: 180px;
+  }
+}
 
-    &:last-child {
-      padding-left: 127px;
-    }
+.interested__item:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
   }
 }
 
@@ -320,6 +324,7 @@
   @media (min-width: $desktop-width) {
     width: 90px;
     height: 90px;
+    margin-right: 32px;
   }
 
   & svg {

@@ -6,8 +6,7 @@
   justify-content: center;
 
   &--index {
-    width: 145px;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
   }
 }
@@ -36,17 +35,17 @@
 
   color: $basic-blue-light;
 
-  @media (min-width: $tablet-width) {
+  &:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  &--column {
     &:not(:first-child) {
-      margin-left: 20px;
+      margin-left: 0;
     }
   }
 
   @media (min-width: $desktop-width) {
-    &:not(:first-child) {
-      margin-left: 0;
-    }
-
     & img {
       height: 24px;
     }

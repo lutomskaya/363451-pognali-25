@@ -165,7 +165,7 @@
     margin-bottom: 44px;
 
     &:nth-child(2) {
-      padding-bottom: 54px;
+      padding-bottom: 44px;
     }
 
     &:nth-child(3) {
@@ -366,10 +366,10 @@
       position: absolute;
       content: "";
       top: 30px;
-      left: 70px;
+      left: -4px;
       width: 12px;
       height: 15px;
-      background-image: url("../img/icon/polygon.svg");
+      background-image: url("../img/svg/polygon.svg");
       transform: rotate(180deg);
     }
   }
@@ -409,7 +409,7 @@
     width: 53%;
     padding-left: 34px;
     padding-top: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     text-align: left;
 
     @include text (24px, 24px);

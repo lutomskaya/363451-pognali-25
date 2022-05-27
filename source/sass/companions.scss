@@ -62,7 +62,7 @@
     padding-left: 95px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 105px 130px auto auto;
+    grid-template-rows: 18% 28% auto auto;
     grid-template-areas:
       "title list"
       "text list"
@@ -138,7 +138,7 @@
   @media (min-width: $desktop-width) {
     width: 39%;
     padding-bottom: 0;
-    padding-top: 42px;
+    padding-top: 10px;
     margin: 0;
   }
 }
@@ -219,6 +219,7 @@
 .companions__inner {
   background-color: $color-white;
   margin-top: -7px;
+  padding-top: 25px;
   border-radius: 0 0 10px 10px;
 
   @media (min-width: $tablet-width) {
@@ -230,37 +231,47 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 27px;
+  margin-left: 45px;
+  padding-left: 25px;
+  padding-top: 5px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   color: $basic-blue-light;
-  text-align: center;
 
   &::before {
     content: "";
     position: absolute;
-    top: 37px;
-    left: 53px;
+    top: 9px;
+    left: 8px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background-color: #f97676;
 
     @media (min-width: $tablet-width) {
-      top: 42px;
-      left: 48px;
+      top: 16px;
+      left: 3px;
     }
   }
 
-  &--green::before {
-    background-color: #81e31e;
+  &--green {
+    margin-left: 55px;
+    padding-top: 0;
+
+    &::before {
+      background-color: #81e31e;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
+    padding-top: 5px;
     font-size: 24px;
     line-height: 22px;
+
+    &--green {
+      margin-left: 45px;
+    }
   }
 }
 
@@ -278,13 +289,13 @@
 
 .companions__hashtags {
   text-align: center;
-  padding-left: 46px;
+  padding-left: 35px;
   padding-right: 36px;
   margin-top: 13px;
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 19px;
+    padding-left: 23px;
     padding-right: 23px;
     margin-top: 28px;
     font-size: 20px;
@@ -337,5 +348,6 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 24px;
+    padding-bottom: 20px;
   }
 }

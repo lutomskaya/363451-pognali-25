@@ -3,7 +3,7 @@
   padding-bottom: 70px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
+    padding-top: 39px;
     padding-bottom: 109px;
   }
 
@@ -46,7 +46,7 @@
     margin-bottom: 38px;
     padding-bottom: 24px;
     grid-template-columns: 1fr 26% 1fr 1fr;
-    grid-template-rows: 40px 90px auto auto;
+    grid-template-rows: 15% 32% auto auto;
 
     grid-template-areas:
       "photo title title transport"
@@ -59,9 +59,9 @@
     width: 951px;
     padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: 32px;
+    margin-bottom: 26px;
     grid-template-columns: 1fr 204px 1fr 1fr 1fr;
-    grid-template-rows: 90px 90px 103px;
+    grid-template-rows: 32% 32% min-content;
 
     grid-template-areas:
       "photo title title country country"

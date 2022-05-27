@@ -36,6 +36,21 @@
   color: $basic-blue;
   box-sizing: border-box;
 
+  &::after {
+    position: absolute;
+    counter-increment: number;
+    content: counter(number);
+    top: 23px;
+    right: 23px;
+
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+
+    color: $color-white;
+  }
+
   @media (min-width: $tablet-width) {
     width: 50%;
     margin-top: 0;
@@ -140,20 +155,5 @@
       margin-left: -30px;
       padding-right: 80px;
     }
-  }
-
-  &::after {
-    position: absolute;
-    counter-increment: number;
-    content: counter(number);
-    top: 23px;
-    right: 23px;
-
-    font-size: 18px;
-    line-height: 1;
-    font-weight: 700;
-    text-align: center;
-
-    color: $color-white;
   }
 }
