@@ -27,6 +27,87 @@
   }
 }
 
+.add-plan__item-head {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: $border-color;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+
+    justify-content: space-between;
+  }
+}
+
+.add-plan__indicator {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    @include reset;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 85px;
+    margin-right: 28px;
+  }
+}
+
+.add-plan__indicator-item {
+  position: relative;
+  width: 21px;
+  height: 24px;
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    margin-bottom: 19px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      left: 1px;
+      top: 6px;
+
+      width: 5px;
+      height: 5px;
+
+      border-radius: 50%;
+      background-color: rgba(#808285, 0.3);
+    }
+
+    &--active::before {
+      background-color: $basic-blue-light;
+    }
+  }
+}
+
+.add-plan__indicator-text {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-left: 43px;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: rgba($color-black, 0.6);
+  }
+}
+
 .add-plan__wrapper {
   position: relative;
   display: flex;
@@ -71,10 +152,7 @@
   display: flex;
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
-    position: absolute;
-    top: 250px;
-    right: 190px;
+    display: none;
   }
 }
 
@@ -233,27 +311,11 @@
     padding-bottom: 35px;
 
     @include text (20px, 24px);
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-
-      width: 100%;
-      height: 1px;
-
-      background-color: $border-color;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 581px;
     padding-bottom: 55px;
-
-    &::after {
-      width: 998px;
-    }
   }
 }
 

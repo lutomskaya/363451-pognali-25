@@ -1,12 +1,16 @@
 .catalog-container__title-wrapper {
-  position: relative;
-  margin-top: -3px;
-  padding-top: 25px;
-  padding-left: 25px;
-  padding-bottom: 5px;
   background-color: $basic-blue;
   color: $color-white;
   border-radius: 0 0 20px 20px;
+}
+
+.catalog-container__title-inner {
+  @include container;
+
+  position: relative;
+  margin-top: -3px;
+  padding-top: 25px;
+  padding-bottom: 5px;
 
   &::before {
     content: "";
@@ -35,13 +39,11 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 123px;
-    padding-left: 75px;
     padding-bottom: 64px;
     border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 124px;
     padding-top: 120px;
     padding-bottom: 62px;
   }
@@ -56,6 +58,7 @@
 
   @media (min-width: $tablet-width) {
     width: 358px;
+    margin-left: 67px;
 
     @include text (60px, 60px);
   }
@@ -91,16 +94,16 @@
       height: 16px;
       top: 3px;
       right: 75px;
-      background-image: url("../img/icon/icon-arrow-bend.svg");
+      background-image: url("../img/svg/icon-arrow-bend.svg");
       background-repeat: no-repeat;
 
       @media (min-width: $desktop-width) {
-        right: 123px;
+        right: 60px;
       }
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 183px;
+    padding-right: 122px;
   }
 }

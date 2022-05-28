@@ -206,6 +206,11 @@
   }
 }
 
+.form__input:focus + .form__label {
+  outline: none;
+  opacity: 0.6;
+}
+
 .form__label {
   position: relative;
   padding-left: 26px;
@@ -216,31 +221,17 @@
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    color: rgba($color-black, 0.6);
+    outline: none;
   }
+
+  /* &:hover::before,
+  &:focus::before {
+    background-color: rgba($color-white, 0.6);
+  } */
 
   &:active {
     opacity: 0.3;
-  }
-
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 18px;
-    height: 18px;
-
-    background-color: $color-white;
-
-    border-radius: 4px;
-
-    @media (min-width: $tablet-width) {
-      width: 24px;
-      height: 24px;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -250,11 +241,30 @@
   }
 }
 
+.form__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 18px;
+  height: 18px;
+
+  background-color: $color-white;
+
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .form__input:checked + .form__label::after {
   position: absolute;
   content: "";
-  top: 2px;
-  left: 5px;
+  top: 7px;
+  left: 8px;
   width: 9px;
   height: 9px;
   background-image: url("../img/svg/tick.svg");

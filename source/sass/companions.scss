@@ -235,7 +235,8 @@
   line-height: 21px;
   font-weight: 700;
   color: $basic-blue-light;
-  text-align: center;
+  padding-left: 70px;
+  padding-right: 40px;
 
   &::before {
     content: "";

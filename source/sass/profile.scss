@@ -46,7 +46,6 @@
 }
 
 .profile__title-wrapper {
-  position: relative;
   margin-top: -3px;
   padding-top: 24px;
   padding-left: 25px;
@@ -77,9 +76,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 124px;
-    padding-top: 120px;
+    padding-top: 121px;
+    padding-left: 64px;
   }
+}
+
+.profile__title-inner {
+  @include container;
+  position: relative;
+  padding-left: 0;
 }
 
 .profile__title {
@@ -112,8 +117,8 @@
     position: absolute;
     z-index: 20;
     margin-top: 0;
-    top: 106px;
-    right: 389px;
+    top: 110px;
+    right: 388px;
     width: 95px;
     height: 95px;
   }

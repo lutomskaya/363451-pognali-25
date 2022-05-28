@@ -73,13 +73,19 @@
         </ul>
         <ul class="main-header__site-list">
           <li class="main-header__site-item">
-            <a class="main-header__site-link" href="./index.html">О сервисе</a>
+            <a class="main-header__site-link" href="./index.html">
+              <span class="main-header__site-text" data-hover="О&nbsp;сервисе">О сервисе</span>
+            </a>
           </li>
           <li class="main-header__site-item">
-            <a class="main-header__site-link">Направления</a>
+            <a class="main-header__site-link">
+              <span class="main-header__site-text" data-hover="Направления">Направления</span>
+            </a>
           </li>
           <li class="main-header__site-item">
-            <a class="main-header__site-link" href="./catalog.html">Попутчики</a>
+            <a class="main-header__site-link" href="./catalog.html">
+              <span class="main-header__site-text" data-hover="Попутчики">Попутчики</span>
+            </a>
           </li>
         </ul>
         <ul class="main-header__social-list social-list">
@@ -115,7 +121,9 @@
 
       <section class="profile">
         <div class="profile__title-wrapper">
-          <h2 class="profile__title">Направления</h2>
+          <div class="profile__title-inner">
+            <h2 class="profile__title">Направления</h2>
+          </div>
         </div>
         <div class="profile__container">
           <div class="profile__level level level--big level--80">
@@ -228,8 +236,23 @@
             </div>
             <ul class="add-plan__list">
               <li class="add-plan__item" id="step-1">
-                <h3 class="add-plan__subtitle">Шаг 1. <br class="add-plan__subtitle--break"> Даты пребывания</h3>
-                <p class="add-plan__text">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+                <div class="add-plan__item-head">
+                  <div class="add-plan__step">
+                    <h3 class="add-plan__subtitle">Шаг 1. <br class="add-plan__subtitle--break"> Даты пребывания</h3>
+                    <p class="add-plan__text">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+                  </div>
+                  <ol class="add-plan__indicator add-plan__indicator--desktop">
+                    <li class="add-plan__indicator-item add-plan__indicator-item--active">
+                      <span class="add-plan__indicator-text">Даты</span>
+                    </li>
+                    <li class="add-plan__indicator-item">
+                      <span class="add-plan__indicator-text">Маршрут</span>
+                    </li>
+                    <li class="add-plan__indicator-item">
+                      <span class="add-plan__indicator-text">Развлечения</span>
+                    </li>
+                  </ol>
+                </div>
                 <div class="add-plan__form plan-filters">
                   <fieldset class="plan-filters__field plan-filters__field--companions">
                     <label class="plan-filters__label" for="companions">Ищу попутчиков:</label>
@@ -458,8 +481,23 @@
                 <a class="add-plan__button-next button" href="#step-2">Следующий шаг</a>
               </li>
               <li class="add-plan__item" id="step-2">
-                <h3 class="add-plan__subtitle">Шаг 2. <br class="add-plan__subtitle--break"> Маршрут</h3>
-                <p class="add-plan__text add-plan__text--second">Укажите страны, которые вы хотели бы посетить. Это&nbsp;может&nbsp;быть&nbsp;одна или сразу несколько.</p>
+                <div class="add-plan__item-head">
+                  <div class="add-plan__step">
+                    <h3 class="add-plan__subtitle">Шаг 2. <br class="add-plan__subtitle--break"> Маршрут</h3>
+                    <p class="add-plan__text add-plan__text--second">Укажите страны, которые вы хотели бы посетить. Это&nbsp;может&nbsp;быть&nbsp;одна или сразу несколько.</p>
+                  </div>
+                  <ol class="add-plan__indicator add-plan__indicator--desktop">
+                    <li class="add-plan__indicator-item add-plan__indicator-item--active">
+                      <span class="add-plan__indicator-text">Даты</span>
+                    </li>
+                    <li class="add-plan__indicator-item">
+                      <span class="add-plan__indicator-text">Маршрут</span>
+                    </li>
+                    <li class="add-plan__indicator-item">
+                      <span class="add-plan__indicator-text">Развлечения</span>
+                    </li>
+                  </ol>
+                </div>
                 <ul class="add-plan__select country-selected">
                   <li class="country-selected__item country-selected__item--select">
                     <div class="country-selected__field country-selected__field--select">
@@ -493,7 +531,7 @@
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </li>
-                  <li class="country-selected__item country-selected__item--whole country-selected__item--closed">
+                  <li class="country-selected__item country-selected__item--whole country-selected__item--opened">
                     <div class="country-selected__inner">
                       <div class="country-selected__field country-selected__field--whole country-selected__field--active">
                         <button type="button" class="country-selected__button country-selected__button--whole" aria-label="Выбрать страну">
@@ -1114,9 +1152,23 @@
                 </div>
               </li>
               <li class="add-plan__item" id="step-3">
-                <h3 class="add-plan__subtitle">Шаг 3. <br class="add-plan__subtitle--break"> Развлечения</h3>
-                <p class="add-plan__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
-                </p>
+                <div class="add-plan__item-head">
+                  <div class="add-plan__step">
+                    <h3 class="add-plan__subtitle">Шаг 3. <br class="add-plan__subtitle--break"> Развлечения</h3>
+                    <p class="add-plan__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                  </div>
+                  <ol class="add-plan__indicator add-plan__indicator--desktop">
+                    <li class="add-plan__indicator-item add-plan__indicator-item--active">
+                      <span class="add-plan__indicator-text">Даты</span>
+                    </li>
+                    <li class="add-plan__indicator-item">
+                      <span class="add-plan__indicator-text">Маршрут</span>
+                    </li>
+                    <li class="add-plan__indicator-item">
+                      <span class="add-plan__indicator-text">Развлечения</span>
+                    </li>
+                  </ol>
+                </div>
                 <div class="add-plan__description plan-description">
                   <div class="plan-description__item tooltip">
                     <p class="plan-description__country plan-description__flag plan-description__flag--bosnia">
@@ -1190,6 +1242,7 @@
             Разработано
           </a>
           <a class="footer__link" href="#">
+            <span class="visually-hidden">html-academy.</span>
             <svg width="27" height="33">
               <use xlink:href="./img/sprite.svg#logo-html"></use>
             </svg>

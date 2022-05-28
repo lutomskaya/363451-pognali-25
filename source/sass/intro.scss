@@ -51,7 +51,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 418px 1fr;
-    grid-template-rows: 420px 1fr;
+    grid-template-rows: 1fr min-content;
     padding-top: 0;
     background-image: url("../img/background/traveller-illustration-desktop.png");
     background-repeat: no-repeat;
@@ -179,6 +179,7 @@
     vertical-align: middle;
     padding-top: 115px;
     padding-right: 26px;
+    margin-bottom: 115px;
   }
 }
 
