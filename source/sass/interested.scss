@@ -263,17 +263,20 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 64%;
+    margin-left: 226px;
+    margin-top: 47px;
+    padding: 0;
+
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
 .interested__item {
   @media (min-width: $desktop-width) {
-    padding-left: 180px;
-
-    &:last-child {
-      padding-left: 127px;
-    }
+    width: 49%;
   }
 }
 

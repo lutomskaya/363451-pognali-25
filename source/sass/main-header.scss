@@ -366,6 +366,7 @@
 
 .main-header__site-list {
   @include reset;
+  overflow: hidden;
   position: relative;
   grid-area: site-list;
   display: none;
@@ -406,7 +407,13 @@
   }
 }
 
+.main-header__user-item {
+  overflow: hidden;
+}
+
 .main-header__site-link {
+  overflow: hidden;
+  margin-bottom: 0;
   font-size: 30px;
   line-height: 35px;
   font-weight: 500;
@@ -414,6 +421,15 @@
   text-decoration: none;
 
   color: $color-blue;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $basic-yellow;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -425,16 +441,37 @@
     font-size: 20px;
     line-height: 20px;
     color: $color-white;
-
-    &[href]:hover,
-    &[href]:focus {
-      color: $basic-yellow;
-    }
-
-    &[href]:active {
-      opacity: 0.3;
-    }
   }
+}
+
+.main-header__site-text {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  transition: transform 0.3s;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+
+  &::before {
+    content: attr(data-hover);
+
+    position: absolute;
+    top: 100%;
+
+    color: $basic-yellow;
+    font-weight: 700;
+
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.main-header__site-link:hover .main-header__site-text,
+.main-header__site-link:focus .main-header__site-text {
+  transform: translateY(-100%);
 }
 
 .main-header__social-list {

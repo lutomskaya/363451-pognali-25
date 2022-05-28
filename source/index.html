@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
     <link rel="icon" href="favicon32.ico"> <!-- 32×32 -->
     <link rel="icon" href="favicon16.ico"> <!-- 16×16 -->
   </head>
@@ -73,13 +77,19 @@
         </ul>
         <ul class="main-header__site-list">
           <li class="main-header__site-item">
-            <a class="main-header__site-link">О сервисе</a>
+            <a class="main-header__site-link">
+              <span class="main-header__site-text" data-hover="О&nbsp;сервисе">О сервисе</span>
+            </a>
           </li>
           <li class="main-header__site-item">
-            <a class="main-header__site-link" href="./form.html">Направления</a>
+            <a class="main-header__site-link" href="./form.html">
+              <span class="main-header__site-text" data-hover="Направления">Направления</span>
+            </a>
           </li>
           <li class="main-header__site-item">
-            <a class="main-header__site-link" href="./catalog.html">Попутчики</a>
+            <a class="main-header__site-link" href="./catalog.html">
+              <span class="main-header__site-text" data-hover="Попутчики">Попутчики</span>
+            </a>
           </li>
         </ul>
         <ul class="main-header__social-list social-list">
@@ -258,18 +268,17 @@
                 <fieldset class="companions__transport transport">
                   <ul class="transport__list">
                     <li class="transport__item tooltip">
-                      <input  class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-plane-firsova" value="plane">
-                      <label class="transport__label" for="transport-plane-firsova">
+                      <label class="transport__label" for="plane-firsova">
                         <span>
                           <svg class="transport__svg" width="18" height="20">
                             <use xlink:href="./img/sprite.svg#plane"></use>
                           </svg>
                         </span>
                       </label>
+                      <input  class="transport__input visually-hidden" type="checkbox" name="transport" id="plane-firsova" value="plane">
                       <span class="tooltip__text">Авиаперелет</span>
                     </li>
                     <li class="transport__item tooltip">
-                      <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-bus-firsova" value="bus">
                       <label class="transport__label" for="transport-bus-firsova">
                         <span>
                           <svg class="transport__svg" width="18" height="21">
@@ -277,10 +286,10 @@
                           </svg>
                         </span>
                       </label>
+                      <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-bus-firsova" value="bus">
                       <span class="tooltip__text">Автотранспорт</span>
                     </li>
                     <li class="transport__item tooltip">
-                      <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-bike-firsova" value="bike" checked>
                       <label class="transport__label" for="transport-bike-firsova">
                         <span>
                           <svg class="transport__svg" width="25" height="24">
@@ -288,10 +297,10 @@
                           </svg>
                         </span>
                       </label>
+                      <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-bike-firsova" value="bike" checked>
                       <span class="tooltip__text">Велосипед</span>
                     </li>
                     <li class="transport__item tooltip">
-                      <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-foot-firsova" value="foot">
                       <label class="transport__label" for="transport-foot-firsova">
                         <span>
                           <svg class="transport__svg" width="21" height="24">
@@ -299,6 +308,7 @@
                           </svg>
                         </span>
                       </label>
+                      <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-foot-firsova" value="foot">
                       <span class="tooltip__text">Пешком</span>
                     </li>
                   </ul>
@@ -520,6 +530,7 @@
             Разработано
           </a>
           <a class="footer__link" href="#">
+            <span class="visually-hidden">html-academy.</span>
             <svg width="27" height="33">
               <use xlink:href="./img/sprite.svg#logo-html"></use>
             </svg>
