@@ -67,7 +67,7 @@
 .interested__text {
   width: 74%;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 26px;
   padding-left: 32px;
   text-align: center;
 
@@ -188,6 +188,11 @@
     font-size: 24px;
     line-height: 24px;
     padding-left: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 }
 

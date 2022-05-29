@@ -18,7 +18,7 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    width: 43px;
+    width: 32px;
     height: 43px;
   }
 
@@ -38,6 +38,20 @@
     @media (min-width: $desktop-width) {
       margin-left: 10px;
       margin-top: 20px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $desktop-width) {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  &--catalog-form {
+    @media (min-width: $tablet-width) {
+      width: 43px;
+      height: 43px;
     }
   }
 }

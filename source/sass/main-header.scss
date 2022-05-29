@@ -34,9 +34,20 @@
 .main-header__logo {
   grid-area: logo;
   display: block;
+  margin-top: -12px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 
   & img {
     @media (min-width: $tablet-width) {
+      width: 166px;
+      height: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
       width: 200px;
       height: 50px;
     }
@@ -179,6 +190,7 @@
       "social-list social-list social-list";
 
     padding-top: 45px;
+    padding-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -186,6 +198,7 @@
     grid-template-rows: auto;
     grid-template-areas: "logo site-list user-list";
     padding-bottom: 5px;
+    padding-top: 50px;
   }
 }
 

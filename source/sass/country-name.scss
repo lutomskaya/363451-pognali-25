@@ -1,5 +1,5 @@
 .country-name {
-  padding-bottom: 28px;
+  padding-bottom: 11px;
   padding-top: 10px;
   box-sizing: border-box;
   display: flex;
@@ -28,6 +28,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(5, 32%);
+    grid-template-rows: 26% 20% 17% 20%;
     row-gap: 40px;
     padding-top: 44px;
     padding-left: 10px;
