@@ -44,7 +44,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
     margin-bottom: 38px;
-    padding-bottom: 24px;
+    padding-bottom: 22px;
     grid-template-columns: 1fr 26% 1fr 1fr;
     grid-template-rows: min-content min-content min-content min-content;
 
@@ -152,7 +152,7 @@
   @media (min-width: $tablet-width) {
     @include text (30px, 30px);
     padding-left: 33px;
-    margin-top: 30px;
+    margin-top: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -195,6 +195,10 @@
   padding-right: 10px;
 
   color: $special-grey;
+
+ @media (min-width: $tablet-width) {
+    padding-left: 58px;
+  }
 }
 
 .companion-catalog__country {

@@ -2,6 +2,10 @@
   background-color: $basic-blue;
   color: $color-white;
   border-radius: 0 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .catalog-container__title-inner {
@@ -38,13 +42,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 123px;
+    padding: 0 75px;
+    padding-top: 120px;
     padding-bottom: 64px;
-    border-radius: 0 0 60px 60px;
+
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 120px;
+    padding: 0 125px;
+    padding-top: 115px;
     padding-bottom: 62px;
   }
 }
@@ -58,7 +64,6 @@
 
   @media (min-width: $tablet-width) {
     width: 358px;
-    margin-left: 67px;
 
     @include text (60px, 60px);
   }
@@ -70,7 +75,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     position: relative;
-    padding-right: 135px;
+    padding-right: 60px;
 
     @include text (20px, 20px);
     font-weight: 700;
@@ -93,17 +98,17 @@
       width: 32px;
       height: 16px;
       top: 3px;
-      right: 75px;
+      right: 0;
       background-image: url("../img/svg/icon-arrow-bend.svg");
       background-repeat: no-repeat;
 
       @media (min-width: $desktop-width) {
-        right: 60px;
+        right: 0;
       }
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 122px;
+    padding-right: 58px;
   }
 }

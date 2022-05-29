@@ -44,7 +44,7 @@
       width: 2px;
       height: calc(100% + 50px);
       left: initial;
-      right: -33px;
+      right: 8px;
       border: none;
       border-right: 2px solid $basic-blue-light;
     }
@@ -52,6 +52,7 @@
 
   @media (min-width: $desktop-width) {
     width: 73%;
+    margin-bottom: 55px;
 
     &:first-child::before {
       right: -45px;
@@ -100,6 +101,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 94%;
     height: 140px;
     font-size: 20px;
     line-height: 23px;
@@ -151,7 +153,7 @@
       width: 14px;
       height: 14px;
       left: initial;
-      right: -39px;
+      right: 2px;
       top: 10px;
     }
   }
@@ -173,6 +175,7 @@
   @media (min-width: $tablet-width) {
     width: 70px;
     height: 47px;
+    right: 35px;
   }
 
   @media (min-width: $desktop-width) {

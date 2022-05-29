@@ -26,8 +26,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 37px;
     padding-left: 75px;
     padding-right: 75px;
     justify-content: space-between;
@@ -76,8 +76,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 121px;
-    padding-left: 64px;
+    padding-top: 0;
+    padding-left: 0px;
   }
 }
 
@@ -85,6 +85,15 @@
   @include container;
   position: relative;
   padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 125px;
+    padding-top: 116px;
+  }
 }
 
 .profile__title {
@@ -105,7 +114,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 64px;
+    padding-bottom: 71px;
   }
 }
 
@@ -125,6 +134,11 @@
 }
 
 .profile__image {
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 20;
@@ -133,6 +147,8 @@
     right: 155px;
     width: 190px;
     height: 190px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 }
 
@@ -162,7 +178,7 @@
 
   @media (min-width: $tablet-width) {
     order: 4;
-    margin-top: 43px;
+    margin-top: 48px;
     margin-bottom: 21px;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -178,6 +194,8 @@
     right: 155px;
     top: 206px;
     padding-top: 12px;
+    font-size: 20px;
+    line-height: 18px;
 
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -210,6 +228,8 @@
     order: 1;
     width: 732px;
     margin-left: 50px;
+    margin-top: 23px;
+    margin-bottom: 27px;
   }
 }
 
@@ -294,10 +314,10 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    width: 284px;
+    width: 307px;
     order: 2;
-    padding-bottom: 12px;
-    padding-top: 18px;
+    padding-bottom: 25px;
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
